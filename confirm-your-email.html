@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>SITO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <meta name="format-detection" content="telephone=no">
+    <link href="/favicon.png" rel="shortcut icon" type="image/png">
+    <!-- styles-->
+    <link rel="stylesheet" href="assets/css/foundation.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!--js-->
+    <script src="assets/js/foundation.js" defer></script>
+    <script src="assets/js/app.js" defer></script><!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+</head>
+
+<body class="body">
+    <div class="content">
+        <header class="header">
+            <div class="limit">
+                <div class="flex-panel header-panel">
+                    <button class="btn burger js-mnu-btn"><span class="burger__top"></span><span
+                            class="burger__middle"></span><span class="burger__bottom"></span></button>
+                    <div class="mobile-mnu js-mobile-mnu">
+                        <div class="mobile-mnu__top">
+                            <div class="mobile-mnu__list">
+                                <div class="mobile-mnu__list-itm"><a class="mobile-mnu__link"
+                                        href="/login.html">Войти</a></div>
+                            </div>
+                        </div>
+                        <div class="mobile-mnu__footer">
+                            <div class="mobile-mnu__list">
+                                <div class="mobile-mnu__list-itm"><a class="mobile-mnu__footer-link" href="#"
+                                        target="_blank">Политика конфиденциальности </a></div>
+                                <div class="mobile-mnu__list-itm"><a class="mobile-mnu__footer-link" href="#"
+                                        target="_blank">Пользовательское соглашение</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-panel__logo"><a class="logo" href="/"><span
+                                class="logo__pic logo__pic_desk">SITO</span><span
+                                class="logo__pic logo__pic_mob">S</span><span class="logo__txt">Исследовательский
+                                проект</span></a></div>
+                    <div class="header-panel__nav">
+                        <nav class="nav"><a class="nav__link login" href="/login.html">Войти</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+
+            <div class="emailmodal" id="myModal">
+                <div class="emailmodal__window">
+                    <div class="emailmodal__image-close">
+                        <div class="emailmodal__close"><img src="assets/img/confirm-your-email/email-cross.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="emailmodal__form-container">
+                        <form action="" class="emailmodal__form">
+                            <div class="emailmodal__email-input">
+                                <label class="emailmodal__text-field-label" for="confirm-email-input">E-mail</label>
+                                <input class="emailmodal__text-field-input" type="email" name="confirm-email-input"
+                                    id="confirm-email-input" placeholder="v-project@mail.com"
+                                    value="v-project@mail.com">
+                            </div>
+
+                            <div class="emailmodal__textarea">
+                                <label class="emailmodal__text-field-label"
+                                    for="confirm-email-message">Сообщение</label>
+                                <textarea class="emailmodal__text-field-textarea" name="confirm-email-message"
+                                    id="confirm-email-message" placeholder="У меня ..."></textarea>
+                            </div>
+
+                            <div class="emailmodal__checkbox">
+                                <input type="checkbox" class="emailmodal__custom-checkbox"
+                                    id="emailmodal__custom-checkbox-id" name="emailmodal__custom-checkbox" value="yes">
+                                <label class="emailmodal__checkbox-label" for="emailmodal__custom-checkbox-id">
+                                    <p class="emailmodal__checkbox-label-text">Я согласен с условиями
+                                        <span class="emailmodal__checkbox-label-green">Пользовательского соглашения,
+                                            Политики
+                                            конфиденциальности</span> и даю Согласие на обработку моих персональных
+                                        данных
+                                    </p>
+                                </label>
+                            </div>
+                            <button type="submit" class="emailmodal__button-submit">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="top-bar top-bar_custom">
+                <div class="limit">
+                    <div class="top-panel top-panel_custom">
+                        <div class="top-panel__title top-panel__title_custom">
+                            <h1 class="page-title page-title_custom">Подтвердите ваш e-mail</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <section class="sect sect_custom">
+                <div class="limit limit-custom">
+
+                    <div class="confirm-your-email">
+
+                        <div class="confirm-your-email_left-container">
+                            <div class="confirm-your-email_main-left">
+                                <div class="confirm-your-email__txt">
+                                    <div class="confirm-your-email__txt-top txt-top_custom">
+                                        Для этого вам необходимо
+                                        <span class="confirm-your-email__txt-span_green"> перейти на свою почту</span> и
+                                        найти <br>письмо от V-project.
+                                    </div>
+                                    <div class="confirm-your-email__txt-bottom"> Если вы не можете найти письмо,
+                                        пожалуйста,
+                                        <span class="confirm-your-email__txt-span_red">проверьте папку <br>
+                                            "Спам"</span>,
+                                        так
+                                        как
+                                        иногда наши письма могут попасть туда.
+                                    </div>
+                                </div>
+                                <button class="confirm-your-email__button-problem">
+                                    <div class="confirm-your-email__button-problem-txt">У меня возникли проблемы</div>
+                                </button>
+                            </div>
+                            <div class="confirm-your-email__image-women"></div>
+                        </div>
+
+                        <div class="confirm-your-email__main-right">
+                            <div class="confirm-your-email__aside">
+
+                                <div class="confirm-your-email__aside-txt">Готовы познакомиться ближе и начать
+                                    проходить
+                                    опросы?
+                                </div>
+
+                                <div class="confirm-your-email__aside-wrap">
+
+                                    <div class="confirm-your-email__content-bar">
+                                        <div class="confirm-your-email__bar-image">
+                                            <img class="confirm-your-email__bar-img"
+                                                src="assets/img/confirm-your-email/confirm-email-thermometer.png"
+                                                alt="thermometer">
+                                        </div>
+
+                                        <div class="confirm-your-email__bar-txt">Высказывайтесь <br
+                                                class="confirm-your-email__br"> по
+                                            социально-политическим вопросам</div>
+                                    </div>
+
+                                    <div class="confirm-your-email__content-bar">
+                                        <div class="confirm-your-email__bar-image">
+                                            <img class="confirm-your-email__bar-img"
+                                                src="assets/img/confirm-your-email/confirm-email-fire.png" alt="fire">
+                                        </div>
+
+                                        <div class="confirm-your-email__bar-txt">Участвуйте в <br
+                                                class="confirm-your-email__br"> "Опросы дня" на
+                                            актуальную
+                                            тему</div>
+                                    </div>
+
+                                    <div class="confirm-your-email__content-bar">
+                                        <div class="confirm-your-email__bar-image">
+                                            <img class="confirm-your-email__bar-img"
+                                                src="assets/img/confirm-your-email/confirm-email-family.png"
+                                                alt="family">
+                                        </div>
+
+                                        <div class="confirm-your-email__bar-txt">Узнайте больше о <br
+                                                class="confirm-your-email__br"> себе: тесты про
+                                            семью
+                                            и любовь, карьеру, характер и т.д</div>
+                                    </div>
+
+                                    <div class="confirm-your-email__content-bar">
+                                        <div class="confirm-your-email__bar-image">
+                                            <img class="confirm-your-email__bar-img"
+                                                src="assets/img/confirm-your-email/confirm-email-shop.png" alt="shop">
+                                        </div>
+
+                                        <div class="confirm-your-email__bar-txt">Влияйте на коммерческие организации
+                                            и
+                                            <br class="confirm-your-email__br">
+                                            многое другое!
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+            </section>
+
+
+        </main>
+
+        <footer class="footer">
+            <div class="limit">
+                <div class="flex-panel footer-panel">
+                    <div class="copiright">© 2020, sito-opros.ru.</div>
+                    <div class="footer-nav"><a class="footer-nav__link" href="/privacy.html">Политика
+                            конфиденциальности</a><a class="footer-nav__link" href="/agreement.html">Пользовательское
+                            соглашение</a></div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

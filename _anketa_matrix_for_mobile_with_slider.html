@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>SITO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <meta name="format-detection" content="telephone=no">
+    <link href="/favicon.png" rel="shortcut icon" type="image/png">
+    <!-- styles-->
+    <link rel="stylesheet" href="assets/css/foundation.css">
+    <link rel="stylesheet" href="assets/css/fancyapps.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!--js-->
+    <script src="assets/js/foundation.js" defer></script>
+    <script src="assets/js/fancyapps.min.js" defer></script>
+    <script src="assets/js/app.js" defer></script><!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+  </head>
+  <body class="body">
+    <div class="content">
+      <header class="header">
+        <div class="limit">
+          <div class="flex-panel header-panel">
+            <button class="btn burger js-mnu-btn"><span class="burger__top"></span><span class="burger__middle"></span><span class="burger__bottom"></span></button>
+            <div class="mobile-mnu js-mobile-mnu">
+              <div class="mobile-mnu__top">
+                <div class="mobile-mnu__list">
+                  <div class="mobile-mnu__list-itm"><a class="mobile-mnu__link" href="/profile.html">Профиль</a></div>
+                  <div class="mobile-mnu__list-itm"><a class="mobile-mnu__link" href="/anketa.html">Анкета</a></div>
+                  <div class="mobile-mnu__list-itm"><a class="mobile-mnu__link" href="/polls-list.html">Опросы</a></div>
+                </div>
+              </div>
+              <div class="mobile-mnu__footer">
+                <div class="mobile-mnu__list">
+                  <div class="mobile-mnu__list-itm"><a class="mobile-mnu__footer-link" href="#" target="_blank">Политика  конфиденциальности  </a></div>
+                  <div class="mobile-mnu__list-itm"><a class="mobile-mnu__footer-link" href="#" target="_blank">Пользовательское  соглашение</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="header-panel__logo"><a class="logo" href="/"><span class="logo__pic logo__pic_desk">SITO</span><span class="logo__pic logo__pic_mob">S</span><span class="logo__txt">Исследовательский  проект</span></a></div>
+            <div class="header-panel__nav">
+              <nav class="nav"><a class="nav__link" href="/polls-list.html"> <span class="nav__link-icn">
+                    <svg class="icn icn-bubbls">
+                      <use xlink:href="assets/img/sprite.svg#bubbls"></use>
+                    </svg></span><span class="nav__link-txt">Опросы</span></a><a class="nav__link active" href="/profile.html"> <span class="nav__link-icn">
+                    <svg class="icn icn-man">
+                      <use xlink:href="assets/img/sprite.svg#man"></use>
+                    </svg></span><span class="nav__link-txt">Профиль</span></a><a class="nav__link login" href="#">Выйти</a>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="top-bar">
+          <div class="limit">
+            <div class="top-panel">
+              <div class="top-panel__title">
+                <h1 class="page-title">Анкета</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="sect">
+          <div class="limit">
+            <div class="two-col">
+              <div class="two-col__main">
+                <div class="progress">
+                  <div class="progress__txt">
+                    <div class="progress__val">16%</div>
+                    <div class="progress__title">Информация о Вас</div>
+                  </div>
+                  <div class="progress__bar">
+                    <div class="progress__line" style="width:16%"></div>
+                  </div>
+                </div>
+                <form class="form form_quest">
+                  <div class="form__block">
+                    <div class="form__title">Как Вы любите проводить время в социальных сетях?</div>
+                    <div class="gallery-slider ">
+                      <div class="gallery-slider__items owl-carousel js-slider-gallery">
+                        <a href="assets/img/photo-girl.jpg" class="gallery-slider__img" data-fancybox="gallery">
+                          <img src="assets/img/photo-girl.jpg" alt="image">
+                        </a>
+                        <a href="assets/img/news1.webp" class="gallery-slider__img" data-fancybox="gallery">
+                          <img src="assets/img/news1.webp" alt="image">
+                        </a>
+                        <a href="assets/img/news2.webp" class="gallery-slider__img" data-fancybox="gallery">
+                          <img src="assets/img/news2.webp" alt="image">
+                        </a>
+                      </div>
+                      <div class="gallery-slider__counter">
+                          <span class="gallery-slider__counter-title">Пролистайте изображения</span>
+                          <span id="counter" class="gallery-slider__counter-numbers">Пролистайте изображения</span>
+                        </div>
+                    </div>
+                    <div class="fields-table-wrapper mobile-hidden">
+                      <table class="fields-table">
+                        <thead>
+                          <tr>
+                            <th style='min-width: 200px'>
+                              <span class="fields-table__swipe"></span>
+                            </th>
+                            <th>
+                              <span class="fields-table__title">Все</span>
+                            </th>
+                            <th>
+                              <span class="fields-table__title">ВКонтакте</span>
+                            </th>
+                            <th>
+                              <span class="fields-table__title">Одноклассники</span>
+                            </th>
+                            <th>
+                              <span class="fields-table__title">Facebook</span>
+                            </th>
+                            <th>
+                              <span class="fields-table__title">Twitter</span>
+                            </th>
+                            <th>
+                              <span class="fields-table__title">Instagram</span>
+                            </th>
+                            <th>
+                              <span class="fields-table__title">YouTube</span>
+                            </th>
+                            <th>
+                              <span class="fields-table__title">TikTok</span>
+                            </th>
+                            <th>
+                              <span class="fields-table__title">Не провожу так время в сетях</span>
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                                <span class="fields-table__label">Листаю ленту новостей</span>
+                              </td>
+                            <td>
+                              <label class="check"> 
+                                <input class="check__inpt" type="checkbox" name="all" value="news"><span class="check__mask"><span class="check__icn">
+                                  <svg class="icn icn-check">
+                                    <use xlink:href="assets/img/sprite.svg#check"></use>
+                                  </svg></span></span>
+                              </label>
+                            </td>
+                            <td>
+                              <label class="check"> 
+                                <input class="check__inpt" type="checkbox" name="vk" value="news"><span class="check__mask"><span class="check__icn">
+                                  <svg class="icn icn-check">
+                                    <use xlink:href="assets/img/sprite.svg#check"></use>
+                                  </svg></span></span>
+                              </label>
+                            </td>
+                            <td>
+                              <label class="check"> 
+                                <input class="check__inpt" type="checkbox" name="ok" value="news"><span class="check__mask"><span class="check__icn">
+                                  <svg class="icn icn-check">
+                                    <use xlink:href="assets/img/sprite.svg#check"></use>
+                                  </svg></span></span>
+                              </label>
+                            </td>
+                            <td>
+                              <label class="check"> 
+                                <input class="check__inpt" type="checkbox" name="fb" value="news"><span class="check__mask"><span class="check__icn">
+                                  <svg class="icn icn-check">
+                                    <use xlink:href="assets/img/sprite.svg#check"></use>
+                                  </svg></span></span>
+                              </label>
+                            </td>
+                            <td>
+                              <label class="check"> 
+                                <input class="check__inpt" type="checkbox" name="tw" value="news"><span class="check__mask"><span class="check__icn">
+                                  <svg class="icn icn-check">
+                                    <use xlink:href="assets/img/sprite.svg#check"></use>
+                                  </svg></span></span>
+                              </label>
+                            </td>
+                            <td>
+                              <label class="check"> 
+                                <input class="check__inpt" type="checkbox" name="inst" value="news"><span class="check__mask"><span class="check__icn">
+                                  <svg class="icn icn-check">
+                                    <use xlink:href="assets/img/sprite.svg#check"></use>
+                                  </svg></span></span>
+                              </label>
+                            </td>
+                            <td>
+                              <label class="check"> 
+                                <input class="check__inpt" type="checkbox" name="youtube" value="news"><span class="check__mask"><span class="check__icn">
+                                  <svg class="icn icn-check">
+                                    <use xlink:href="assets/img/sprite.svg#check"></use>
+                                  </svg></span></span>
+                              </label>
+                            </td>
+                            <td>
+                              <label class="check"> 
+                                <input class="check__inpt" type="checkbox" name="tt" value="news"><span class="check__mask"><span class="check__icn">
+                                  <svg class="icn icn-check">
+                                    <use xlink:href="assets/img/sprite.svg#check"></use>
+                                  </svg></span></span>
+                              </label>
+                            </td>
+                            <td>
+                              <label class="check"> 
+                                <input class="check__inpt" type="checkbox" name="no" value="news"><span class="check__mask"><span class="check__icn">
+                                  <svg class="icn icn-check">
+                                    <use xlink:href="assets/img/sprite.svg#check"></use>
+                                  </svg></span></span>
+                              </label>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                                <span class="fields-table__label">Играю</span>
+                              </td>
+                            <td>
+                              <label class="check"> 
+                                <input class="check__inpt" type="checkbox" name="all" value="play"><span class="check__mask"><span class="check__icn">
+                                  <svg class="icn icn-check">
+                                    <use xlink:href="assets/img/sprite.svg#check"></use>
+                                  </svg></span></span>
+                              </label>
+                            </td>
+                            <td>
+                              <label class="check"> 
+                                <input class="check__inpt" type="checkbox" name="vk" value="play"><span class="check__mask"><span class="check__icn">
+                                  <svg class="icn icn-check">
+                                    <use xlink:href="assets/img/sprite.svg#check"></use>
+                                  </svg></span></span>
+                              </label>
+                            </td>
+                            <td>
+                              <label class="check"> 
+                                <input class="check__inpt" type="checkbox" name="ok" value="play"><span class="check__mask"><span class="check__icn">
+                                  <svg class="icn icn-check">
+                                    <use xlink:href="assets/img/sprite.svg#check"></use>
+                                  </svg></span></span>
+                              </label>
+                            </td>
+                            <td>
+                              <label class="check"> 
+                                <input class="check__inpt" type="checkbox" name="fb" value="play"><span class="check__mask"><span class="check__icn">
+                                  <svg class="icn icn-check">
+                                    <use xlink:href="assets/img/sprite.svg#check"></use>
+                                  </svg></span></span>
+                              </label>
+                            </td>
+                            <td>
+                              <label class="check"> 
+                                <input class="check__inpt" type="checkbox" name="tw" value="play"><span class="check__mask"><span class="check__icn">
+                                  <svg class="icn icn-check">
+                                    <use xlink:href="assets/img/sprite.svg#check"></use>
+                                  </svg></span></span>
+                              </label>
+                            </td>
+                            <td>
+                              <label class="check"> 
+                                <input class="check__inpt" type="checkbox" name="inst" value="play"><span class="check__mask"><span class="check__icn">
+                                  <svg class="icn icn-check">
+                                    <use xlink:href="assets/img/sprite.svg#check"></use>
+                                  </svg></span></span>
+                              </label>
+                            </td>
+                            <td>
+                              <label class="check"> 
+                                <input class="check__inpt" type="checkbox" name="youtube" value="play"><span class="check__mask"><span class="check__icn">
+                                  <svg class="icn icn-check">
+                                    <use xlink:href="assets/img/sprite.svg#check"></use>
+                                  </svg></span></span>
+                              </label>
+                            </td>
+                            <td>
+                              <label class="check"> 
+                                <input class="check__inpt" type="checkbox" name="tt" value="play"><span class="check__mask"><span class="check__icn">
+                                  <svg class="icn icn-check">
+                                    <use xlink:href="assets/img/sprite.svg#check"></use>
+                                  </svg></span></span>
+                              </label>
+                            </td>
+                            <td>
+                              <label class="check"> 
+                                <input class="check__inpt" type="checkbox" name="no" value="play"><span class="check__mask"><span class="check__icn">
+                                  <svg class="icn icn-check">
+                                    <use xlink:href="assets/img/sprite.svg#check"></use>
+                                  </svg></span></span>
+                              </label>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                                <span class="fields-table__label">Смотрю видео</span>
+                              </td>
+                            <td>
+                              <label class="check"> 
+                                <input class="check__inpt" type="checkbox" name="all" value="video"><span class="check__mask"><span class="check__icn">
+                                  <svg class="icn icn-check">
+                                    <use xlink:href="assets/img/sprite.svg#check"></use>
+                                  </svg></span></span>
+                              </label>
+                            </td>
+                            <td>
+                              <label class="check"> 
+                                <input class="check__inpt" type="checkbox" name="vk" value="video"><span class="check__mask"><span class="check__icn">
+                                  <svg class="icn icn-check">
+                                    <use xlink:href="assets/img/sprite.svg#check"></use>
+                                  </svg></span></span>
+                              </label>
+                            </td>
+                            <td>
+                              <label class="check"> 
+                                <input class="check__inpt" type="checkbox" name="ok" value="video"><span class="check__mask"><span class="check__icn">
+                                  <svg class="icn icn-check">
+                                    <use xlink:href="assets/img/sprite.svg#check"></use>
+                                  </svg></span></span>
+                              </label>
+                            </td>
+                            <td>
+                              <label class="check"> 
+                                <input class="check__inpt" type="checkbox" name="fb" value="video"><span class="check__mask"><span class="check__icn">
+                                  <svg class="icn icn-check">
+                                    <use xlink:href="assets/img/sprite.svg#check"></use>
+                                  </svg></span></span>
+                              </label>
+                            </td>
+                            <td>
+                              <label class="check"> 
+                                <input class="check__inpt" type="checkbox" name="tw" value="video"><span class="check__mask"><span class="check__icn">
+                                  <svg class="icn icn-check">
+                                    <use xlink:href="assets/img/sprite.svg#check"></use>
+                                  </svg></span></span>
+                              </label>
+                            </td>
+                            <td>
+                              <label class="check"> 
+                                <input class="check__inpt" type="checkbox" name="inst" value="video"><span class="check__mask"><span class="check__icn">
+                                  <svg class="icn icn-check">
+                                    <use xlink:href="assets/img/sprite.svg#check"></use>
+                                  </svg></span></span>
+                              </label>
+                            </td>
+                            <td>
+                              <label class="check"> 
+                                <input class="check__inpt" type="checkbox" name="youtube" value="video"><span class="check__mask"><span class="check__icn">
+                                  <svg class="icn icn-check">
+                                    <use xlink:href="assets/img/sprite.svg#check"></use>
+                                  </svg></span></span>
+                              </label>
+                            </td>
+                            <td>
+                              <label class="check"> 
+                                <input class="check__inpt" type="checkbox" name="tt" value="video"><span class="check__mask"><span class="check__icn">
+                                  <svg class="icn icn-check">
+                                    <use xlink:href="assets/img/sprite.svg#check"></use>
+                                  </svg></span></span>
+                              </label>
+                            </td>
+                            <td>
+                              <label class="check"> 
+                                <input class="check__inpt" type="checkbox" name="no" value="video"><span class="check__mask"><span class="check__icn">
+                                  <svg class="icn icn-check">
+                                    <use xlink:href="assets/img/sprite.svg#check"></use>
+                                  </svg></span></span>
+                              </label>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                                <span class="fields-table__label">Сижу в группах</span>
+                              </td>
+                            <td>
+                              <label class="check"> 
+                                <input class="check__inpt" type="checkbox" name="all" value="groups"><span class="check__mask"><span class="check__icn">
+                                  <svg class="icn icn-check">
+                                    <use xlink:href="assets/img/sprite.svg#check"></use>
+                                  </svg></span></span>
+                              </label>
+                            </td>
+                            <td>
+                              <label class="check"> 
+                                <input class="check__inpt" type="checkbox" name="vk" value="groups"><span class="check__mask"><span class="check__icn">
+                                  <svg class="icn icn-check">
+                                    <use xlink:href="assets/img/sprite.svg#check"></use>
+                                  </svg></span></span>
+                              </label>
+                            </td>
+                            <td>
+                              <label class="check"> 
+                                <input class="check__inpt" type="checkbox" name="ok" value="groups"><span class="check__mask"><span class="check__icn">
+                                  <svg class="icn icn-check">
+                                    <use xlink:href="assets/img/sprite.svg#check"></use>
+                                  </svg></span></span>
+                              </label>
+                            </td>
+                            <td>
+                              <label class="check"> 
+                                <input class="check__inpt" type="checkbox" name="fb" value="groups"><span class="check__mask"><span class="check__icn">
+                                  <svg class="icn icn-check">
+                                    <use xlink:href="assets/img/sprite.svg#check"></use>
+                                  </svg></span></span>
+                              </label>
+                            </td>
+                            <td>
+                              <label class="check"> 
+                                <input class="check__inpt" type="checkbox" name="tw" value="groups"><span class="check__mask"><span class="check__icn">
+                                  <svg class="icn icn-check">
+                                    <use xlink:href="assets/img/sprite.svg#check"></use>
+                                  </svg></span></span>
+                              </label>
+                            </td>
+                            <td>
+                              <label class="check"> 
+                                <input class="check__inpt" type="checkbox" name="inst" value="groups"><span class="check__mask"><span class="check__icn">
+                                  <svg class="icn icn-check">
+                                    <use xlink:href="assets/img/sprite.svg#check"></use>
+                                  </svg></span></span>
+                              </label>
+                            </td>
+                            <td>
+                              <label class="check"> 
+                                <input class="check__inpt" type="checkbox" name="youtube" value="groups"><span class="check__mask"><span class="check__icn">
+                                  <svg class="icn icn-check">
+                                    <use xlink:href="assets/img/sprite.svg#check"></use>
+                                  </svg></span></span>
+                              </label>
+                            </td>
+                            <td>
+                              <label class="check"> 
+                                <input class="check__inpt" type="checkbox" name="tt" value="groups"><span class="check__mask"><span class="check__icn">
+                                  <svg class="icn icn-check">
+                                    <use xlink:href="assets/img/sprite.svg#check"></use>
+                                  </svg></span></span>
+                              </label>
+                            </td>
+                            <td>
+                              <label class="check"> 
+                                <input class="check__inpt" type="checkbox" name="no" value="groups"><span class="check__mask"><span class="check__icn">
+                                  <svg class="icn icn-check">
+                                    <use xlink:href="assets/img/sprite.svg#check"></use>
+                                  </svg></span></span>
+                              </label>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                                <span class="fields-table__label">Слушаю музыку</span>
+                              </td>
+                            <td>
+                              <label class="check"> 
+                                <input class="check__inpt" type="checkbox" name="all" value="music"><span class="check__mask"><span class="check__icn">
+                                  <svg class="icn icn-check">
+                                    <use xlink:href="assets/img/sprite.svg#check"></use>
+                                  </svg></span></span>
+                              </label>
+                            </td>
+                            <td>
+                              <label class="check"> 
+                                <input class="check__inpt" type="checkbox" name="vk" value="music"><span class="check__mask"><span class="check__icn">
+                                  <svg class="icn icn-check">
+                                    <use xlink:href="assets/img/sprite.svg#check"></use>
+                                  </svg></span></span>
+                              </label>
+                            </td>
+                            <td>
+                              <label class="check"> 
+                                <input class="check__inpt" type="checkbox" name="ok" value="music"><span class="check__mask"><span class="check__icn">
+                                  <svg class="icn icn-check">
+                                    <use xlink:href="assets/img/sprite.svg#check"></use>
+                                  </svg></span></span>
+                              </label>
+                            </td>
+                            <td>
+                              <label class="check"> 
+                                <input class="check__inpt" type="checkbox" name="fb" value="music"><span class="check__mask"><span class="check__icn">
+                                  <svg class="icn icn-check">
+                                    <use xlink:href="assets/img/sprite.svg#check"></use>
+                                  </svg></span></span>
+                              </label>
+                            </td>
+                            <td>
+                              <label class="check"> 
+                                <input class="check__inpt" type="checkbox" name="tw" value="music"><span class="check__mask"><span class="check__icn">
+                                  <svg class="icn icn-check">
+                                    <use xlink:href="assets/img/sprite.svg#check"></use>
+                                  </svg></span></span>
+                              </label>
+                            </td>
+                            <td>
+                              <label class="check"> 
+                                <input class="check__inpt" type="checkbox" name="inst" value="music"><span class="check__mask"><span class="check__icn">
+                                  <svg class="icn icn-check">
+                                    <use xlink:href="assets/img/sprite.svg#check"></use>
+                                  </svg></span></span>
+                              </label>
+                            </td>
+                            <td>
+                              <label class="check"> 
+                                <input class="check__inpt" type="checkbox" name="youtube" value="music"><span class="check__mask"><span class="check__icn">
+                                  <svg class="icn icn-check">
+                                    <use xlink:href="assets/img/sprite.svg#check"></use>
+                                  </svg></span></span>
+                              </label>
+                            </td>
+                            <td>
+                              <label class="check"> 
+                                <input class="check__inpt" type="checkbox" name="tt" value="music"><span class="check__mask"><span class="check__icn">
+                                  <svg class="icn icn-check">
+                                    <use xlink:href="assets/img/sprite.svg#check"></use>
+                                  </svg></span></span>
+                              </label>
+                            </td>
+                            <td>
+                              <label class="check"> 
+                                <input class="check__inpt" type="checkbox" name="no" value="music"><span class="check__mask"><span class="check__icn">
+                                  <svg class="icn icn-check">
+                                    <use xlink:href="assets/img/sprite.svg#check"></use>
+                                  </svg></span></span>
+                              </label>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                                <span class="fields-table__label">Пишу посты</span>
+                              </td>
+                            <td>
+                              <label class="check"> 
+                                <input class="check__inpt" type="checkbox" name="all" value="posts"><span class="check__mask"><span class="check__icn">
+                                  <svg class="icn icn-check">
+                                    <use xlink:href="assets/img/sprite.svg#check"></use>
+                                  </svg></span></span>
+                              </label>
+                            </td>
+                            <td>
+                              <label class="check"> 
+                                <input class="check__inpt" type="checkbox" name="vk" value="posts"><span class="check__mask"><span class="check__icn">
+                                  <svg class="icn icn-check">
+                                    <use xlink:href="assets/img/sprite.svg#check"></use>
+                                  </svg></span></span>
+                              </label>
+                            </td>
+                            <td>
+                              <label class="check"> 
+                                <input class="check__inpt" type="checkbox" name="ok" value="posts"><span class="check__mask"><span class="check__icn">
+                                  <svg class="icn icn-check">
+                                    <use xlink:href="assets/img/sprite.svg#check"></use>
+                                  </svg></span></span>
+                              </label>
+                            </td>
+                            <td>
+                              <label class="check"> 
+                                <input class="check__inpt" type="checkbox" name="fb" value="posts"><span class="check__mask"><span class="check__icn">
+                                  <svg class="icn icn-check">
+                                    <use xlink:href="assets/img/sprite.svg#check"></use>
+                                  </svg></span></span>
+                              </label>
+                            </td>
+                            <td>
+                              <label class="check"> 
+                                <input class="check__inpt" type="checkbox" name="tw" value="posts"><span class="check__mask"><span class="check__icn">
+                                  <svg class="icn icn-check">
+                                    <use xlink:href="assets/img/sprite.svg#check"></use>
+                                  </svg></span></span>
+                              </label>
+                            </td>
+                            <td>
+                              <label class="check"> 
+                                <input class="check__inpt" type="checkbox" name="inst" value="posts"><span class="check__mask"><span class="check__icn">
+                                  <svg class="icn icn-check">
+                                    <use xlink:href="assets/img/sprite.svg#check"></use>
+                                  </svg></span></span>
+                              </label>
+                            </td>
+                            <td>
+                              <label class="check"> 
+                                <input class="check__inpt" type="checkbox" name="youtube" value="posts"><span class="check__mask"><span class="check__icn">
+                                  <svg class="icn icn-check">
+                                    <use xlink:href="assets/img/sprite.svg#check"></use>
+                                  </svg></span></span>
+                              </label>
+                            </td>
+                            <td>
+                              <label class="check"> 
+                                <input class="check__inpt" type="checkbox" name="tt" value="posts"><span class="check__mask"><span class="check__icn">
+                                  <svg class="icn icn-check">
+                                    <use xlink:href="assets/img/sprite.svg#check"></use>
+                                  </svg></span></span>
+                              </label>
+                            </td>
+                            <td>
+                              <label class="check"> 
+                                <input class="check__inpt" type="checkbox" name="no" value="posts"><span class="check__mask"><span class="check__icn">
+                                  <svg class="icn icn-check">
+                                    <use xlink:href="assets/img/sprite.svg#check"></use>
+                                  </svg></span></span>
+                              </label>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                                <span class="fields-table__label">Другое</span>
+                              </td>
+                            <td>
+                              <label class="check"> 
+                                <input class="check__inpt" type="checkbox" name="all" value="other"><span class="check__mask"><span class="check__icn">
+                                  <svg class="icn icn-check">
+                                    <use xlink:href="assets/img/sprite.svg#check"></use>
+                                  </svg></span></span>
+                              </label>
+                            </td>
+                            <td>
+                              <label class="check"> 
+                                <input class="check__inpt" type="checkbox" name="vk" value="other"><span class="check__mask"><span class="check__icn">
+                                  <svg class="icn icn-check">
+                                    <use xlink:href="assets/img/sprite.svg#check"></use>
+                                  </svg></span></span>
+                              </label>
+                            </td>
+                            <td>
+                              <label class="check"> 
+                                <input class="check__inpt" type="checkbox" name="ok" value="other"><span class="check__mask"><span class="check__icn">
+                                  <svg class="icn icn-check">
+                                    <use xlink:href="assets/img/sprite.svg#check"></use>
+                                  </svg></span></span>
+                              </label>
+                            </td>
+                            <td>
+                              <label class="check"> 
+                                <input class="check__inpt" type="checkbox" name="fb" value="other"><span class="check__mask"><span class="check__icn">
+                                  <svg class="icn icn-check">
+                                    <use xlink:href="assets/img/sprite.svg#check"></use>
+                                  </svg></span></span>
+                              </label>
+                            </td>
+                            <td>
+                              <label class="check"> 
+                                <input class="check__inpt" type="checkbox" name="tw" value="other"><span class="check__mask"><span class="check__icn">
+                                  <svg class="icn icn-check">
+                                    <use xlink:href="assets/img/sprite.svg#check"></use>
+                                  </svg></span></span>
+                              </label>
+                            </td>
+                            <td>
+                              <label class="check"> 
+                                <input class="check__inpt" type="checkbox" name="inst" value="other"><span class="check__mask"><span class="check__icn">
+                                  <svg class="icn icn-check">
+                                    <use xlink:href="assets/img/sprite.svg#check"></use>
+                                  </svg></span></span>
+                              </label>
+                            </td>
+                            <td>
+                              <label class="check"> 
+                                <input class="check__inpt" type="checkbox" name="youtube" value="other"><span class="check__mask"><span class="check__icn">
+                                  <svg class="icn icn-check">
+                                    <use xlink:href="assets/img/sprite.svg#check"></use>
+                                  </svg></span></span>
+                              </label>
+                            </td>
+                            <td>
+                              <label class="check"> 
+                                <input class="check__inpt" type="checkbox" name="tt" value="other"><span class="check__mask"><span class="check__icn">
+                                  <svg class="icn icn-check">
+                                    <use xlink:href="assets/img/sprite.svg#check"></use>
+                                  </svg></span></span>
+                              </label>
+                            </td>
+                            <td>
+                              <label class="check"> 
+                                <input class="check__inpt" type="checkbox" name="no" value="other"><span class="check__mask"><span class="check__icn">
+                                  <svg class="icn icn-check">
+                                    <use xlink:href="assets/img/sprite.svg#check"></use>
+                                  </svg></span></span>
+                              </label>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    
+                    <div class="mobile-visible">
+                      <div class="field-select">
+                        <div class="field-select__title">Листаю ленту новостей</div>
+                        <div class="field-select__select">Выбрать</div>
+                        <div class="field-select__dropdown">
+                          <div class="field-select__dropdown-title">Листаю ленту новостей</div>
+                          <label class="check">
+                            <input class="check__inpt" type="checkbox" name="news" value="all"><span class="check__label">Все</span><span class="check__mask"><span class="check__icn">
+                              <svg class="icn icn-check">
+                                <use xlink:href="assets/img/sprite.svg#check"></use>
+                              </svg></span></span>
+                          </label>
+                          <label class="check">
+                            <input class="check__inpt" type="checkbox" name="news" value="vk"><span class="check__label">ВКонтакте</span><span class="check__mask"><span class="check__icn">
+                              <svg class="icn icn-check">
+                                <use xlink:href="assets/img/sprite.svg#check"></use>
+                              </svg></span></span>
+                          </label>
+                          <label class="check">
+                            <input class="check__inpt" type="checkbox" name="news" value="ok"><span class="check__label">Одноклассники</span><span class="check__mask"><span class="check__icn">
+                              <svg class="icn icn-check">
+                                <use xlink:href="assets/img/sprite.svg#check"></use>
+                              </svg></span></span>
+                          </label>
+                          <label class="check">
+                            <input class="check__inpt" type="checkbox" name="news" value="fb"><span class="check__label">Facebook</span><span class="check__mask"><span class="check__icn">
+                              <svg class="icn icn-check">
+                                <use xlink:href="assets/img/sprite.svg#check"></use>
+                              </svg></span></span>
+                          </label>
+                          <label class="check">
+                            <input class="check__inpt" type="checkbox" name="news" value="tw"><span class="check__label">Twitter</span><span class="check__mask"><span class="check__icn">
+                              <svg class="icn icn-check">
+                                <use xlink:href="assets/img/sprite.svg#check"></use>
+                              </svg></span></span>
+                          </label>
+                          <label class="check">
+                            <input class="check__inpt" type="checkbox" name="news" value="inst"><span class="check__label">Instagram</span><span class="check__mask"><span class="check__icn">
+                              <svg class="icn icn-check">
+                                <use xlink:href="assets/img/sprite.svg#check"></use>
+                              </svg></span></span>
+                          </label>
+                          <label class="check">
+                            <input class="check__inpt" type="checkbox" name="news" value="youtube"><span class="check__label">YouTube</span><span class="check__mask"><span class="check__icn">
+                              <svg class="icn icn-check">
+                                <use xlink:href="assets/img/sprite.svg#check"></use>
+                              </svg></span></span>
+                          </label>
+                          <label class="check">
+                            <input class="check__inpt" type="checkbox" name="news" value="tt"><span class="check__label">TikTok</span><span class="check__mask"><span class="check__icn">
+                              <svg class="icn icn-check">
+                                <use xlink:href="assets/img/sprite.svg#check"></use>
+                              </svg></span></span>
+                          </label>
+                          <label class="check">
+                            <input class="check__inpt" type="checkbox" name="news" value="no"><span class="check__label">Не провожу так время в сетях</span><span class="check__mask"><span class="check__icn">
+                              <svg class="icn icn-check">
+                                <use xlink:href="assets/img/sprite.svg#check"></use>
+                              </svg></span></span>
+                          </label>
+                          <a href="#" class="field-select__save btn btn_subm">Сохранить</a>
+                        </div>
+                      </div>
+
+                      <div class="field-select">
+                        <div class="field-select__title">Играю</div>
+                        <div class="field-select__select">Выбрать</div>
+                        <div class="field-select__dropdown">
+                          <div class="field-select__dropdown-title">Играю</div>
+                          <label class="check">
+                            <input class="check__inpt" type="checkbox" name="play" value="all"><span class="check__label">Все</span><span class="check__mask"><span class="check__icn">
+                              <svg class="icn icn-check">
+                                <use xlink:href="assets/img/sprite.svg#check"></use>
+                              </svg></span></span>
+                          </label>
+                          <label class="check">
+                            <input class="check__inpt" type="checkbox" name="play" value="vk"><span class="check__label">ВКонтакте</span><span class="check__mask"><span class="check__icn">
+                              <svg class="icn icn-check">
+                                <use xlink:href="assets/img/sprite.svg#check"></use>
+                              </svg></span></span>
+                          </label>
+                          <label class="check">
+                            <input class="check__inpt" type="checkbox" name="play" value="ok"><span class="check__label">Одноклассники</span><span class="check__mask"><span class="check__icn">
+                              <svg class="icn icn-check">
+                                <use xlink:href="assets/img/sprite.svg#check"></use>
+                              </svg></span></span>
+                          </label>
+                          <label class="check">
+                            <input class="check__inpt" type="checkbox" name="play" value="fb"><span class="check__label">Facebook</span><span class="check__mask"><span class="check__icn">
+                              <svg class="icn icn-check">
+                                <use xlink:href="assets/img/sprite.svg#check"></use>
+                              </svg></span></span>
+                          </label>
+                          <label class="check">
+                            <input class="check__inpt" type="checkbox" name="play" value="tw"><span class="check__label">Twitter</span><span class="check__mask"><span class="check__icn">
+                              <svg class="icn icn-check">
+                                <use xlink:href="assets/img/sprite.svg#check"></use>
+                              </svg></span></span>
+                          </label>
+                          <label class="check">
+                            <input class="check__inpt" type="checkbox" name="play" value="inst"><span class="check__label">Instagram</span><span class="check__mask"><span class="check__icn">
+                              <svg class="icn icn-check">
+                                <use xlink:href="assets/img/sprite.svg#check"></use>
+                              </svg></span></span>
+                          </label>
+                          <label class="check">
+                            <input class="check__inpt" type="checkbox" name="play" value="youtube"><span class="check__label">YouTube</span><span class="check__mask"><span class="check__icn">
+                              <svg class="icn icn-check">
+                                <use xlink:href="assets/img/sprite.svg#check"></use>
+                              </svg></span></span>
+                          </label>
+                          <label class="check">
+                            <input class="check__inpt" type="checkbox" name="play" value="tt"><span class="check__label">TikTok</span><span class="check__mask"><span class="check__icn">
+                              <svg class="icn icn-check">
+                                <use xlink:href="assets/img/sprite.svg#check"></use>
+                              </svg></span></span>
+                          </label>
+                          <label class="check">
+                            <input class="check__inpt" type="checkbox" name="play" value="no"><span class="check__label">Не провожу так время в сетях</span><span class="check__mask"><span class="check__icn">
+                              <svg class="icn icn-check">
+                                <use xlink:href="assets/img/sprite.svg#check"></use>
+                              </svg></span></span>
+                          </label>
+                          <a href="#" class="field-select__save btn btn_subm">Сохранить</a>
+                        </div>
+                      </div>
+
+                      <div class="field-select">
+                        <div class="field-select__title">Смотрю видео</div>
+                        <div class="field-select__select">Выбрать</div>
+                        <div class="field-select__dropdown">
+                          <div class="field-select__dropdown-title">Смотрю видео</div>
+                          <label class="check">
+                            <input class="check__inpt" type="checkbox" name="video" value="all"><span class="check__label">Все</span><span class="check__mask"><span class="check__icn">
+                              <svg class="icn icn-check">
+                                <use xlink:href="assets/img/sprite.svg#check"></use>
+                              </svg></span></span>
+                          </label>
+                          <label class="check">
+                            <input class="check__inpt" type="checkbox" name="video" value="vk"><span class="check__label">ВКонтакте</span><span class="check__mask"><span class="check__icn">
+                              <svg class="icn icn-check">
+                                <use xlink:href="assets/img/sprite.svg#check"></use>
+                              </svg></span></span>
+                          </label>
+                          <label class="check">
+                            <input class="check__inpt" type="checkbox" name="video" value="ok"><span class="check__label">Одноклассники</span><span class="check__mask"><span class="check__icn">
+                              <svg class="icn icn-check">
+                                <use xlink:href="assets/img/sprite.svg#check"></use>
+                              </svg></span></span>
+                          </label>
+                          <label class="check">
+                            <input class="check__inpt" type="checkbox" name="video" value="fb"><span class="check__label">Facebook</span><span class="check__mask"><span class="check__icn">
+                              <svg class="icn icn-check">
+                                <use xlink:href="assets/img/sprite.svg#check"></use>
+                              </svg></span></span>
+                          </label>
+                          <label class="check">
+                            <input class="check__inpt" type="checkbox" name="video" value="tw"><span class="check__label">Twitter</span><span class="check__mask"><span class="check__icn">
+                              <svg class="icn icn-check">
+                                <use xlink:href="assets/img/sprite.svg#check"></use>
+                              </svg></span></span>
+                          </label>
+                          <label class="check">
+                            <input class="check__inpt" type="checkbox" name="video" value="inst"><span class="check__label">Instagram</span><span class="check__mask"><span class="check__icn">
+                              <svg class="icn icn-check">
+                                <use xlink:href="assets/img/sprite.svg#check"></use>
+                              </svg></span></span>
+                          </label>
+                          <label class="check">
+                            <input class="check__inpt" type="checkbox" name="video" value="youtube"><span class="check__label">YouTube</span><span class="check__mask"><span class="check__icn">
+                              <svg class="icn icn-check">
+                                <use xlink:href="assets/img/sprite.svg#check"></use>
+                              </svg></span></span>
+                          </label>
+                          <label class="check">
+                            <input class="check__inpt" type="checkbox" name="video" value="tt"><span class="check__label">TikTok</span><span class="check__mask"><span class="check__icn">
+                              <svg class="icn icn-check">
+                                <use xlink:href="assets/img/sprite.svg#check"></use>
+                              </svg></span></span>
+                          </label>
+                          <label class="check">
+                            <input class="check__inpt" type="checkbox" name="video" value="no"><span class="check__label">Не провожу так время в сетях</span><span class="check__mask"><span class="check__icn">
+                              <svg class="icn icn-check">
+                                <use xlink:href="assets/img/sprite.svg#check"></use>
+                              </svg></span></span>
+                          </label>
+                          <a href="#" class="field-select__save btn btn_subm">Сохранить</a>
+                        </div>
+                      </div>
+
+                      <div class="field-select">
+                        <div class="field-select__title">Сижу в группах</div>
+                        <div class="field-select__select">Выбрать</div>
+                        <div class="field-select__dropdown">
+                          <div class="field-select__dropdown-title">Сижу в группах</div>
+                          <label class="check">
+                            <input class="check__inpt" type="checkbox" name="groups" value="all"><span class="check__label">Все</span><span class="check__mask"><span class="check__icn">
+                              <svg class="icn icn-check">
+                                <use xlink:href="assets/img/sprite.svg#check"></use>
+                              </svg></span></span>
+                          </label>
+                          <label class="check">
+                            <input class="check__inpt" type="checkbox" name="groups" value="vk"><span class="check__label">ВКонтакте</span><span class="check__mask"><span class="check__icn">
+                              <svg class="icn icn-check">
+                                <use xlink:href="assets/img/sprite.svg#check"></use>
+                              </svg></span></span>
+                          </label>
+                          <label class="check">
+                            <input class="check__inpt" type="checkbox" name="groups" value="ok"><span class="check__label">Одноклассники</span><span class="check__mask"><span class="check__icn">
+                              <svg class="icn icn-check">
+                                <use xlink:href="assets/img/sprite.svg#check"></use>
+                              </svg></span></span>
+                          </label>
+                          <label class="check">
+                            <input class="check__inpt" type="checkbox" name="groups" value="fb"><span class="check__label">Facebook</span><span class="check__mask"><span class="check__icn">
+                              <svg class="icn icn-check">
+                                <use xlink:href="assets/img/sprite.svg#check"></use>
+                              </svg></span></span>
+                          </label>
+                          <label class="check">
+                            <input class="check__inpt" type="checkbox" name="groups" value="tw"><span class="check__label">Twitter</span><span class="check__mask"><span class="check__icn">
+                              <svg class="icn icn-check">
+                                <use xlink:href="assets/img/sprite.svg#check"></use>
+                              </svg></span></span>
+                          </label>
+                          <label class="check">
+                            <input class="check__inpt" type="checkbox" name="groups" value="inst"><span class="check__label">Instagram</span><span class="check__mask"><span class="check__icn">
+                              <svg class="icn icn-check">
+                                <use xlink:href="assets/img/sprite.svg#check"></use>
+                              </svg></span></span>
+                          </label>
+                          <label class="check">
+                            <input class="check__inpt" type="checkbox" name="groups" value="youtube"><span class="check__label">YouTube</span><span class="check__mask"><span class="check__icn">
+                              <svg class="icn icn-check">
+                                <use xlink:href="assets/img/sprite.svg#check"></use>
+                              </svg></span></span>
+                          </label>
+                          <label class="check">
+                            <input class="check__inpt" type="checkbox" name="groups" value="tt"><span class="check__label">TikTok</span><span class="check__mask"><span class="check__icn">
+                              <svg class="icn icn-check">
+                                <use xlink:href="assets/img/sprite.svg#check"></use>
+                              </svg></span></span>
+                          </label>
+                          <label class="check">
+                            <input class="check__inpt" type="checkbox" name="groups" value="no"><span class="check__label">Не провожу так время в сетях</span><span class="check__mask"><span class="check__icn">
+                              <svg class="icn icn-check">
+                                <use xlink:href="assets/img/sprite.svg#check"></use>
+                              </svg></span></span>
+                          </label>
+                          <a href="#" class="field-select__save btn btn_subm">Сохранить</a>
+                        </div>
+                      </div>
+
+                      <div class="field-select">
+                        <div class="field-select__title">Слушаю музыку</div>
+                        <div class="field-select__select">Выбрать</div>
+                        <div class="field-select__dropdown">
+                          <div class="field-select__dropdown-title">Слушаю музыку</div>
+                          <label class="check">
+                            <input class="check__inpt" type="checkbox" name="music" value="all"><span class="check__label">Все</span><span class="check__mask"><span class="check__icn">
+                              <svg class="icn icn-check">
+                                <use xlink:href="assets/img/sprite.svg#check"></use>
+                              </svg></span></span>
+                          </label>
+                          <label class="check">
+                            <input class="check__inpt" type="checkbox" name="music" value="vk"><span class="check__label">ВКонтакте</span><span class="check__mask"><span class="check__icn">
+                              <svg class="icn icn-check">
+                                <use xlink:href="assets/img/sprite.svg#check"></use>
+                              </svg></span></span>
+                          </label>
+                          <label class="check">
+                            <input class="check__inpt" type="checkbox" name="music" value="ok"><span class="check__label">Одноклассники</span><span class="check__mask"><span class="check__icn">
+                              <svg class="icn icn-check">
+                                <use xlink:href="assets/img/sprite.svg#check"></use>
+                              </svg></span></span>
+                          </label>
+                          <label class="check">
+                            <input class="check__inpt" type="checkbox" name="music" value="fb"><span class="check__label">Facebook</span><span class="check__mask"><span class="check__icn">
+                              <svg class="icn icn-check">
+                                <use xlink:href="assets/img/sprite.svg#check"></use>
+                              </svg></span></span>
+                          </label>
+                          <label class="check">
+                            <input class="check__inpt" type="checkbox" name="music" value="tw"><span class="check__label">Twitter</span><span class="check__mask"><span class="check__icn">
+                              <svg class="icn icn-check">
+                                <use xlink:href="assets/img/sprite.svg#check"></use>
+                              </svg></span></span>
+                          </label>
+                          <label class="check">
+                            <input class="check__inpt" type="checkbox" name="music" value="inst"><span class="check__label">Instagram</span><span class="check__mask"><span class="check__icn">
+                              <svg class="icn icn-check">
+                                <use xlink:href="assets/img/sprite.svg#check"></use>
+                              </svg></span></span>
+                          </label>
+                          <label class="check">
+                            <input class="check__inpt" type="checkbox" name="music" value="youtube"><span class="check__label">YouTube</span><span class="check__mask"><span class="check__icn">
+                              <svg class="icn icn-check">
+                                <use xlink:href="assets/img/sprite.svg#check"></use>
+                              </svg></span></span>
+                          </label>
+                          <label class="check">
+                            <input class="check__inpt" type="checkbox" name="music" value="tt"><span class="check__label">TikTok</span><span class="check__mask"><span class="check__icn">
+                              <svg class="icn icn-check">
+                                <use xlink:href="assets/img/sprite.svg#check"></use>
+                              </svg></span></span>
+                          </label>
+                          <label class="check">
+                            <input class="check__inpt" type="checkbox" name="music" value="no"><span class="check__label">Не провожу так время в сетях</span><span class="check__mask"><span class="check__icn">
+                              <svg class="icn icn-check">
+                                <use xlink:href="assets/img/sprite.svg#check"></use>
+                              </svg></span></span>
+                          </label>
+                          <a href="#" class="field-select__save btn btn_subm">Сохранить</a>
+                        </div>
+                      </div>
+
+                      <div class="field-select">
+                        <div class="field-select__title">Пишу посты</div>
+                        <div class="field-select__select">Выбрать</div>
+                        <div class="field-select__dropdown">
+                          <div class="field-select__dropdown-title">Пишу посты</div>
+                          <label class="check">
+                            <input class="check__inpt" type="checkbox" name="posts" value="all"><span class="check__label">Все</span><span class="check__mask"><span class="check__icn">
+                              <svg class="icn icn-check">
+                                <use xlink:href="assets/img/sprite.svg#check"></use>
+                              </svg></span></span>
+                          </label>
+                          <label class="check">
+                            <input class="check__inpt" type="checkbox" name="posts" value="vk"><span class="check__label">ВКонтакте</span><span class="check__mask"><span class="check__icn">
+                              <svg class="icn icn-check">
+                                <use xlink:href="assets/img/sprite.svg#check"></use>
+                              </svg></span></span>
+                          </label>
+                          <label class="check">
+                            <input class="check__inpt" type="checkbox" name="posts" value="ok"><span class="check__label">Одноклассники</span><span class="check__mask"><span class="check__icn">
+                              <svg class="icn icn-check">
+                                <use xlink:href="assets/img/sprite.svg#check"></use>
+                              </svg></span></span>
+                          </label>
+                          <label class="check">
+                            <input class="check__inpt" type="checkbox" name="posts" value="fb"><span class="check__label">Facebook</span><span class="check__mask"><span class="check__icn">
+                              <svg class="icn icn-check">
+                                <use xlink:href="assets/img/sprite.svg#check"></use>
+                              </svg></span></span>
+                          </label>
+                          <label class="check">
+                            <input class="check__inpt" type="checkbox" name="posts" value="tw"><span class="check__label">Twitter</span><span class="check__mask"><span class="check__icn">
+                              <svg class="icn icn-check">
+                                <use xlink:href="assets/img/sprite.svg#check"></use>
+                              </svg></span></span>
+                          </label>
+                          <label class="check">
+                            <input class="check__inpt" type="checkbox" name="posts" value="inst"><span class="check__label">Instagram</span><span class="check__mask"><span class="check__icn">
+                              <svg class="icn icn-check">
+                                <use xlink:href="assets/img/sprite.svg#check"></use>
+                              </svg></span></span>
+                          </label>
+                          <label class="check">
+                            <input class="check__inpt" type="checkbox" name="posts" value="youtube"><span class="check__label">YouTube</span><span class="check__mask"><span class="check__icn">
+                              <svg class="icn icn-check">
+                                <use xlink:href="assets/img/sprite.svg#check"></use>
+                              </svg></span></span>
+                          </label>
+                          <label class="check">
+                            <input class="check__inpt" type="checkbox" name="posts" value="tt"><span class="check__label">TikTok</span><span class="check__mask"><span class="check__icn">
+                              <svg class="icn icn-check">
+                                <use xlink:href="assets/img/sprite.svg#check"></use>
+                              </svg></span></span>
+                          </label>
+                          <label class="check">
+                            <input class="check__inpt" type="checkbox" name="news" value="no"><span class="check__label">Не провожу так время в сетях</span><span class="check__mask"><span class="check__icn">
+                              <svg class="icn icn-check">
+                                <use xlink:href="assets/img/sprite.svg#check"></use>
+                              </svg></span></span>
+                          </label>
+                          <a href="#" class="field-select__save btn btn_subm">Сохранить</a>
+                        </div>
+                      </div>
+
+                      <div class="field-select">
+                        <div class="field-select__title">Другое</div>
+                        <div class="field-select__select">Выбрать</div>
+                        <div class="field-select__dropdown">
+                          <div class="field-select__dropdown-title">Другое</div>
+                          <label class="check">
+                            <input class="check__inpt" type="checkbox" name="other" value="all"><span class="check__label">Все</span><span class="check__mask"><span class="check__icn">
+                              <svg class="icn icn-check">
+                                <use xlink:href="assets/img/sprite.svg#check"></use>
+                              </svg></span></span>
+                          </label>
+                          <label class="check">
+                            <input class="check__inpt" type="checkbox" name="other" value="vk"><span class="check__label">ВКонтакте</span><span class="check__mask"><span class="check__icn">
+                              <svg class="icn icn-check">
+                                <use xlink:href="assets/img/sprite.svg#check"></use>
+                              </svg></span></span>
+                          </label>
+                          <label class="check">
+                            <input class="check__inpt" type="checkbox" name="other" value="ok"><span class="check__label">Одноклассники</span><span class="check__mask"><span class="check__icn">
+                              <svg class="icn icn-check">
+                                <use xlink:href="assets/img/sprite.svg#check"></use>
+                              </svg></span></span>
+                          </label>
+                          <label class="check">
+                            <input class="check__inpt" type="checkbox" name="other" value="fb"><span class="check__label">Facebook</span><span class="check__mask"><span class="check__icn">
+                              <svg class="icn icn-check">
+                                <use xlink:href="assets/img/sprite.svg#check"></use>
+                              </svg></span></span>
+                          </label>
+                          <label class="check">
+                            <input class="check__inpt" type="checkbox" name="other" value="tw"><span class="check__label">Twitter</span><span class="check__mask"><span class="check__icn">
+                              <svg class="icn icn-check">
+                                <use xlink:href="assets/img/sprite.svg#check"></use>
+                              </svg></span></span>
+                          </label>
+                          <label class="check">
+                            <input class="check__inpt" type="checkbox" name="other" value="inst"><span class="check__label">Instagram</span><span class="check__mask"><span class="check__icn">
+                              <svg class="icn icn-check">
+                                <use xlink:href="assets/img/sprite.svg#check"></use>
+                              </svg></span></span>
+                          </label>
+                          <label class="check">
+                            <input class="check__inpt" type="checkbox" name="other" value="youtube"><span class="check__label">YouTube</span><span class="check__mask"><span class="check__icn">
+                              <svg class="icn icn-check">
+                                <use xlink:href="assets/img/sprite.svg#check"></use>
+                              </svg></span></span>
+                          </label>
+                          <label class="check">
+                            <input class="check__inpt" type="checkbox" name="other" value="tt"><span class="check__label">TikTok</span><span class="check__mask"><span class="check__icn">
+                              <svg class="icn icn-check">
+                                <use xlink:href="assets/img/sprite.svg#check"></use>
+                              </svg></span></span>
+                          </label>
+                          <label class="check">
+                            <input class="check__inpt" type="checkbox" name="other" value="no"><span class="check__label">Не провожу так время в сетях</span><span class="check__mask"><span class="check__icn">
+                              <svg class="icn icn-check">
+                                <use xlink:href="assets/img/sprite.svg#check"></use>
+                              </svg></span></span>
+                          </label>
+                          <a href="#" class="field-select__save btn btn_subm">Сохранить</a>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                  <button class="btn btn_subm"> 
+                    <div class="btn__txt">Далее</div>
+                    <div class="btn__icn"> 
+                      <svg class="icn icn-arrow_r">
+                        <use xlink:href="assets/img/sprite.svg#arrow_r"></use>
+                      </svg>
+                    </div>
+                  </button>
+                </form>
+              </div>
+              <div class="two-col__aside">
+                <div class="sidebar">
+                                    <figure class="banner"><img class="banner__img" src="assets/img/layer 2.png" alt="O-o">
+                                      <figcaption class="banner__txt">В день на заполнение анкет уходит в среднем пол часа</figcaption>
+                                    </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="limit">
+          <div class="flex-panel footer-panel">
+            <div class="copiright">© 2020, sito-opros.ru.</div>
+            <div class="footer-nav"><a class="footer-nav__link" href="/privacy.html">Политика конфиденциальности</a><a class="footer-nav__link" href="/agreement.html">Пользовательское соглашение</a></div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

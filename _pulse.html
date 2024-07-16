@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>SITO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <meta name="format-detection" content="telephone=no">
+    <link href="/favicon.png" rel="shortcut icon" type="image/png">
+    <!-- styles-->
+    <link rel="stylesheet" href="assets/css/foundation.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!--js-->
+    <script src="assets/js/foundation.js" defer></script>
+    <script src="assets/js/app.js" defer></script>
+    <!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+</head>
+
+<body class="body">
+    <div class="popup-bg popup-bg--dark js-popup-bg">
+        <div class="popup-modal popup-modal--achievement">
+        <div class="popup-modal__header">
+            <div class="h2 popup-modal__title">Достижение</div>
+            <img src="./assets/img/exit-popup.png" alt="" class="popup-exit">
+        </div>
+        <div class="popup-modal__body">
+            <div class="achievement popup-modal__achievement">
+                <div class="achievement__img-wrap">
+                    <div class="achievement__img">
+                        <img src="./assets/img/achievements-1.png" alt="image">
+                    </div>
+                </div>
+                <div class="achievement__info">
+                    <div class="h3 achievement__title">Начинающий автор</div>
+                    <div class="achievement__text">Вы предложили свою первую тему для опроса</div>
+                </div>
+            </div>
+        </div>
+        <div class="popup-modal__footer">
+            <div class="popup-modal__share">
+                <div class="popup-modal__share-title">Поделитесь своим достижением:</div>
+                <div class="popup-modal__social">
+                    <a href="#" class="social-item social-item--icon">
+                        <svg class="icn icn-vk">
+                            <use xlink:href="assets/img/sprite.svg#vk"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-item social-item--icon">
+                        <svg class="icn icn-ok">
+                            <use xlink:href="assets/img/sprite.svg#ok"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-item social-item--icon">
+                        <svg class="icn icn-telegram">
+                            <use xlink:href="assets/img/sprite.svg#telegram"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="popup-wrap">
+        <div class="popup-modal popup-modal--action popup-modal--action-rules">
+            <div class="popup-modal__header">
+                <div class="h2 popup-modal__title">Правила проведения акции ежедневных бонусов за вход:</div>
+                <div class="popup-exit">
+                    <svg class="icn icn-close-2">
+                        <use xlink:href="assets/img/sprite.svg#close-2"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="popup-modal__body">
+                <div class="popup-modal__text">
+                    <ol>
+                        <li>Акция пройдет в период с 01.03.2023 по 31.03.2023</li>
+                        <li>Акция доступна всем зарегистрированным пользователям V-project.</li>
+                        <li>Вы можете отметиться в акции в личном кабинете только один раз за сутки.</li>
+                        <li>Чтобы день был засчитан, пользователю необходимо выполнить задание дня— оценить 10 единиц контента на вкладке «Опросы», баннер «Оцените работы дизайнеров, видеомейкеров и новости дня» или перейти напрямую из баннера акции по кнопке «Начать»</li>
+                        <li>Если вы будете заходить и отмечаться в приложении 10 дней подряд, то получите финальный приз — фирменный мерч V-project.</li>
+                        <li>Если вы пропустите 1 день, то отсчёт 10 дней начнется заново.</li>
+                        <li>Конкретные условия и положения могут меняться в зависимости от организатора V-project, который спонсирует акцию.</li>
+                        <li>V-project оставляет за собой право заменить приз в случае отсутствия необходимого размера изделия</li>
+                        <li>Пользователь может принять участие в акции только 1 раз в указанный период</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="popup-modal popup-modal--action popup-modal--action-gift">
+            <div class="popup-modal__header">
+                <div class="h2 popup-modal__title">Награда</div>
+                <div class="popup-exit">
+                    <svg class="icn icn-close-2">
+                        <use xlink:href="assets/img/sprite.svg#close-2"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="popup-modal__body">
+                <div class="achievement popup-modal__achievement">
+                    <div class="achievement__img-wrap">
+                        <div class="achievement__img">
+                            <img src="./assets/img/achievements-13.png" alt="image">
+                        </div>
+                    </div>
+                    <div class="achievement__info">
+                        <div class="h3 achievement__title">Фирменный мерч</div>
+                        <div class="achievement__text">Вы выполнили задание и получаете фирменный подарок от V-project!
+                            <br>
+                            Нажмите кнопку «Забрать приз», чтобы мы уточнили у вас детали 
+                            для доставки
+                        </div>
+                        <button class="btn btn--yellow achievement__gift"> 
+                            <span>Забрать приз</span>
+                            <svg class="icn icn-arrow_r">
+                                <use xlink:href="./assets/img/sprite.svg#arrow_r"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="popup-modal__footer">
+                <div class="popup-modal__share">
+                    <div class="popup-modal__share-title">Поделитесь своим достижением:</div>
+                    <div class="popup-modal__social">
+                        <a href="#" class="social-item social-item--yellow social-item--icon">
+                            <svg class="icn icn-vk">
+                                <use xlink:href="assets/img/sprite.svg#vk"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-item social-item--yellow social-item--icon">
+                            <svg class="icn icn-ok">
+                                <use xlink:href="assets/img/sprite.svg#ok"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-item social-item--yellow social-item--icon">
+                            <svg class="icn icn-telegram">
+                                <use xlink:href="assets/img/sprite.svg#telegram"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup-modal popup-modal--action popup-modal--action-info">
+            <div class="popup-modal__header">
+                <div class="h2 popup-modal__title">Награда</div>
+                <div class="popup-exit">
+                    <svg class="icn icn-close-2">
+                        <use xlink:href="assets/img/sprite.svg#close-2"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="popup-modal__body">
+                <form action="" class="popup-modal__form form form--action-info">
+                    <div class="form__row form__row--2">
+                        <label class="inpt"><span class="inpt__label">Имя</span>
+                            <input class="inpt__field" type="text" placeholder="Введите имя" required>
+                        </label>
+                        <label class="inpt"><span class="inpt__label">Отчество</span>
+                            <input class="inpt__field" type="text" placeholder="Введите отчество" required>
+                        </label>
+                    </div>
+                    <div class="form__row">
+                        <label class="inpt"><span class="inpt__label">Фамилия</span>
+                            <input class="inpt__field" type="text" placeholder="Введите фамилию" required>
+                        </label>
+                    </div>    
+                    <div class="form__row form__row--2 form__row--center">
+                        <div class="h3 form__title">Адрес доставки:</div>
+                        <label class="inpt"><span class="inpt__label">Индекс</span>
+                            <input class="inpt__field" type="number" placeholder="Введите индекс" required>
+                        </label>
+                    </div>
+                    <div class="form__row">
+                        <label class="inpt"><span class="inpt__label">Город</span>
+                            <select class="inpt__field js-select" name="city" data-placeholder="Выбрать" required>
+                                <option></option>
+                                <option value="moscow">Москва</option>
+                                <option value="saint-petersburg">Санкт-Петербург</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="form__row">
+                        <label class="inpt"><span class="inpt__label">Улица</span>
+                            <select class="inpt__field js-select" name="street" data-placeholder="Выбрать" required>
+                                <option></option>
+                                <option value="october">Октябрьская</option>
+                                <option value="lenina">Ленина</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="form__row form__row--2">
+                        <label class="inpt"><span class="inpt__label">№ дома-корпуса-квартиры</span>
+                            <input class="inpt__field" type="text" placeholder="Введите № дома-корпуса-квартиры" required>
+                        </label>
+                    </div>
+                    <div class="h3 form__title">Контактные данные</div>
+                    <div class="form__row form__row--2">
+                        <label class="inpt"><span class="inpt__label">Email</span>
+                            <input class="inpt__field" type="email" placeholder="Введите Email" required>
+                        </label>
+                        <label class="inpt"><span class="inpt__label">Мобильный телефон</span>
+                            <input class="inpt__field" type="tel" placeholder="Введите мобильный телефон" required>
+                        </label>
+                    </div>
+                    <div class="h3 form__title">Размер футболки</div>
+                    <div class="form__row form__row--line">
+                        <label class="radio">
+                            <input class="radio__inpt" type="radio" name="size" value="S" checked><span class="radio__mask"></span><span class="radio__label">S</span>
+                        </label>
+                        <label class="radio">
+                            <input class="radio__inpt" type="radio" name="size" value="M"><span class="radio__mask"></span><span class="radio__label">M</span>
+                        </label>
+                        <label class="radio">
+                            <input class="radio__inpt" type="radio" name="size" value="L"><span class="radio__mask"></span><span class="radio__label">L</span>
+                        </label>
+                    </div>
+                    <div class="form__footer">
+                        <button class="btn btn--yellow form__btn">
+                            <span>Отправить</span>
+                            <svg class="icn icn-arrow_r">
+                                <use xlink:href="./assets/img/sprite.svg#arrow_r"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="popup-modal popup-modal--action popup-modal--action-thanks">
+            <div class="popup-modal__header">
+                <div class="h2 popup-modal__title">Спасибо,
+                    <br>
+                    ваша заявка успешно отправлена!
+                </div>
+                <div class="popup-exit">
+                    <svg class="icn icn-close-2">
+                        <use xlink:href="assets/img/sprite.svg#close-2"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="popup-modal__body">
+                <div class="popup-modal__text popup-modal__text--center">
+                    <p>Ваша заявка будет обработана менеджером и подарок будет отправлен на указанный адрес в ближайшее время!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <header class="header">
+            <div class="limit">
+                <div class="flex-panel header-panel">
+                    <button class="btn burger js-mnu-btn"><span class="burger__top"></span><span
+                            class="burger__middle"></span><span class="burger__bottom"></span></button>
+                    <div class="mobile-mnu js-mobile-mnu">
+                        <div class="mobile-mnu__top">
+                            <div class="mobile-mnu__list">
+                                <div class="mobile-mnu__list-itm"><a class="mobile-mnu__link" href="/profile.html">Профиль</a></div>
+                                <div class="mobile-mnu__list-itm"><a class="mobile-mnu__link" href="/anketa.html">Анкета</a>
+                                </div>
+                                <div class="mobile-mnu__list-itm"><a class="mobile-mnu__link" href="/polls-list.html">Опросы</a></div>
+                                <div class="mobile-mnu__list-itm"><a class="mobile-mnu__link" href="/polls-list.html">Выход</a></div>
+                            </div>
+                        </div>
+                        <div class="mobile-mnu__footer">
+                            <div class="mobile-mnu__list">
+                                <div class="mobile-mnu__list-itm"><a class="mobile-mnu__footer-link" href="#" target="_blank">Политика конфиденциальности </a></div>
+                                <div class="mobile-mnu__list-itm"><a class="mobile-mnu__footer-link" href="#" target="_blank">Пользовательское соглашение</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-panel__logo"><a class="logo" href="/"><span
+                                class="logo__pic logo__pic_desk">SITO</span><span
+                                class="logo__pic logo__pic_mob">S</span><span class="logo__txt">Исследовательский
+                                проект</span></a></div>
+                    <div class="header-panel__nav">
+                        <nav class="nav">
+                            <a class="nav__link active" href="/pulse.html"> <span class="nav__link-icn">
+                                    <svg class="icn icn-lightning">
+                                        <use xlink:href="assets/img/sprite.svg#lightning"></use>
+                                    </svg></span><span class="nav__link-txt">Пульс</span>
+                            </a>
+                            <a class="nav__link" href="/polls-list.html"> <span class="nav__link-icn">
+                                <svg class="icn icn-bubbls">
+                                    <use xlink:href="assets/img/sprite.svg#bubbls"></use>
+                                </svg></span><span class="nav__link-txt">Опросы</span>
+                            </a>
+                            <a class="nav__link" href="/polls-list.html"> <span class="nav__link-icn">
+                                <svg class="icn icn-news">
+                                    <use xlink:href="assets/img/sprite.svg#news"></use>
+                                </svg></span><span class="nav__link-txt">Новости</span>
+                            </a>
+
+                        </nav>
+                    </div>
+                    <div class='header-profile'>
+                        <div class='header-profile__info'>
+                            <div class='header-profile__ava'>
+                                <img src='assets/img/ava.png' alt='ava'>
+                            </div>
+                            <div class='header-profile__name'>Алина Михалкова - Ламборджини Степногорскова</div>
+                            <div class='header-profile__experience experience-profile'>
+                                <div class='experience-profile__bar'><span></span></div>
+                                <div class='experience-profile__counts'>
+                                    <span>185</span>/300
+                                </div>
+                            </div>
+                        </div>
+                        <div class='hamb'>
+                            <a href='#' class='hamb__button js-hamb'>
+                                <svg class="icn icn-hamb">
+                                    <use xlink:href="assets/img/sprite.svg#hamb"></use>
+                                </svg>
+                            </a>
+                            <div class='hamb__hidden js-hamb-hidden'>
+                                <a href='https://google.com' class='hamb__link'>Профиль</a>
+                                <a href='https://google.com' class='hamb__link'>Выход</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="top-bar">
+                <div class="limit">
+                    <div class="top-panel">
+                        <div class="top-panel__title">
+                            <h1 class="page-title">Пульс платформы</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="sect">
+                <div class="limit">
+                    <div class="section">
+                        <div class="block block--blue-gradient">
+                            <div class="action">
+                                <div class="action__wrap">
+                                    <div class="action__col">
+                                        <h2 class="h2 action__title">Заходите 10 дней подряд, 
+                                            <br>
+                                            выполняйте задание дня и выигрывайте!
+                                        </h2>
+                                        <div class="action__cta">
+                                            <a href="#" class="btn btn--white btn--rounded action__btn">Начать</a>
+                                            <p class="action__text">Оцените 10 работ дизайнеров, чтобы выполнить задание дня! Если вы пропустите один день, отсчёт начнется заново.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="action__col">
+                                        <div class="action-progress action__days">
+                                            <div class="action-progress__item action-progress__item--10">
+                                                <div class="action-progress__info"></div>
+                                                <div class="action-progress__day">1 день</div>
+                                            </div>
+                                            <div class="action-progress__item action-progress__item--3">
+                                                <div class="action-progress__info">
+                                                    <div class="action-progress__amount">
+                                                        <div class="action-progress__current">3</div>
+                                                        <div class="action-progress__all">из 10</div>
+                                                    </div>
+                                                </div>
+                                                <div class="action-progress__day">2 день</div>
+                                            </div>
+                                            <div class="action-progress__item">
+                                                <div class="action-progress__info"></div>
+                                                <div class="action-progress__day">3 день</div>
+                                            </div>
+                                            <div class="action-progress__item">
+                                                <div class="action-progress__info"></div>
+                                                <div class="action-progress__day">4 день</div>
+                                            </div>
+                                            <div class="action-progress__item">
+                                                <div class="action-progress__info"></div>
+                                                <div class="action-progress__day">5 день</div>
+                                            </div>
+                                            <div class="action-progress__item">
+                                                <div class="action-progress__info"></div>
+                                                <div class="action-progress__day">6 день</div>
+                                            </div>
+                                            <div class="action-progress__item">
+                                                <div class="action-progress__info"></div>
+                                                <div class="action-progress__day">7 день</div>
+                                            </div>
+                                            <div class="action-progress__item">
+                                                <div class="action-progress__info"></div>
+                                                <div class="action-progress__day">8 день</div>
+                                            </div>
+                                            <div class="action-progress__item">
+                                                <div class="action-progress__info"></div>
+                                                <div class="action-progress__day">9 день</div>
+                                            </div>
+                                            <div class="action-progress__item action-progress__gift">
+                                                <div class="action-progress__info">
+                                                    <div class="action-progress__img">
+                                                        <img src="./assets/img/achievements-13.png" alt="image">
+                                                    </div>
+                                                </div>
+                                                <div class="action-progress__day">10 день</div>
+                                            </div>
+                                        </div>
+                                        <div class="action__add-info">
+                                            <button class="action__rules">Правила акции</button>
+                                            <div class="action__period">с 01.03.2023 по 31.03.2023</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="two-col two-col--achievements">
+                        <div class="two-col__main two-col__main--margin-sm">
+                            <div class="section">
+                                <div class="block">
+                                    <div class="all-users">
+                                        <div class="all-users__img">
+                                            <img src="./assets/img/girl-with-book.png" alt="girl-with-book">
+                                        </div>
+                                        <div class="all-users__info">
+                                            <h3 class="h1 all-users__title">С нами уже 
+                                                <br>
+                                                    пользователей
+                                            </h3>
+                                            <div class="all-users__amount">
+                                                <span class="all-users__number">2</span>
+                                                <span class="all-users__number">1</span>
+                                                <span class="all-users__number">7</span>
+                                                <span class="all-users__number">5</span>
+                                                <span class="all-users__number">4</span>
+                                                <span class="all-users__number">3</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section">
+                                <div class="section__header">
+                                    <h2 class="h2 section__title">Ваши достижения</h2>
+                                    <a href="/pulse--achievements.html" class="section__more">
+                                        <span class="section__more-text">Посмотреть все</span>
+                                        <span class="section__more-icon">
+                                            <svg class="icn icn-arrow-right">
+                                                <use xlink:href="assets/img/sprite.svg#arrow-right"></use>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="block block--beige">
+                                    <div class="achievements">
+                                        <div class="achievements__items owl-carousel js-slider-achievements">
+                                            <div class="achievement achievement--new" data-title="Начинающий автор">
+                                                <div class="achievement__img-wrap">
+                                                    <div class="achievement__img">
+                                                        <img src="./assets/img/achievements-1.png" alt="image">
+                                                    </div>
+                                                    <span class="achievement__label">new</span>
+                                                </div>
+                                            </div>
+                                            <div class="achievement" data-title="Добро пожаловать!">
+                                                <div class="achievement__img-wrap">
+                                                    <div class="achievement__img">
+                                                        <img src="./assets/img/achievements-2.png" alt="image">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="achievement" data-title="Новый уровень!">
+                                                <div class="achievement__img-wrap">
+                                                    <div class="achievement__img">
+                                                        <img src="./assets/img/achievements-3.png" alt="image">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="achievement" data-title="Так держать">
+                                                <div class="achievement__img-wrap">
+                                                    <div class="achievement__img">
+                                                        <img src="./assets/img/achievements-4.png" alt="image">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="achievement" data-title="Знакомство">
+                                                <div class="achievement__img-wrap">
+                                                    <div class="achievement__img">
+                                                        <img src="./assets/img/achievements-5.png" alt="image">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="achievement" data-title="Вы с нами уже год!">
+                                                <div class="achievement__img-wrap">
+                                                    <div class="achievement__img">
+                                                        <img src="./assets/img/achievements-6.png" alt="image">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="achievement__popup-title"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="section">
+                                <h2 class="h2 section__title">Самые активные регионы</h2>
+                                <div class="block block--blue">
+                                    <div class="regions">
+                                        <div class="regions__header">
+                                            <div class="regions__info">
+                                                <h3 class="h1 regions__title">Поддержи свой регион!</h3>
+                                                <p class="regions__text">Чем больше активных пользователей в регионе, тем выше поднимается город в рейтинге!</p>
+                                            </div>
+                                            <div class="regions__map">
+                                                <img src="assets/img/all-map.webp" alt="all-map">
+                                            </div>
+                                        </div>
+                                        <div class="regions-stat">
+                                            <div class="regions-stat__header">
+                                                <div class="regions-stat__title">Регионы</div>
+                                                <div class="regions-stat__title">Пользователи</div>
+                                            </div>
+                                            <div class="regions-stat__body">
+                                                <div class="regions-stat__item">
+                                                    <div class="regions-stat__bar" style="width: 30%"></div>
+                                                    <div class="regions-stat__region">Москва</div>
+                                                    <div class="regions-stat__number">231</div>
+                                                </div>
+                                                <div class="regions-stat__item">
+                                                    <div class="regions-stat__bar" style="width: 20%"></div>
+                                                    <div class="regions-stat__region">Кировская область</div>
+                                                    <div class="regions-stat__number">78</div>
+                                                </div>
+                                                <div class="regions-stat__item">
+                                                    <div class="regions-stat__bar" style="width: 15%"></div>
+                                                    <div class="regions-stat__region">Рязанская область</div>
+                                                    <div class="regions-stat__number">65</div>
+                                                </div>
+                                                <div class="regions-stat__item">
+                                                    <div class="regions-stat__bar" style="width: 10%"></div>
+                                                    <div class="regions-stat__region">Новосибирская область</div>
+                                                    <div class="regions-stat__number">41</div>
+                                                </div>
+                                                <div class="regions-stat__item">
+                                                    <div class="regions-stat__bar" style="width: 8%"></div>
+                                                    <div class="regions-stat__region">Республика Алтай</div>
+                                                    <div class="regions-stat__number">37</div>
+                                                </div>
+                                                <div class="regions-stat__item">
+                                                    <div class="regions-stat__bar" style="width: 6%"></div>
+                                                    <div class="regions-stat__region">Татарстан</div>
+                                                    <div class="regions-stat__number">25</div>
+                                                </div>
+                                                <div class="regions-stat__item">
+                                                    <div class="regions-stat__bar" style="width: 4%"></div>
+                                                    <div class="regions-stat__region">Ханты-Мансийский автономный округ - Югра</div>
+                                                    <div class="regions-stat__number">19</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="block block--gray block--borderless qa__block">
+                                <div class="qa__item">
+                                    <div class="qa__item-header">
+                                        <div class="txt-5 qa__item-question">Есть ли в v-project длинные длинные длинные длинные длинные длинные длинные длинные длинные длинные длинные длинные длинные длинные длинные длинные длинные длинные длинные длинные длинные длинные длинные опросы?</div>
+
+                                        <img class="qa-svg" src="assets/img/arrow_up_down.svg" alt="">
+                                    </div>
+
+                                    <div class="qa__item-answer txt-6">
+                                        Пример текстового текста Пример текстового текста
+                                    </div>
+                                </div>
+
+                                <div class="qa__item">
+                                    <div class="qa__item-header">
+                                        <div class="txt-5 qa__item-question">Есть ли в v-project платные опросы?</div>
+
+                                        <img class="qa-svg" src="assets/img/arrow_up_down.svg" alt="">
+                                    </div>
+
+                                    <div class="qa__item-answer txt-6">
+                                        Пример текстового текста Пример текстового текста
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="two-col__aside two-col__aside--new">
+                            <div class="section">
+                                <h2 class="h2 section__title">Получите еще больше баллов!</h2>
+                                <div class="block block--gradient">
+                                    <div class="ref">
+                                        <div class="h2 ref__title">Поделитесь ссылкой с другом и после его регистрации каждый из вас получит по 10 баллов.</div>
+                                        <p class="ref__text">Самые активные участники получают доступ к закрытым опросам, фирменный мерч и шанс поучаствовать в платных опросах!</p>
+                                        <div class="ref__link-wrapper">
+                                            <input id="input-copy" class="ref__link" type="text" value="https://watch?v=p0CNK3eV1yp0CNK3eV1yp0CNK3eV1yp0CNK3eV1y1yp0CNK3eV1y" readonly>
+                                            <button id="copy" class="ref__copy">Скопировать</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section">
+                                <h2 class="h2 section__title">Самый активный пользователь недели!</h2>
+                                <div class="block block--gradient">
+                                    <div class="user">
+                                        <div class="user__ava-wrapper">
+                                            <div class="user__ava">
+                                                <img src="assets/img/ava-big.png" alt="ava">
+                                            </div>
+                                            <div class="user__rosette">
+                                                <img src="assets/img/rosette.png" alt="ava">
+                                            </div>
+                                        </div>
+                                        <div class="user__info">
+                                            <div class="h1 user__name">Cherrutta</div>
+                                            <div class="user__text">Поздравляем!</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section">
+                                <div class="block block--beige">
+                                    <div class="ratings">
+                                        <div class="ratings__header">
+                                            <div class="ratings__info">
+                                                <h2 class="ratings__title">Поднимись на самую вершину!</h2>
+                                                <p class="ratings__text">Заяви о себе, проявляй активность и попади 
+                                                    в рейтинг лучших из лучших</p>
+                                            </div>
+                                            <div class="ratings__img">
+                                                <img src="assets/img/hands-with-heart.png" alt="hands-with-heart">
+                                            </div>
+                                        </div>
+                                        <h2 class="ratings__subtitle">Самые активные пользователи</h2>
+                                        <div class='ratings__content'>
+                                            <div class='ratings-item'>
+                                                <div class="ratings-item__ava">
+                                                    <img src="assets/img/ava.png" alt="ava">
+                                                </div>
+                                                <div class="ratings-item__content">
+                                                    <div class='ratings-item__number'>1</div>
+                                                    <div class='ratings-item__name'>Cherrutta</div>
+                                                    <div class="ratings-item__points">237 919 баллов</div>
+                                                </div>
+                                            </div>
+                                            <div class='ratings-item'>
+                                                <div class="ratings-item__ava">
+                                                    <img src="assets/img/ava2.png" alt="ava">
+                                                </div>
+                                                <div class="ratings-item__content">
+                                                    <div class='ratings-item__number'>2</div>
+                                                    <div class='ratings-item__name'>Фёдор Кириенко</div>
+                                                    <div class="ratings-item__points">95 728 баллов</div>
+                                                </div>
+                                            </div>
+                                            <div class='ratings-item'>
+                                                <div class="ratings-item__ava">
+                                                    <img src="assets/img/ava3.png" alt="ava">
+                                                </div>
+                                                <div class="ratings-item__content">
+                                                    <div class='ratings-item__number'>3</div>
+                                                    <div class='ratings-item__name'>Иван Сергеевич</div>
+                                                    <div class="ratings-item__points">15 350 баллов</div>
+                                                </div>
+                                            </div>
+                                            <div class='ratings-item'>
+                                                <div class="ratings-item__ava">
+                                                    <img src="assets/img/ava.png" alt="ava">
+                                                </div>
+                                                <div class="ratings-item__content">
+                                                    <div class='ratings-item__number'>4</div>
+                                                    <div class='ratings-item__name'>kirra</div>
+                                                    <div class="ratings-item__points">36 214 баллов</div>
+                                                </div>
+                                            </div>
+                                            <div class='ratings-item'>
+                                                <div class="ratings-item__ava">
+                                                    <img src="assets/img/no-ava.png" alt="ava">
+                                                </div>
+                                                <div class="ratings-item__content">
+                                                    <div class='ratings-item__number'>5</div>
+                                                    <div class='ratings-item__name'>Cherruta</div>
+                                                    <div class="ratings-item__points">28 560 баллов</div>
+                                                </div>
+                                            </div>
+                                            <div class='ratings-item'>
+                                                <div class="ratings-item__ava">
+                                                    <img src="assets/img/ava3.png" alt="ava">
+                                                </div>
+                                                <div class="ratings-item__content">
+                                                    <div class='ratings-item__number'>6</div>
+                                                    <div class='ratings-item__name'>Petro1990</div>
+                                                    <div class="ratings-item__points">27 379 баллов</div>
+                                                </div>
+                                            </div>
+                                            <div class='ratings-item'>
+                                                <div class="ratings-item__ava">
+                                                    <img src="assets/img/no-ava.png" alt="ava">
+                                                </div>
+                                                <div class="ratings-item__content">
+                                                    <div class='ratings-item__number'>7</div>
+                                                    <div class='ratings-item__name'>AnnaMoon</div>
+                                                    <div class="ratings-item__points">25 112 баллов</div>
+                                                </div>
+                                            </div>
+                                            <div class='ratings-item'>
+                                                <div class="ratings-item__ava">
+                                                    <img src="assets/img/ava.png" alt="ava">
+                                                </div>
+                                                <div class="ratings-item__content">
+                                                    <div class='ratings-item__number'>8</div>
+                                                    <div class='ratings-item__name'>koko</div>
+                                                    <div class="ratings-item__points">19 803 баллов</div>
+                                                </div>
+                                            </div>
+                                            <div class='ratings-item'>
+                                                <div class="ratings-item__ava">
+                                                    <img src="assets/img/no-ava.png" alt="ava">
+                                                </div>
+                                                <div class="ratings-item__content">
+                                                    <div class='ratings-item__number'>9</div>
+                                                    <div class='ratings-item__name'>Irinapetrovna</div>
+                                                    <div class="ratings-item__points">12 200 баллов</div>
+                                                </div>
+                                            </div>
+                                            <div class='ratings-item'>
+                                                <div class="ratings-item__ava">
+                                                    <img src="assets/img/no-ava.png" alt="ava">
+                                                </div>
+                                                <div class="ratings-item__content">
+                                                    <div class='ratings-item__number'>10</div>
+                                                    <div class='ratings-item__name'>panda</div>
+                                                    <div class="ratings-item__points">8 396 баллов</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="limit">
+                <div class="flex-panel footer-panel">
+                    <div class="copiright">© 2020, sito-opros.ru.</div>
+                    <div class="footer-nav"><a class="footer-nav__link" href="/privacy.html">Политика
+                            конфиденциальности</a><a class="footer-nav__link" href="/agreement.html">Пользовательское
+                            соглашение</a></div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.4); display: none; z-index: 15" class="content-dark"></div>
+
+    <script type="module">
+        import canvasConfetti from 'https://cdn.skypack.dev/canvas-confetti';
+
+        const doItNow = () => {
+            const direction = Math.sign(lastX - window.innerWidth * 0.5);
+            lastX = window.innerWidth * 0.5;
+            const particleCount = r(2, 15);
+            canvasConfetti({
+                particleCount,
+                angle: r(90, 90 + direction * 30),
+                spread: r(45, 80),
+                origin: {
+                    x: window.innerWidth * 0.2 / window.innerWidth,
+                    y: window.innerHeight * 0.5 / window.innerHeight
+                }
+            });
+            canvasConfetti({
+                particleCount,
+                angle: r(90, 90 + direction * 30),
+                spread: r(45,
+                    80),
+                origin: {
+                    x: window.innerWidth * 0.5 / window.innerWidth,
+                    y: window.innerHeight * 0.5 / window.innerHeight
+                }
+            });
+            canvasConfetti({
+                particleCount, angle: r(90, 90 + direction * 30), spread: r(45, 80), origin: {
+                    x: window.innerWidth * 0.8 /
+                        window.innerWidth, y: window.innerHeight * 0.5 / window.innerHeight
+                }
+            });
+            canvasConfetti({
+                particleCount, angle: r(90, 90 + direction * 30), spread: r(45, 80), origin: {
+                    x: window.innerWidth * 0.2 / window.innerWidth, y: window.innerHeight * 0.8
+                        / window.innerHeight
+                }
+            });
+            canvasConfetti({
+                particleCount,
+                angle: r(180, 90 + direction * 30),
+                spread: r(45, 80),
+                origin: {
+                    x: window.innerWidth * 0.5 / window.innerWidth,
+                    y: window.innerHeight * 0.8 / window.innerHeight
+                }
+            });
+            canvasConfetti({
+                particleCount,
+                angle: r(90, 90 + direction * 30),
+                spread: r(45, 80),
+                origin: {
+                    x: window.innerWidth * 0.8 / window.innerWidth,
+                    y: window.innerHeight * 0.8 / window.innerHeight
+                }
+            });
+        };
+        let lastX = 0;
+
+        function r(mi, ma) {
+            return parseInt(Math.random()
+                * (ma - mi) + mi);
+        }
+
+        document.querySelectorAll('.achievement:not(.popup-modal__achievement)').forEach((el) => {
+            el.onclick = (e) => {
+              e.preventDefault();
+              $('.popup-modal').addClass("active");
+              $('.popup-bg').addClass("active");
+              for (let i = 0; i
+              < 50; i++) doItNow();
+            }
+          });
+          if (document.querySelector('.action-progress__gift')) {
+            document.querySelector('.action-progress__gift').onclick = () => {
+              document.querySelector('.popup-modal--action-gift').style.display = 'block';
+              document.querySelector('.content-dark').style.display = 'block';
+              document.querySelector('body').classList.add('scroll');
+              for (let i = 0; i < 50; i++) doItNow();
+            };
+          }
+    </script>
+
+    <script>
+        const activeItemClassName = "qa__item-active"
+        const qaBlock = document.querySelector('.qa__block')
+
+        let previouslyActiveItem = document.querySelector('.qa__item-active')
+
+        qaBlock.addEventListener("click", (event) => {
+            const header = event.target.closest('.qa__item-header')
+
+            if (header) {
+                const item = event.target.closest('.qa__item')
+
+                if (item?.classList.contains(activeItemClassName)) {
+                    item.classList.remove(activeItemClassName)
+                    previouslyActiveItem = null
+                } else if (item) {
+                    item.classList.add(activeItemClassName)
+
+                    if (previouslyActiveItem) previouslyActiveItem.classList.remove(activeItemClassName)
+                    previouslyActiveItem = item
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

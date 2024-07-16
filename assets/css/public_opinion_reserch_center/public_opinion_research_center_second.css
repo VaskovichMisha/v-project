@@ -1,0 +1,369 @@
+.first-page-opinion-reserch-center-second {
+}
+
+.first-page-opinion-reserch-center-second__logo {
+  text-align: center;
+}
+
+.first-page-opinion-reserch-center-second__logo--desktop {
+  margin-bottom: 119px;
+}
+
+.first-page-opinion-reserch-center-second__logo--mobile {
+  display: none;
+}
+
+.first-page-opinion-reserch-center-second__title--center {
+  text-align: center;
+}
+
+.first-page-opinion-reserch-center-second__title {
+  max-width: 1083px;
+  text-align: center;
+  margin: 0 auto 48px;
+}
+
+.first-page-opinion-reserch-center-second__titlev2 {
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.first-page-opinion-reserch-center-second__title_desc {
+  font-size: 28px;
+  color: #000;
+  max-width: 924px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.first-page-opinion-reserch-center-second__chart-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+
+.first-page-opinion-reserch-center-second__chart-box--labels {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.first-page-opinion-reserch-center-second__chart-box--labels--align-end {
+  align-items: flex-end;
+}
+
+.first-page-opinion-reserch-center-second__chart-box--labels--justify-center {
+  justify-content: center;
+}
+
+.first-page-opinion-reserch-center-second__chart-box--labels__item {
+  font-size: 22px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.first-page-opinion-reserch-center-second__chart-box--labels__item--br {
+  display: none;
+}
+
+.first-page-opinion-reserch-center-second__chart-box--labels__item--left::after {
+  content: "";
+  display: inline-flex;
+  align-items: center;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-left: 6px;
+  background: var(--circle-color);
+  flex: 0 0 15px;
+}
+
+.first-page-opinion-reserch-center-second__chart-box--labels__item--right::before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-right: 6px;
+  background: var(--circle-color);
+  flex: 0 0 15px;
+}
+
+.first-page-opinion-reserch-center-second__chart-box--chart {
+  width: 258px;
+  height: 256px;
+  flex: 0 0 258px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.first-page-opinion-reserch-center-second__chart-box--chart--sex {
+  background-image: url("../../img/public-opinion-research-center/chart-sex.png");
+}
+
+.first-page-opinion-reserch-center-second__chart-box--chart--age {
+  background-image: url("../../img/public-opinion-research-center/chart-age.png");
+}
+
+.first-page-opinion-reserch-center-second__chart-box--chart--income {
+  background-image: url("../../img/public-opinion-research-center/chart-income.png");
+}
+
+.first-page-opinion-reserch-center-second__also-know {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 24px;
+  row-gap: 6px;
+}
+
+.first-page-opinion-reserch-center-second__also-know--text {
+  font-size: 22px;
+  font-weight: 400;
+  color: #000;
+  flex: 0;
+  white-space: nowrap;
+}
+
+@media (max-width: 1200px) {
+  .first-page-opinion-reserch-center-second__chart-box--income {
+    padding-top: 312px;
+  }
+
+  .first-page-opinion-reserch-center-second__chart-box--income
+    .first-page-opinion-reserch-center-second__chart-box--labels {
+    gap: 18px;
+  }
+
+  .first-page-opinion-reserch-center-second__chart-box--chart--income {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 1023px) {
+  .first-page-opinion-reserch-center-second__logo--desktop {
+    display: none;
+  }
+
+  .first-page-opinion-reserch-center-second__logo--mobile {
+    display: block;
+    margin-bottom: 48px;
+    margin-top: 48px;
+  }
+
+  .first-page-opinion-reserch-center-second__title {
+    max-width: 100%;
+  }
+
+  .first-page-opinion-reserch-center-second__title_desc {
+    max-width: 100%;
+    font-size: 20px;
+  }
+
+  .first-page-opinion-reserch-center-second__chart-box {
+    gap: 19px;
+  }
+
+  .first-page-opinion-reserch-center-second__chart-box--chart {
+    width: 200px;
+    height: 200px;
+    flex-basis: 200px;
+  }
+
+  .first-page-opinion-reserch-center-second__chart-box--labels__item {
+    font-size: 16px;
+  }
+
+  .first-page-opinion-reserch-center-second__chart-box--labels__item--right {
+    justify-content: flex-start;
+  }
+
+  .first-page-opinion-reserch-center-second__chart-box--labels__item--left {
+    justify-content: space-between;
+  }
+
+  .first-page-opinion-reserch-center-second__also-know--text {
+    font-size: 16px;
+    white-space: normal;
+    gap: 32px;
+  }
+
+  .first-page-opinion-reserch-center-second__title--center,
+  .first-page-opinion-reserch-center-form__text {
+    text-align: left;
+  }
+
+  .first-page-opinion-reserch-center-second__chart-box--income {
+    padding-top: 0;
+  }
+
+  .first-page-opinion-reserch-center-second__chart-box--chart--income {
+    position: static;
+    transform: translate(0, 0);
+  }
+
+  .first-page-opinion-reserch-center-second__chart-box--income
+    .first-page-opinion-reserch-center-second__chart-box--labels {
+    gap: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .first-page-opinion-reserch-center-second__chart-box--income {
+    padding-top: 244px;
+  }
+
+  .first-page-opinion-reserch-center-second__chart-box--income
+    .first-page-opinion-reserch-center-second__chart-box--labels {
+    gap: 18px;
+  }
+
+  .first-page-opinion-reserch-center-second__chart-box--chart--income {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+  }
+
+  .first-page-opinion-reserch-center-second__chart-box--labels__item {
+    white-space: normal;
+  }
+
+  .first-page-opinion-reserch-center-second__chart-box--labels__item--br {
+    display: block;
+  }
+
+  .first-page-opinion-reserch-center-card--income {
+    padding: 48px 30px;
+  }
+
+  .first-page-opinion-reserch-center-second__chart-box--labels--align-end {
+    align-items: normal;
+  }
+}
+
+@media (max-width: 479px) {
+  .first-page-opinion-reserch-center-second__logo--mobile img {
+    width: 100px;
+    height: 12px;
+  }
+
+  .first-page-opinion-reserch-center-second__title_desc {
+    font-size: 14px;
+  }
+
+  .first-page-opinion-reserch-center-second__title {
+    margin-bottom: 27px;
+  }
+
+  .first-page-opinion-reserch-center-second__titlev2 {
+    margin-bottom: 37px;
+  }
+
+  .first-page-opinion-reserch-center-second__titlte_desc {
+    font-size: 14px;
+  }
+
+  .first-page-opinion-reserch-center-second__chart-box {
+    gap: 18px;
+  }
+
+  .first-page-opinion-reserch-center-second__chart-box--income {
+    padding-top: 166px;
+  }
+
+  .first-page-opinion-reserch-center-second__chart-box--income
+    .first-page-opinion-reserch-center-second__chart-box--labels {
+    gap: 20px;
+  }
+
+  .first-page-opinion-reserch-center-second__chart-box--income
+    .first-page-opinion-reserch-center-second__chart-box--labels
+    .first-page-opinion-reserch-center-second__chart-box--labels__item {
+    width: 100%;
+    white-space: nowrap;
+  }
+
+  .first-page-opinion-reserch-center-second__chart-box--chart {
+    width: 150px;
+    height: 150px;
+    flex-basis: 150px;
+  }
+
+  .first-page-opinion-reserch-center-second__chart-box--chart--income {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+  }
+
+  .first-page-opinion-reserch-center-second__chart-box--labels__item {
+    font-size: 14px;
+  }
+
+  .first-page-opinion-reserch-center-second__also-know {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    column-gap: 32px;
+  }
+
+  .first-page-opinion-reserch-center-second__also-know--text {
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 390px) {
+  .first-page-opinion-reserch-center-second__chart-box--chart--age,
+  .first-page-opinion-reserch-center-second__chart-box--chart--sex {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+  }
+
+  .first-page-opinion-reserch-center-second__chart-box--chart--income {
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .first-page-opinion-reserch-center-second__chart-box--age,
+  .first-page-opinion-reserch-center-second__chart-box--sex {
+    padding-top: 166px;
+  }
+
+  .first-page-opinion-reserch-center-second__chart-box--income
+    :first-child.first-page-opinion-reserch-center-second__chart-box--labels {
+    flex-basis: auto;
+    width: 160px;
+  }
+
+  .first-page-opinion-reserch-center-second__chart-box--income
+    :nth-child(3).first-page-opinion-reserch-center-second__chart-box--labels {
+    flex-basis: auto;
+    width: 160px;
+    margin-left: auto;
+  }
+
+  .first-page-opinion-reserch-center-second__chart-box--income {
+    padding-top: 0;
+    flex-direction: column;
+    gap: 227px;
+    justify-content: center;
+  }
+
+  .first-page-opinion-reserch-center-second__chart-box {
+    justify-content: space-between;
+  }
+
+  .first-page-opinion-reserch-center-second__chart-box--labels {
+    gap: 20px;
+    flex: 0;
+  }
+}

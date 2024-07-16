@@ -1,0 +1,581 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>SITO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <meta name="format-detection" content="telephone=no">
+    <link href="/favicon.png" rel="shortcut icon" type="image/png">
+    <!-- styles-->
+    <link rel="stylesheet" href="assets/css/foundation.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <!--js-->
+    <script src="assets/js/foundation.js" defer></script>
+    <script src="assets/js/app.js" defer></script><!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+  </head>
+
+<body class="body" data-new-gr-c-s-check-loaded="14.1105.0" data-gr-ext-installed="">
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M2RTBJ7" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <input type="hidden" id="metrics_ym_id" name="metrics_ym_id" value="70701016">
+
+
+
+
+    <div class="content">
+
+        <header class="header">
+
+            <form method="post" action="/accounts/logout/" id="logout-form">
+                <input type="hidden" name="csrfmiddlewaretoken"
+                    value="2uJHSvlbFWVz91AGPNMxZyqJF4NxseuFn4MrNqE3qvOmQsH91Jz9wGfuOKPk2vr8">
+
+            </form>
+
+
+            <div class="limit">
+                <div class="flex-panel header-panel">
+                    <button class="btn burger js-mnu-btn"><span class="burger__top"></span><span
+                            class="burger__middle"></span><span class="burger__bottom"></span></button>
+                    <div class="mobile-mnu js-mobile-mnu">
+                        <div class="mobile-mnu__top">
+                            <div class="mobile-mnu__list">
+
+                                <div class="mobile-mnu__list-itm">
+                                    <a class="mobile-mnu__link" href="/users/profile/">
+                                        Профиль
+                                    </a>
+                                </div>
+                                <div class="mobile-mnu__list-itm">
+                                    <a class="mobile-mnu__link" href="/surveys/available/">
+                                        Опросы
+                                    </a>
+                                </div>
+                                <div class="mobile-mnu__list-itm">
+                                    <a class="mobile-mnu__link" href="javascript:;"
+                                        onclick="document.getElementById('logout-form').submit();">
+                                        Выйти
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="mobile-mnu__footer">
+                            <div class="mobile-mnu__list">
+                                <div class="mobile-mnu__list-itm">
+                                    <a class="mobile-mnu__footer-link" href="/privacy/" target="_blank">
+                                        Политика конфиденциальности
+                                    </a>
+                                </div>
+
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Логотип -->
+                    <div class="header-panel__logo">
+                        <a class="logo" href="/">
+                            <span class="logo__pic logo__pic_desk">V-PROJECT</span>
+                            <span class="logo__pic logo__pic_mob">V</span>
+
+                        </a>
+                    </div>
+                    <!-- Панель навигации -->
+                    <div class="header-panel__nav">
+                        <nav class="nav">
+
+
+
+
+
+
+
+                            <!-- Кнопка пульс -->
+                            <a class="nav__link " href="/pulse/"> <span class="nav__link-icn">
+                                    <svg class="icn icn-lightning">
+                                        <use xlink:href="assets/img/sprite.svg#lightning">
+                                        </use>
+                                    </svg></span><span class="nav__link-txt">Пульс</span>
+                            </a>
+
+                            <a class="nav__link " href="/surveys/available/"> <span class="nav__link-icn">
+                                    <svg class="icn icn-bubbls">
+                                        <use xlink:href="https://v-project-online.ru/static/img/sprite.svg#bubbls">
+                                        </use>
+                                    </svg></span><span class="nav__link-txt">Опросы</span>
+                            </a>
+                            <!-- Кнопка новости -->
+                            <a class="nav__link " href="/news/"> <span class="nav__link-icn">
+                                    <svg class="icn icn-news">
+                                        <use xlink:href="assets/img/sprite.svg#news"></use>
+                                    </svg></span><span class="nav__link-txt">Новости</span>
+                            </a>
+
+                            <div class="header-profile__notification" id="notification">
+                                <svg class="icn icn-notification">
+                                    <use xlink:href="assets/img/sprite.svg#notification">
+                                    </use>
+                                </svg>
+
+                                <div class="notification-hidden">
+                                    <div class="notification-hidden__item">
+                                        <div class="notification-hidden__text">
+                                            <h3>Нет новых уведомлений</h3>
+                                        </div>
+                                    </div>
+                                    <a href="/notifications/" class="notification-hidden__more">Показать ещё</a>
+                                </div>
+
+
+                            </div>
+
+
+                            <div class="header-profile__info">
+                                <div class="header-profile__ava">
+                                    <a href="/users/profile/"><img
+                                            src="https://v-project-online.ru/static/img/no-ava.png" alt="ava"></a>
+                                </div>
+                                <div class="header-profile__name">User 327582</div>
+                                <div class="header-profile__experience experience-profile" style="margin-left: 6%">
+                                    <div class="experience-profile__bar"><span style="width: 0%"></span></div>
+                                    <div class="experience-profile__counts">
+                                        <span>0</span>
+                                        /50
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hamb">
+                                <a href="#" class="hamb__button js-hamb">
+                                
+                                    <svg class="icn icn-hamb">
+                                        <use xlink:href="assets/img/sprite.svg#hamb"></use>
+                                    </svg>
+                                </a>
+                                <div class="hamb__hidden js-hamb-hidden" style="display: none;">
+                                    <a href="/users/profile/" class="hamb__link">Профиль</a>
+                                    <a href="javascript:;" onclick="document.getElementById('logout-form').submit();"
+                                        class="hamb__link">Выйти</a>
+                                </div>
+                            </div>
+
+                            <div class="header-profile__msg">
+                                Ваш уровень<br>«Новый пользователь»
+                            </div>
+
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+
+        <main class="main">
+            <div class="top-bar">
+                <div class="limit">
+                    <div class="top-panel">
+                        <div class="top-panel__title">
+                            <h1 class="page-title">Поделитесь Вашим опытом и мнением о прохождении опросов</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="sect">
+                <div class="limit">
+                    <a href="/surveys/available/" class="btn btn--close">
+                        <svg class="icn icn-delete">
+                            <use xlink:href="/static/img/sprite.svg?v=1#delete"></use>
+                        </svg>
+                    </a>
+                    <div class="two-col" id="survey-body">
+                        <script src="https://v-project-online.ru/static/js/fancyapps.min.js" defer=""></script>
+                        <script src="https://v-project-online.ru/static/js/jquery.validate.min.js"></script>
+                        <link rel="stylesheet" href="https://v-project-online.ru/static/css/fancyapps.min.css">
+
+
+
+
+                        <div class="two-col__main" id="two-col__main" style="display: block;">
+
+
+                            <section class="prog" id="prog" style="display: flex">
+                                <div class="prog__inner">
+                                    <div class="prog__title">Пройдено</div>
+                                    <div class="prog__line">
+                                        <div class="prog__per" style="width: 28%"></div>
+                                    </div>
+                                    <div class="prog__percent">
+                                        2 из 7 вопросов / <b>28%</b>
+                                    </div>
+                                </div>
+                            </section>
+
+
+
+
+                            <div id="form_response" style="display: block;">
+                                <form class="form form_quest form_opacity" method="post" action="" id="formResponse"
+                                    style="opacity: 1; pointer-events: auto;">
+                                    <input type="hidden" name="csrfmiddlewaretoken"
+                                        value="fFfATsLbI95NU7myVRsbsYsuR6aWlEwbAfikOn43tIYAByt17NfNZ6hf0McJVVtE">
+                                    <input type="hidden" name="question-id" value="14990">
+
+
+
+                                    <div class="form__block">
+
+                                        <div class="form__title">
+                                            <p>Восемь</p>
+
+                                        </div>
+
+
+                                        <!-- edit hide__size_1 -->
+                                        <div class="form__grade">
+                                            <div class="form__subtitle form__text_left_mobile_hide mr_0 w_40pc">
+                                                Очень НЕ удобно - длиннее текст
+                                            </div>
+                                            <div class="form__grade-fields">
+                                                <label class="radio">
+                                                    <input class="radio__inpt" type="radio" name="grade" value="1"><span
+                                                        class="radio__mask_poll"></span><span class="radio__label">1</span>
+                                                </label>
+                                                <label class="radio">
+                                                    <input class="radio__inpt" type="radio" name="grade" value="2"><span
+                                                        class="radio__mask_poll"></span><span class="radio__label">2</span>
+                                                </label>
+                                                <label class="radio">
+                                                    <input class="radio__inpt" type="radio" name="grade" value="3"><span
+                                                        class="radio__mask_poll"></span><span class="radio__label">3</span>
+                                                </label>
+                                                <label class="radio">
+                                                    <input class="radio__inpt" type="radio" name="grade" value="4"><span
+                                                        class="radio__mask_poll"></span><span class="radio__label">4</span>
+                                                </label>
+                                                <label class="radio">
+                                                    <input class="radio__inpt" type="radio" name="grade" value="5"><span
+                                                        class="radio__mask_poll"></span><span class="radio__label">5</span>
+                                                </label>
+                                                <label class="radio">
+                                                    <input class="radio__inpt" type="radio" name="grade" value="1"><span
+                                                        class="radio__mask_poll"></span><span class="radio__label">6</span>
+                                                </label>
+                                                <label class="radio">
+                                                    <input class="radio__inpt" type="radio" name="grade" value="2"><span
+                                                        class="radio__mask_poll"></span><span class="radio__label">7</span>
+                                                </label>
+                                                <label class="radio">
+                                                    <input class="radio__inpt" type="radio" name="grade" value="3"><span
+                                                        class="radio__mask_poll"></span><span class="radio__label">8</span>
+                                                </label>
+                                                <label class="radio">
+                                                    <input class="radio__inpt" type="radio" name="grade" value="4"><span
+                                                        class="radio__mask_poll"></span><span class="radio__label">9</span>
+                                                </label>
+                                                <label class="radio">
+                                                    <input class="radio__inpt" type="radio" name="grade" value="5"><span
+                                                        class="radio__mask_poll"></span><span class="radio__label">10</span>
+                                                </label>
+                                            </div>
+                                            <div class="form__subtitle form__text_left_dectop_hide w_40pc">
+                                                Очень НЕ удобно - длиннее текст
+                                            </div>
+                                            <div class="form__subtitle ml__10_desctop w_40pc txt-a-r">
+                                                Очень удобно - длиннее текст
+                                            </div>
+                                        </div>
+
+
+                                        <!-- example several rows -->
+                                        <div class="form__grade">
+                                            <div class="form__subtitle form__text_left_mobile_hide mr_0 w_40pc">
+                                                Очень НЕ удобно - длиннее текст
+                                            </div>
+                                            <div class="form__grade-fields">
+                                                <label class="radio">
+                                                    <input class="radio__inpt" type="radio" name="grade" value="1"><span
+                                                        class="radio__mask_poll"></span><span class="radio__label">1</span>
+                                                </label>
+                                                <label class="radio">
+                                                    <input class="radio__inpt" type="radio" name="grade" value="2"><span
+                                                        class="radio__mask_poll"></span><span class="radio__label">2</span>
+                                                </label>
+                                                <label class="radio">
+                                                    <input class="radio__inpt" type="radio" name="grade" value="3"><span
+                                                        class="radio__mask_poll"></span><span class="radio__label">3</span>
+                                                </label>
+                                                <label class="radio">
+                                                    <input class="radio__inpt" type="radio" name="grade" value="4"><span
+                                                        class="radio__mask_poll"></span><span class="radio__label">4</span>
+                                                </label>
+                                                <label class="radio">
+                                                    <input class="radio__inpt" type="radio" name="grade" value="5"><span
+                                                        class="radio__mask_poll"></span><span class="radio__label">5</span>
+                                                </label>
+                                                <label class="radio">
+                                                    <input class="radio__inpt" type="radio" name="grade" value="1"><span
+                                                        class="radio__mask_poll"></span><span class="radio__label">6</span>
+                                                </label>
+                                                <label class="radio">
+                                                    <input class="radio__inpt" type="radio" name="grade" value="2"><span
+                                                        class="radio__mask_poll"></span><span class="radio__label">7</span>
+                                                </label>
+                                                <label class="radio">
+                                                    <input class="radio__inpt" type="radio" name="grade" value="3"><span
+                                                        class="radio__mask_poll"></span><span class="radio__label">8</span>
+                                                </label>
+                                                <label class="radio">
+                                                    <input class="radio__inpt" type="radio" name="grade" value="4"><span
+                                                        class="radio__mask_poll"></span><span class="radio__label">9</span>
+                                                </label>
+                                                <label class="radio">
+                                                    <input class="radio__inpt" type="radio" name="grade" value="5"><span
+                                                        class="radio__mask_poll"></span><span class="radio__label">10</span>
+                                                </label>
+                                            </div>
+                                            <div class="form__subtitle form__text_left_dectop_hide w_40pc">
+                                                Очень НЕ удобно - длиннее текст
+                                            </div>
+                                            <div class="form__subtitle ml__10_desctop w_40pc txt-a-r">
+                                                Очень удобно - длиннее текст
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <script>
+                                        $(document).on('click', '#isCheck', function () {
+                                            let input_other = $('#input_other');
+                                            let label_input_other = $('#label_input_other');
+                                            if ($(this).is(':checked')) {
+
+                                                $(input_other).prop('required', true);
+
+                                                $(input_other).removeAttr('disabled');
+                                                $(label_input_other).show()
+                                            } else {
+                                                $(input_other).val("");
+                                                $(input_other).prop('disabled', true);
+                                                $(input_other).removeAttr("required")
+                                                $(label_input_other).hide()
+                                            }
+                                        });
+                                        $(document).ready(function () {
+
+                                            let maxChoices = parseInt(0, 10);
+                                            if (maxChoices > 1) {
+                                                $('.check__inpt').on("click", function () {
+                                                    checkMaxChoices(maxChoices)
+                                                });
+                                                $(document).ready(function () {
+                                                    checkMaxChoices(maxChoices)
+                                                })
+
+                                            }
+                                        });
+                                        function checkMaxChoices(maxChoices) {
+                                            if (maxChoices > 0) {
+                                                if ($('.check__inpt:checkbox:checked').length >= maxChoices) {
+                                                    $('.check__inpt').not(':checked').attr('disabled', true);
+                                                } else {
+                                                    $('.check__inpt').removeAttr('disabled');
+                                                }
+                                            }
+                                        }
+                                    </script>
+
+
+
+                                    <button class="btn btn--back" id="back" value="back" type="button">
+                                        <div class="btn__icn">
+                                            <svg class="icn icn-back">
+                                                <use xlink:href="/static/img/sprite.svg#back"></use>
+                                            </svg>
+                                        </div>
+                                    </button>
+
+
+                                    <button class="btn btn_subm subm_response btn_next_question">
+                                        <div class="btn__txt">Далее</div>
+                                        <div class="btn__icn">
+                                            <svg class="icn icn-arrow_r">
+                                                <use xlink:href="/static/img/sprite.svg#arrow_r"></use>
+                                            </svg>
+                                        </div>
+                                    </button>
+                                </form>
+                            </div>
+
+                            <div id="form_back">
+                                <form id="form_button_back" method="post" action="">
+                                    <input type="hidden" name="csrfmiddlewaretoken"
+                                        value="fFfATsLbI95NU7myVRsbsYsuR6aWlEwbAfikOn43tIYAByt17NfNZ6hf0McJVVtE">
+                                    <input type="hidden" name="back" value="back">
+                                </form>
+                            </div>
+
+
+                        </div>
+
+
+                        <div class="two-col__aside" id="two-col__aside" style="display: block;">
+                            <div class="sidebar">
+                                <figure class="banner"><img class="banner__img"
+                                        src="https://v-project-online.ru/static/img/layer_survey.webp" alt="O-o">
+                                    <figcaption class="banner__txt">В день на заполнение анкет уходит в среднем пол часа
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+                        <script defer="" src="https://v-project-online.ru/static/js/subm_response.js"></script>
+
+                        <script>
+
+
+                            $(document).ready(function () {
+                                selectInputValueStorageAnswer(14990, "select-multiple")
+                            })
+
+
+                            $(".subm_response").on('click', function () {
+                                delStorageAnswer(14990)
+                            });
+
+                        </script>
+
+
+
+                    </div>
+                </div>
+            </section>
+        </main>
+
+
+
+
+
+        <footer class="footer">
+            <div class="limit">
+                <div class="flex-panel footer-panel">
+                    <div class="copiright">© 2020 - 2023, v-project-online.ru</div>
+                    <div class="footer-nav">
+                        <a class="footer-nav__link" href="/privacy/">Политика конфиденциальности</a>
+                        <a class="footer-nav__link" href="/terms/">Пользовательское соглашение</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+        <!-- adcm -->
+        <script>
+            var adcm_config = {
+                id: 7311,
+                platformId: 974,
+                tagsRaw: {
+                    anonymousUserId: 'c0ec30b1-efb6-4826-8e3b-2259d5079687',
+                },
+                init: function () {
+                    window.adcm.call();
+
+                    function callAdcmTag() {
+                        var tag = $(this).data('adcm');
+                        if (tag) {
+                            console.log(tag);
+                            window.adcm.call({ tags: [tag] });
+                        }
+                    }
+                    $("*[data-adcm]").each(function () {
+                        $(this).click(callAdcmTag);
+                    });
+                }
+            };
+            adcm_config['profileId'] = "327582";
+        </script>
+        <script src="https://v-project-online.ru/static/js/adcm.js" async=""></script>
+        <!-- /adcm -->
+
+    </div>
+    <script src="https://v-project-online.ru/static/js/foundation.js" defer=""></script>
+    <script src="https://v-project-online.ru/static/js/blazy.min.js" defer=""></script>
+    <script src="https://v-project-online.ru/static/js/app.js?v=13" defer=""></script>
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function () {
+            let list_notifications = document.querySelectorAll('.notification-hidden__text');
+
+            $(function () {
+                $("#notification").hover(onIn, onOut);
+            });
+
+            function onIn() {
+                if (list_notifications.length > 0) {
+                    let list_id = [];
+                    for (let notification of list_notifications) {
+                        let notification_id = $(notification).attr('id');
+                        if (notification_id) {
+                            list_id.push(notification_id);
+                        }
+                    }
+                    if (list_id.length > 0) {
+                        const csrftoken = '2uJHSvlbFWVz91AGPNMxZyqJF4NxseuFn4MrNqE3qvOmQsH91Jz9wGfuOKPk2vr8';
+                        $.post(
+                            "/notifications/", {
+                            list_id: list_id,
+                            csrfmiddlewaretoken: csrftoken,
+                        },
+                        ).done(
+                            function (data, textStatus, jqXHR) {
+                                console.log(data);
+                                console.log(textStatus);
+                                if (data.not_viewed !== 0) {
+                                    $("#count_notification").text(data.not_viewed);
+                                } else {
+                                    $("#count_notification").hide();
+                                }
+                            }
+                        ).fail(
+                            function (jqXHR, textStatus, errorThrown) {
+                                console.log(jqXHR.responseText);
+                            }
+                        )
+                    }
+
+                }
+            }
+
+            function onOut() {
+                if (list_notifications.length > 0) {
+                    list_notifications = [];
+                }
+            }
+        });
+    </script>
+
+    <script src="https://v-project-online.ru/static/js/jquery.form.min.js" defer=""></script>
+    <script defer="" src="https://v-project-online.ru/static/js/survey.js"></script>
+
+    <script defer="" src="https://v-project-online.ru/static/js/general_app.js?v=4"></script>
+
+
+</body>
+
+</html>

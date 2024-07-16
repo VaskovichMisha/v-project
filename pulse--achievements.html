@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>SITO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <meta name="format-detection" content="telephone=no">
+    <link href="/favicon.png" rel="shortcut icon" type="image/png">
+    <!-- styles-->
+    <link rel="stylesheet" href="assets/css/foundation.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!--js-->
+    <script src="assets/js/foundation.js" defer></script>
+    <script src="assets/js/app.js" defer></script>
+    <!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+</head>
+
+<body class="body">
+    <div class="popup-modal popup-modal--achievement">
+        <div class="popup-modal__header">
+            <div class="h2 popup-modal__title">Достижение</div>
+            <img src="./assets/img/exit-popup.png" alt="" class="popup-exit">
+        </div>
+        <div class="popup-modal__body">
+            <div class="achievement popup-modal__achievement">
+                <div class="achievement__img-wrap">
+                    <div class="achievement__img">
+                        <img src="./assets/img/achievements-1.png" alt="image">
+                    </div>
+                </div>
+                <div class="achievement__info">
+                    <div class="h3 achievement__title">Начинающий автор</div>
+                    <div class="achievement__text">Вы предложили свою первую тему для опроса</div>
+                </div>
+            </div>
+        </div>
+        <div class="popup-modal__footer">
+            <div class="popup-modal__share">
+                <div class="popup-modal__share-title">Поделитесь своим достижением:</div>
+                <div class="popup-modal__social">
+                    <a href="#" class="social-item social-item--icon">
+                        <svg class="icn icn-vk">
+                            <use xlink:href="assets/img/sprite.svg#vk"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-item social-item--icon">
+                        <svg class="icn icn-ok">
+                            <use xlink:href="assets/img/sprite.svg#ok"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-item social-item--icon">
+                        <svg class="icn icn-telegram">
+                            <use xlink:href="assets/img/sprite.svg#telegram"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <header class="header">
+            <div class="limit">
+                <div class="flex-panel header-panel">
+                    <button class="btn burger js-mnu-btn"><span class="burger__top"></span><span
+                            class="burger__middle"></span><span class="burger__bottom"></span></button>
+                    <div class="mobile-mnu js-mobile-mnu">
+                        <div class="mobile-mnu__top">
+                            <div class="mobile-mnu__list">
+                                <div class="mobile-mnu__list-itm"><a class="mobile-mnu__link" href="/profile.html">Профиль</a></div>
+                                <div class="mobile-mnu__list-itm"><a class="mobile-mnu__link" href="/anketa.html">Анкета</a>
+                                </div>
+                                <div class="mobile-mnu__list-itm"><a class="mobile-mnu__link" href="/polls-list.html">Опросы</a></div>
+                                <div class="mobile-mnu__list-itm"><a class="mobile-mnu__link" href="/polls-list.html">Выход</a></div>
+                            </div>
+                        </div>
+                        <div class="mobile-mnu__footer">
+                            <div class="mobile-mnu__list">
+                                <div class="mobile-mnu__list-itm"><a class="mobile-mnu__footer-link" href="#" target="_blank">Политика конфиденциальности </a></div>
+                                <div class="mobile-mnu__list-itm"><a class="mobile-mnu__footer-link" href="#" target="_blank">Пользовательское соглашение</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-panel__logo"><a class="logo" href="/"><span
+                                class="logo__pic logo__pic_desk">SITO</span><span
+                                class="logo__pic logo__pic_mob">S</span><span class="logo__txt">Исследовательский
+                                проект</span></a></div>
+                    <div class="header-panel__nav">
+                        <nav class="nav">
+                            <a class="nav__link active" href="/pulse.html"> <span class="nav__link-icn">
+                                    <svg class="icn icn-lightning">
+                                        <use xlink:href="assets/img/sprite.svg#lightning"></use>
+                                    </svg></span><span class="nav__link-txt">Пульс</span>
+                            </a>
+                            <a class="nav__link" href="/polls-list.html"> <span class="nav__link-icn">
+                                <svg class="icn icn-bubbls">
+                                    <use xlink:href="assets/img/sprite.svg#bubbls"></use>
+                                </svg></span><span class="nav__link-txt">Опросы</span>
+                            </a>
+                            <a class="nav__link" href="/polls-list.html"> <span class="nav__link-icn">
+                                <svg class="icn icn-news">
+                                    <use xlink:href="assets/img/sprite.svg#news"></use>
+                                </svg></span><span class="nav__link-txt">Новости</span>
+                            </a>
+
+                        </nav>
+                    </div>
+                    <div class='header-profile'>
+                        <div class='header-profile__info'>
+                            <div class='header-profile__ava'>
+                                <img src='assets/img/ava.png' alt='ava'>
+                            </div>
+                            <div class='header-profile__name'>Алина Михалкова</div>
+                            <div class='header-profile__experience experience-profile'>
+                                <div class='experience-profile__bar'><span></span></div>
+                                <div class='experience-profile__counts'>
+                                    <span>185</span>/300
+                                </div>
+                            </div>
+                        </div>
+                        <div class='hamb'>
+                            <a href='#' class='hamb__button js-hamb'>
+                                <svg class="icn icn-hamb">
+                                    <use xlink:href="assets/img/sprite.svg#hamb"></use>
+                                </svg>
+                            </a>
+                            <div class='hamb__hidden js-hamb-hidden'>
+                                <a href='https://google.com' class='hamb__link'>Профиль</a>
+                                <a href='https://google.com' class='hamb__link'>Выход</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="top-bar">
+                <div class="limit">
+                    <div class="top-panel">
+                        <div class="top-panel__title">
+                            <h1 class="page-title">Пульс платформы</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="sect">
+                <div class="limit">
+                
+                    <div class="two-col two-col--achievements">
+                        <div class="two-col__main two-col__main--center">
+                            <div class="section">
+                                <h2 class="h2 section__title">Ваши достижения</h2>
+                                <div class="block block--beige">
+                                    <div class="achievements">
+                                        <div class="achievements__items">
+                                            <div class="achievement" data-title="Начинающий автор">
+                                                <div class="achievement__img-wrap">
+                                                    <div class="achievement__img">
+                                                        <img src="./assets/img/achievements-1.png" alt="image">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="achievement" data-title="Добро пожаловать!">
+                                                <div class="achievement__img-wrap">
+                                                    <div class="achievement__img">
+                                                        <img src="./assets/img/achievements-2.png" alt="image">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="achievement" data-title="Новый уровень!">
+                                                <div class="achievement__img-wrap">
+                                                    <div class="achievement__img">
+                                                        <img src="./assets/img/achievements-3.png" alt="image">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="achievement" data-title="Так держать">
+                                                <div class="achievement__img-wrap">
+                                                    <div class="achievement__img">
+                                                        <img src="./assets/img/achievements-4.png" alt="image">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="achievement" data-title="Знакомство">
+                                                <div class="achievement__img-wrap">
+                                                    <div class="achievement__img">
+                                                        <img src="./assets/img/achievements-5.png" alt="image">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="achievement" data-title="Вы с нами уже год!">
+                                                <div class="achievement__img-wrap">
+                                                    <div class="achievement__img">
+                                                        <img src="./assets/img/achievements-6.png" alt="image">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="achievement" data-title="Вы с нами уже год!">
+                                                <div class="achievement__img-wrap">
+                                                    <div class="achievement__img">
+                                                        <img src="./assets/img/achievements-7.png" alt="image">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="achievement" data-title="Отличный старт!">
+                                                <div class="achievement__img-wrap">
+                                                    <div class="achievement__img">
+                                                        <img src="./assets/img/achievements-8.png" alt="image">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="achievement" data-title="Опытный">
+                                                <div class="achievement__img-wrap">
+                                                    <div class="achievement__img">
+                                                        <img src="./assets/img/achievements-9.png" alt="image">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="achievement" data-title="Опытный">
+                                                <div class="achievement__img-wrap">
+                                                    <div class="achievement__img">
+                                                        <img src="./assets/img/achievements-10.png" alt="image">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="achievement" data-title="Опытный">
+                                                <div class="achievement__img-wrap">
+                                                    <div class="achievement__img">
+                                                        <img src="./assets/img/achievements-11.png" alt="image">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="achievement" data-title="Опытный">
+                                                <div class="achievement__img-wrap">
+                                                    <div class="achievement__img">
+                                                        <img src="./assets/img/achievements-12.png" alt="image">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="achievement" data-title="Больше баллов!">
+                                                <div class="achievement__img-wrap">
+                                                    <div class="achievement__img">
+                                                        <img src="./assets/img/achievements-13.png" alt="image">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="achievement" data-title="Вы попали в рейтинг!">
+                                                <div class="achievement__img-wrap">
+                                                    <div class="achievement__img">
+                                                        <img src="./assets/img/achievements-14.png" alt="image">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="achievement" data-title="Активность">
+                                                <div class="achievement__img-wrap">
+                                                    <div class="achievement__img">
+                                                        <img src="./assets/img/achievements-15.png" alt="image">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="achievement" data-title="Активность">
+                                                <div class="achievement__img-wrap">
+                                                    <div class="achievement__img">
+                                                        <img src="./assets/img/achievements-16.png" alt="image">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="achievement" data-title="Активность">
+                                                <div class="achievement__img-wrap">
+                                                    <div class="achievement__img">
+                                                        <img src="./assets/img/achievements-17.png" alt="image">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="achievement" data-title="Активность">
+                                                <div class="achievement__img-wrap">
+                                                    <div class="achievement__img">
+                                                        <img src="./assets/img/achievements-18.png" alt="image">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="achievement" data-title="Активность">
+                                                <div class="achievement__img-wrap">
+                                                    <div class="achievement__img">
+                                                        <img src="./assets/img/achievements-19.png" alt="image">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="achievement__popup-title"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="limit">
+                <div class="flex-panel footer-panel">
+                    <div class="copiright">© 2020, sito-opros.ru.</div>
+                    <div class="footer-nav"><a class="footer-nav__link" href="/privacy.html">Политика
+                            конфиденциальности</a><a class="footer-nav__link" href="/agreement.html">Пользовательское
+                            соглашение</a></div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.4); display: none; z-index: 15" class="content-dark"></div>
+
+    <script type="module">
+        import canvasConfetti from 'https://cdn.skypack.dev/canvas-confetti'; const doItNow = () => { const direction = Math.sign(lastX - window.innerWidth * 0.5); lastX = window.innerWidth * 0.5; const particleCount = r(2, 15); canvasConfetti({ particleCount,
+        angle: r(90, 90 + direction * 30), spread: r(45, 80), origin: { x: window.innerWidth * 0.2 / window.innerWidth, y: window.innerHeight * 0.5 / window.innerHeight } }); canvasConfetti({ particleCount, angle: r(90, 90 + direction * 30), spread: r(45,
+        80), origin: { x: window.innerWidth * 0.5 / window.innerWidth, y: window.innerHeight * 0.5 / window.innerHeight } }); canvasConfetti({ particleCount, angle: r(90, 90 + direction * 30), spread: r(45, 80), origin: { x: window.innerWidth * 0.8 /
+        window.innerWidth, y: window.innerHeight * 0.5 / window.innerHeight } }); canvasConfetti({ particleCount, angle: r(90, 90 + direction * 30), spread: r(45, 80), origin: { x: window.innerWidth * 0.2 / window.innerWidth, y: window.innerHeight * 0.8
+        / window.innerHeight } }); canvasConfetti({ particleCount, angle: r(180, 90 + direction * 30), spread: r(45, 80), origin: { x: window.innerWidth * 0.5 / window.innerWidth, y: window.innerHeight * 0.8 / window.innerHeight } }); canvasConfetti({
+        particleCount, angle: r(90, 90 + direction * 30), spread: r(45, 80), origin: { x: window.innerWidth * 0.8 / window.innerWidth, y: window.innerHeight * 0.8 / window.innerHeight } }); }; let lastX = 0; function r(mi, ma) { return parseInt(Math.random()
+        * (ma - mi) + mi); } document.querySelectorAll('.achievement:not(.popup-modal__achievement)').forEach((el) => { el.onclick = (e) => { e.preventDefault(); document.querySelector('.popup-modal').style.display = 'flex'; document.querySelector('.content-dark').style.display
+        = 'block'; for (let i = 0; i
+        < 50; i++) doItNow(); document.querySelector( '.popup-exit').onclick=( )=> { document.querySelector('.popup-modal').style.display = 'none'; document.querySelector('.content-dark').style.display = 'none' }; } })
+    </script>
+</body>
+
+</html>
