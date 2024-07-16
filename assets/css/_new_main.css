@@ -504,14 +504,17 @@ button {
     }
 }
 
-.interactive_objects span {
+.interactive_objects span{
     position: absolute;
     background: #FFFFFF;
     font-family: "HelveticaNeueCYR", sans-serif;
     font-size: calc(8.89px + 8.89 * (100vw - 830px) / 830);
     line-height: calc(8.89px + 8.89 * (100vw - 830px) / 830);
     border-radius: calc(13.33px + 13.34 * ( 100vw - 830px) / 830);
-    padding: calc(9.44px + 9.45 * (100vw - 830px) / 830) calc(12.22px + 12.22 * (100vw - 830px) / 830);
+    padding-top: calc(9.44px + 9.45 * (100vw - 830px) / 830);
+    padding-right: calc(12.22px + 12.22 * (100vw - 830px) / 830);
+    padding-bottom: calc(9.44px + 9.45 * (100vw - 830px) / 830);
+    padding-left: calc(12.22px + 12.22 * (100vw - 830px) / 830);
     font-weight: 400;
     text-align: left;
     color: #191919;
@@ -1233,43 +1236,46 @@ button {
     display: flex;
     flex-direction: column;
     align-items: start;
-    width: 689px;
+    width: 36.75vw;
     height: fit-content;
+    font-family: 'Lato', sans-serif;
     background: linear-gradient(258.86deg, #FD7DA3 0%, #AC7BEA 99.55%);
-    padding: 40px 50px 30px;
+    padding: 2.5vw 3.13vw 1.875vw;
+    transform: translateY(-50%);
     position: fixed;
-    top: 40px;
-    left: 40px;
+    top: 50%;
+    left: 2.5vw;
     z-index: 40;
 }
 
 .current-survey__image {
-    width: 190px;
+    width: 12.125vw;
+    height: auto;
     position: absolute;
     bottom: 0;
-    right: 70px;
+    right: 4.8vw;
 }
 
 .current-survey__title {
     display: flex;
     align-items: center;
-    gap: 12px;
-    height: 42px;
+    gap: 0.75vw;
+    height: 2.625vw;
     width: fit-content;
-    font-size: 30px;
+    font-size: 1.875vw;
     font-weight: 700;
     background: #FFFFFF;
     border-radius: 100px;
-    padding: 0 20px;
-    margin-bottom: 20px;
+    padding: 0 1.25vw;
+    margin-bottom: 1.25vw;
 }
 
 .current-survey__title > img {
-    width: 30px;
+    width: 1.875vw;
 }
 
 .current-survey__subtitle {
-    font-size: 30px;
+    font-size: 1.875vw;
     font-weight: 600;
     line-height: 120%;
     color: #FFFFFF;
@@ -1278,7 +1284,7 @@ button {
 }
 
 .current-survey__text {
-    font-size: 12px;
+    font-size: 0.75vw;
     line-height: 120%;
 }
 
@@ -1286,13 +1292,19 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 12px;
+    gap: 0.75vw;
     width: fit-content;
-    height: 48px;
+    height: 3vw;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.25vw;
     background: #FFC444;
     border-radius: 6px;
-    padding: 0 26px;
-    margin-top: 10px;
+    padding: 0 1.625vw;
+    margin-top: 0.625vw;
+}
+
+.current-survey__button > img {
+    width: 0.55vw;
 }
 
 .nav-mobile {
@@ -1716,46 +1728,6 @@ button {
 
     .footer__link {
         font-size: 13px;
-    }
-
-    .current-survey {
-        width: 520px;
-        padding: 32px 40px 24px;
-        top: 32px;
-        left: 32px;
-    }
-
-    .current-survey__image {
-        width: 150px;
-        right: 60px;
-    }
-
-    .current-survey__title {
-        gap: 10px;
-        height: 36px;
-        font-size: 25px;
-        padding: 0 18px;
-        margin-bottom: 18px;
-    }
-
-    .current-survey__title > img {
-        width: 25px;
-    }
-
-    .current-survey__subtitle {
-        font-size: 25px;
-        padding-bottom: 16px;
-    }
-
-    .current-survey__text {
-        font-size: 10px;
-    }
-
-    .current-survey__button {
-        gap: 10px;
-        height: 40px;
-        padding: 0 22px;
-        margin-top: 10px;
     }
 }
 
@@ -2627,10 +2599,8 @@ button {
     }
 
     .current-survey {
-        width: calc(100% - 112px);
+        width: fit-content;
         padding: 32px 24px 20px;
-        top: 32px;
-        left: 32px;
     }
 
     .current-survey__image {
@@ -2653,6 +2623,10 @@ button {
         font-size: 21px;
         padding-bottom: 12px;
         width: 70%;
+    }
+
+    .current-survey__text {
+        font-size: 10px;
     }
 
     .current-survey__button {
@@ -3037,10 +3011,8 @@ button {
     }
 
     .current-survey {
-        width: calc(100% - 64px);
+        width: calc(100% - 5vw - 32px);
         padding: 24px 16px 12px;
-        top: 16px;
-        left: 16px;
     }
 
     .current-survey__title {
@@ -3062,15 +3034,21 @@ button {
     }
 
     .current-survey__button {
-        gap: 10px;
+        gap: 8px;
         height: 32px;
         padding: 0 12px;
         margin-top: 6px;
+        font-size: 14px;
+    }
+
+    .current-survey__button > img {
+        width: 6px;
     }
 
     .mobile {
         display: flex;
     }
 }
+
 
 
