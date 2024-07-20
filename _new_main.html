@@ -406,7 +406,7 @@
       </div>
       <div class="_container">
         <div class="how-work">
-          <h2 class="how-work__title">Как работает платформа V - PROJECT?</h2>
+          <h2 class="how-work__title">Как работает платформа <span>V-PROJECT?</span></h2>
           <div class="how-work__steps">
             <div class="how-work__step how-work__step--active">
               <div>1</div>
@@ -427,54 +427,91 @@
               <span>Третий шаг</span>
             </div>
           </div>
-          <div class="registration">
-            <img class="registration__image" src="assets/img/hand-big-img.png" alt="">
-            <div class="registration__head">
-              <div class="registration__title">
-                <div>1</div>
-                <span>Регистрация</span>
+          <div class="how-work__container">
+
+            <div id="registration" class="registration">
+              <img class="registration__image" src="assets/img/hand-big-img.png" alt="">
+              <div class="registration__head">
+                <div class="registration__title">
+                  <div>1</div>
+                  <span>Регистрация</span>
+                </div>
+                <span class="registration-text">Пройдите стандартную процедуру регистрации по email, номеру телефона или войдите через соц сети</span>
+                <span>Зарегистрируйтесь на платформе V-Project</span>
               </div>
-              <span class="registration-text">Пройдите стандартную процедуру регистрации по email, номеру телефона или войдите через соц сети</span>
-              <span>Зарегистрируйтесь на платформе V-Project</span>
-            </div>
-            <div class="registration__form">
-              <div class="registration__input">
-                <label for="tel-email">*Телефон или почта</label>
-                <input type="text" id="tel-email">
+              <div class="registration__form">
+                <div class="registration__input">
+                  <label for="tel-email">*Телефон или почта</label>
+                  <input type="text" id="tel-email">
+                </div>
+                <div class="registration__input">
+                  <label for="password">*Пароль</label>
+                  <input type="text" id="password">
+                </div>
+                <div class="registration__input">
+                  <label for="repeat-password">*Повторите пароль</label>
+                  <input type="text" id="repeat-password">
+                </div>
+                <button class="registration__btn registration__btn--disable">
+                  Зарегистрироваться
+                </button>
               </div>
-              <div class="registration__input">
-                <label for="password">*Пароль</label>
-                <input type="text" id="password">
-              </div>
-              <div class="registration__input">
-                <label for="repeat-password">*Повторите пароль</label>
-                <input type="text" id="repeat-password">
-              </div>
-              <button class="registration__btn registration__btn--disable">
-                Зарегистрироваться
-              </button>
-            </div>
-            <div>
-              <input class="checkbox" type="checkbox" id="checkbox_1">
-              <label for="checkbox_1">
+              <div>
+                <input class="checkbox" type="checkbox" id="checkbox_1">
+                <label for="checkbox_1">
                 <span>
                   Я согласен с уловиями
                   <a href="">Пользовательского соглашения</a>
                    и
                   <a href="">Политики конфиденциальности</a>
                 </span>
-              </label>
+                </label>
+              </div>
+              <div>
+                <input class="checkbox" type="checkbox" id="checkbox_2">
+                <label for="checkbox_2">Выражаю согласие на получение СМС-сообщений с уведомлениями о новых продуктах и услугах, специальных предложениях и акциях</label>
+              </div>
+              <div class="registration__or">
+                <div></div>
+                <span>ИЛИ</span>
+                <div></div>
+              </div>
+              <button class="registration__btn">Войти</button>
             </div>
-            <div>
-              <input class="checkbox" type="checkbox" id="checkbox_2">
-              <label for="checkbox_2">Выражаю согласие на получение СМС-сообщений с уведомлениями о новых продуктах и услугах, специальных предложениях и акциях</label>
+            <div id="take-survey" class="registration take-survey">
+              <div class="registration__head">
+                <div class="registration__title">
+                  <div>2</div>
+                  <span>Пройди опрос</span>
+                </div>
+                <span class="registration-text">Проходи опросы, участвуй в гонке лидеров в разделе “Пульс” и попади в рейтинг лучших из лучших!</span>
+                <span>Чем больше опросов ты пройдешь, тем выше твои шансы на победу!</span>
+              </div>
+              <button class="button__gradient">Пульс</button>
             </div>
-            <div class="registration__or">
-              <div></div>
-              <span>ИЛИ</span>
-              <div></div>
+            <div id="participation-surveys" class="registration participation-surveys">
+              <div class="registration__head">
+                <div class="registration__title">
+                  <div>3</div>
+                  <span>Активно участвуй в опросах</span>
+                </div>
+                <span class="registration-text">Стань частью настоящих исследований!</span>
+                <span>Присоединяйся к нам в разделе “Исследования” и стань голосом перемен!</span>
+              </div>
+              <button class="button__gradient">Исследования</button>
             </div>
-            <button class="registration__btn">Войти</button>
+
+            <div class="how-work__arrow-buttons">
+              <button class="how-work__arrow-btn how-work__arrow-btn--left how-work__arrow-btn--disable">
+                <img src="assets/svg/arrow-white-right.svg" alt="">
+              </button>
+              <button class="how-work__arrow-btn how-work__arrow-btn--right">
+                <img src="assets/svg/arrow-white-right.svg" alt="">
+              </button>
+            </div>
+
+            <img class="take-survey__image" src="assets/img/MacBook-orange.png" alt="">
+            <img class="participation-surveys__image" src="assets/img/ipad-green.png" alt="">
           </div>
         </div>
       </div>
@@ -596,7 +633,7 @@
               v-project-online.ru
             </div>
           </div>
-          <div class="footer__link-mobile mobile">
+          <div class="footer__link-mobile">
             <a href="#">Политика конфиденциальности</a>
             <a href="#">Пользовательское соглашение</a>
             <a href="#">© 2020-2024 v-project-online.ru</a>
