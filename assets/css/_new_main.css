@@ -29,7 +29,7 @@ button {
 ._container {
     max-width: 1480px;
     margin: 0 auto;
-    padding: 0 3.75vw;
+    padding: 0 6.75vw;
     box-sizing: content-box;
 }
 
@@ -43,7 +43,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 48px 24px;
+    padding: 44px 22px;
     background: #191919;
 }
 
@@ -59,7 +59,7 @@ button {
     justify-content: center;
     gap: 8px;
     font-family: 'Syncopate', sans-serif;
-    font-size: 33px;
+    font-size: 32px;
     font-weight: 700;
     line-height: 100%;
     letter-spacing: 0.02em;
@@ -75,7 +75,7 @@ button {
 }
 
 .nav__item {
-    font-size: 21px;
+    font-size: 20px;
     line-height: 130%;
     color: #FFFFFF;
 }
@@ -88,7 +88,7 @@ button {
 
 .button__gradient {
     height: calc(30px + 30 * (100vw - 830px) / 830);
-    padding: 0 calc(14.44px + 14.56 * (100vw - 830px) / 830);
+    padding: 2px calc(14.44px + 14.56 * (100vw - 830px) / 830);
     background: linear-gradient(180deg, #F12711 0%, #F5AF19 100%);
     border-radius: 100px;
     font-size: calc(9px + 9 * (100vw - 830px) / 830);
@@ -97,18 +97,39 @@ button {
     color: #FFFFFF;
 }
 
+.button__gradient:hover {
+    padding: 0 calc(13.44px + 13.56 * (100vw - 830px) / 830);
+    border: 2px solid #FFFFFF;
+}
+
 .button__arrow {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 8px;
-    height: calc(30px + 30 * (100vw - 830px) / 830);
+    height: calc(29px + 29 * (100vw - 830px) / 830);
     padding: 0 calc(14.44px + 14.56 * (100vw - 830px) / 830);
+    border: 2px solid #FFFFFF;
     background: #FFFFFF;
     border-radius: 100px;
     font-size: calc(9px + 9 * (100vw - 830px) / 830);
     line-height: 110%;
     color: #191919;
+    transition: all 0.2s;
+}
+
+.button__arrow path {
+    transition: all 0.2s;
+}
+
+.button__arrow:hover {
+    border: 2px solid #B4E925;
+    transition: all 0.2s;
+}
+
+.button__arrow:hover path {
+    stroke: #B4E925;
+    transition: all 0.2s;
 }
 
 @media (min-width: 1600px) {
@@ -118,6 +139,11 @@ button {
         padding: 0 24px;
         font-size: 19px;
     }
+
+    .button__gradient:hover {
+        padding: 0 22px;
+        border: 2px solid #FFFFFF;
+    }
 }
 
 .front-part {
@@ -125,10 +151,10 @@ button {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 20px;
+    gap: 18px;
     background: #191919;
     border-radius: 0 0 16px 16px;
-    padding: 120px 0 230px;
+    padding: 100px 0 200px;
     position: relative;
     z-index: 1;
 }
@@ -141,7 +167,7 @@ button {
 }
 
 .front-part__title {
-    font-size: 68px;
+    font-size: 64px;
     font-weight: 700;
     line-height: 100%;
     color: #FFFFFF;
@@ -152,8 +178,8 @@ button {
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 8px;
-    width: 70vw;
-    height: 250px;
+    width: 68vw;
+    height: 240px;
     box-shadow: 0 0 28px 0 #00000014;
     background: #FFF;
     border-radius: 16px;
@@ -199,6 +225,10 @@ button {
     font-size: 18px;
     font-weight: 500;
     line-height: 110%;
+}
+
+.advantages__link-mobile {
+    display: none;
 }
 
 .advantages__list {
@@ -271,6 +301,10 @@ button {
     color: #292929;
 }
 
+.quizzes__tab--active:hover {
+    border: 1px solid #FFFFFF;
+}
+
 .quizzes__arrow-buttons {
     display: flex;
     align-items: center;
@@ -285,7 +319,7 @@ button {
     width: 56px;
     height: 56px;
     border-radius: 16px;
-    transition: all 0.2s;
+    transition: background 0.2s;
 }
 
 .quizzes__arrow-btn--disable {
@@ -293,12 +327,31 @@ button {
     cursor: default;
 }
 
-.quizzes__arrow-btn--left img {
+.quizzes__arrow-btn--disable:hover {
+    background: #191919 !important;
+    opacity: 0.6;
+    cursor: default;
+}
+
+.quizzes__arrow-btn--disable:hover path {
+    fill: white !important;
+}
+
+.quizzes__arrow-btn--left svg {
     transform: rotate(180deg) translateX(3px);
 }
 
-.quizzes__arrow-btn--right img  {
+.quizzes__arrow-btn--right svg  {
     transform: translateX(3px);
+}
+
+.quizzes__arrow-btn:hover {
+    background: none;
+    border: 2px solid #191919;
+}
+
+.quizzes__arrow-btn:hover path {
+    fill: #191919;
 }
 
 .quizzes__list {
@@ -418,7 +471,7 @@ button {
     height: 100%;
     max-width: 1480px;
     margin: 0 auto;
-    padding: 0 3.75vw;
+    padding: 0 6.75vw;
     box-sizing: content-box;
 }
 
@@ -435,7 +488,7 @@ button {
 .info_blocks {
     display: flex;
     gap: 18px;
-    width: calc(100% - 7.5vw);
+    width: calc(100% - 13.5vw);
     transform: translateY(-50%);
     position: absolute;
     top: 0;
@@ -948,12 +1001,31 @@ button {
     cursor: default;
 }
 
-.how-work__arrow-btn--left img {
+.how-work__arrow-btn--disable:hover {
+    background: #191919 !important;
+    opacity: 0.6;
+    cursor: default;
+}
+
+.how-work__arrow-btn--disable:hover path {
+    fill: white !important;
+}
+
+.how-work__arrow-btn--left svg {
     transform: rotate(180deg) translateX(3px);
 }
 
-.how-work__arrow-btn--right img  {
+.how-work__arrow-btn--right svg  {
     transform: translateX(3px);
+}
+
+.how-work__arrow-btn:hover {
+    background: none;
+    border: 2px solid #191919;
+}
+
+.how-work__arrow-btn:hover path {
+    fill: #191919;
 }
 
 .participation-surveys > button {
@@ -1509,7 +1581,7 @@ button {
         gap: 7px;
     }
 
-    .button__arrow img {
+    .button__arrow svg {
         width: 17px;
     }
 
@@ -1597,7 +1669,7 @@ button {
         border-radius: 12px;
     }
 
-    .quizzes__arrow-btn > img {
+    .quizzes__arrow-btn > svg {
         width: 14px;
     }
 
@@ -1698,7 +1770,7 @@ button {
         gap: 18px;
     }
 
-    .how-work__arrow-btn > img {
+    .how-work__arrow-btn > svg {
         width: 14px;
     }
 
@@ -1922,7 +1994,7 @@ button {
         gap: 6px;
     }
 
-    .button__arrow img {
+    .button__arrow svg {
         width: 15px;
     }
 
@@ -2010,15 +2082,15 @@ button {
         border-radius: 10px;
     }
 
-    .quizzes__arrow-btn > img {
+    .quizzes__arrow-btn > svg {
         width: 12px;
     }
 
-    .quizzes__arrow-btn--left img {
+    .quizzes__arrow-btn--left svg {
         transform: rotate(180deg) translateX(2px);
     }
 
-    .quizzes__arrow-btn--right img  {
+    .quizzes__arrow-btn--right svg  {
         transform: translateX(2px);
     }
 
@@ -2133,15 +2205,15 @@ button {
         border-radius: 10px;
     }
 
-    .how-work__arrow-btn > img {
+    .how-work__arrow-btn > svg {
         width: 12px;
     }
 
-    .how-work__arrow-btn--left img {
+    .how-work__arrow-btn--left svg {
         transform: rotate(180deg) translateX(2px);
     }
 
-    .how-work__arrow-btn--right img  {
+    .how-work__arrow-btn--right svg  {
         transform: translateX(2px);
     }
 
@@ -2366,7 +2438,7 @@ button {
         gap: 6px;
     }
 
-    .button__arrow img {
+    .button__arrow svg {
         width: 13px;
     }
 
@@ -2415,6 +2487,10 @@ button {
         padding: 0 0 12px 12px;
     }
 
+    .advantages__link-mobile {
+        display: flex !important;
+    }
+
     .advantages__link > img {
         width: 12px;
     }
@@ -2456,7 +2532,7 @@ button {
         border-radius: 8px;
     }
 
-    .quizzes__arrow-btn > img {
+    .quizzes__arrow-btn > svg {
         width: 10px;
     }
 
@@ -2572,15 +2648,15 @@ button {
         border-radius: 8px;
     }
 
-    .how-work__arrow-btn > img {
+    .how-work__arrow-btn > svg {
         width: 10px;
     }
 
-    .how-work__arrow-btn--left img {
+    .how-work__arrow-btn--left svg {
         transform: rotate(180deg) translateX(2px);
     }
 
-    .how-work__arrow-btn--right img  {
+    .how-work__arrow-btn--right svg {
         transform: translateX(2px);
     }
 
@@ -2950,6 +3026,11 @@ button {
         font-size: 14px;
     }
 
+    .button__gradient:hover {
+        padding: 1px 15px;
+        border: 1px solid #FFFFFF;
+    }
+
     .button__arrow {
         height: 42px;
         padding: 0 16px;
@@ -2977,7 +3058,7 @@ button {
         font-size: 12px;
     }
 
-    .button__arrow img {
+    .button__arrow svg {
         width: 10px;
     }
 
@@ -2991,9 +3072,6 @@ button {
 
     .advantages__link {
         display: none;
-        gap: 6px;
-        font-size: 13px;
-        padding: 0 0 12px 12px;
     }
 
     .advantages__link > img {
@@ -3010,7 +3088,7 @@ button {
 
     .quizzes {
         gap: 30px;
-        margin: 220px 0 400px;
+        margin: 200px 0 400px;
     }
 
     .quizzes__title {
@@ -3037,15 +3115,15 @@ button {
         border-radius: 7px;
     }
 
-    .quizzes__arrow-btn > img {
+    .quizzes__arrow-btn > svg {
         width: 8px;
     }
 
-    .quizzes__arrow-btn--left img {
+    .quizzes__arrow-btn--left svg {
         transform: rotate(180deg) translateX(1px);
     }
 
-    .quizzes__arrow-btn--right img  {
+    .quizzes__arrow-btn--right svg  {
         transform: translateX(1px);
     }
 
@@ -3131,15 +3209,15 @@ button {
         border-radius: 7px;
     }
 
-    .how-work__arrow-btn > img {
+    .how-work__arrow-btn > svg {
         width: 8px;
     }
 
-    .how-work__arrow-btn--left img {
+    .how-work__arrow-btn--left svg {
         transform: rotate(180deg) translateX(1px);
     }
 
-    .how-work__arrow-btn--right img  {
+    .how-work__arrow-btn--right svg  {
         transform: translateX(1px);
     }
 
@@ -3304,4 +3382,9 @@ button {
     }
 }
 
+@media (max-width: 360px) {
+    .quizzes {
+        margin: 220px 0 400px;
+    }
+}
 
