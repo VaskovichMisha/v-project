@@ -51,49 +51,67 @@ button {
     }
 }
 
-._arrow_btn {
+.link__arrow {
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
     height: fit-content;
+    color: #000;
+    transition: all 0.2s;
+}
+.link__arrow path {
+    stroke: #000;
+    transition: all 0.2s;
+}
+.link__arrow:hover {
+    color: #B4E925;
+    transition: all 0.2s;
+}
+.link__arrow:hover path {
+    stroke: #B4E925;
+    transition: all 0.2s;
+}
+.link__arrow_white {
+    color: #FFF;
+}
+.link__arrow_white path {
+    stroke: #FFF;
 }
 @media (max-width: 799px) {
-    ._arrow_btn {
+    .link__arrow {
         font-size: 3.59vw;
         font-weight: 550;
         line-height: 3.16vw;
         gap: 1.54vw;
     }
-    ._arrow_btn > img {
+    .link__arrow > img {
         width: 2.82vw;
         height: 1.79vw;
     }
 }
 @media (min-width: 800px) {
-    ._arrow_btn {
+    .link__arrow {
         font-size: 1.8vw;
         line-height: 5.42vw;
         gap: 1.25vw;
     }
-    ._arrow_btn > img {
-        width: 2.75vw;
-        height: 2.75vw;
+    .link__arrow > svg {
+        width: 2.2vw;
+        height: 2.2vw;
         max-width: 44px;
         max-height: 44px;
     }
 }
 @media (min-width: 1600px) {
-    ._arrow_btn {
+    .link__arrow {
         font-size: 29px;
         line-height: 43.33px;
-
         gap: 20px
     }
 }
-
 .button__gradient {
     height: calc(30px + 30 * (100vw - 830px) / 830);
-    padding: 0 calc(14.44px + 14.56 * (100vw - 830px) / 830);
+    padding: 2px calc(14.44px + 14.56 * (100vw - 830px) / 830);
     background: linear-gradient(180deg, #F12711 0%, #F5AF19 100%);
     border-radius: 100px;
     font-size: calc(9px + 9 * (100vw - 830px) / 830);
@@ -101,48 +119,35 @@ button {
     line-height: 110%;
     color: #FFFFFF;
 }
+.button__gradient:hover {
+    padding: 0 calc(13.44px + 13.56 * (100vw - 830px) / 830);
+    border: 2px solid #FFFFFF;
+}
 .button__arrow {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 8px;
-    height: calc(30px + 30 * (100vw - 830px) / 830);
+    height: calc(29px + 29 * (100vw - 830px) / 830);
     padding: 0 calc(14.44px + 14.56 * (100vw - 830px) / 830);
+    border: 2px solid #FFFFFF;
     background: #FFFFFF;
     border-radius: 100px;
     font-size: calc(9px + 9 * (100vw - 830px) / 830);
     line-height: 110%;
     color: #191919;
+    transition: all 0.2s;
 }
-.button__arrow > img {
-    display: none;
+.button__arrow path {
+    transition: all 0.2s;
 }
-@media (max-width: 799px) {
-    .button__arrow {
-        height: 8.97vw;
-        font-size: 3.08vw;
-        padding: 0 4.1vw;
-    }
-
-    .button__gradient {
-        height: 8.97vw;
-        font-size: 3.08vw;
-        padding: 0 4.1vw;
-    }
-
-    .button__arrow img {
-        width: 2.56vw;
-    }
+.button__arrow:hover {
+    border: 2px solid #B4E925;
+    transition: all 0.2s;
 }
-@media (max-width: 1599px) {
-    .button__arrow span:after {
-        content: " →"
-    }
-}
-@media (min-width: 1600px) {
-    .button__arrow img {
-        display: block;
-    }
+.button__arrow:hover path {
+    stroke: #B4E925;
+    transition: all 0.2s;
 }
 @media (min-width: 1600px) {
     .button__gradient,
@@ -150,6 +155,64 @@ button {
         height: 60px;
         padding: 0 24px;
         font-size: 19px;
+    }
+
+    .button__gradient:hover {
+        padding: 0 22px;
+        border: 2px solid #FFFFFF;
+    }
+}
+@media (max-width: 1380px) {
+    .button__arrow {
+        gap: 7px;
+    }
+    .button__arrow svg {
+        width: 17px;
+    }
+}
+@media (max-width: 1200px) {
+    .button__arrow {
+        gap: 6px;
+    }
+    .button__arrow svg {
+        width: 15px;
+    }
+}
+@media (max-width: 992px) {
+    .button__arrow {
+        gap: 6px;
+    }
+    .button__arrow svg {
+        width: 13px;
+    }
+}
+@media (max-width: 756px) {
+    .button__arrow {
+        height: 42px;
+        padding: 0 16px;
+        font-size: 14px;
+    }
+    .button__gradient {
+        height: 42px;
+        padding: 0 16px;
+        font-size: 14px;
+    }
+    .button__gradient:hover {
+        padding: 1px 15px;
+        border: 1px solid #FFFFFF;
+    }
+}
+@media (max-width: 576px) {
+    .button__arrow {
+        height: 35px;
+        font-size: 12px;
+    }
+    .button__gradient {
+        height: 35px;
+        font-size: 12px;
+    }
+    .button__arrow svg {
+        width: 10px;
     }
 }
 
@@ -539,7 +602,7 @@ button {
         font-size: 1.8vw;
         line-height: 2.5vw;
     }
-    .vote__btn {
+    .vote__link {
         margin-top: 1.1vw;
     }
 }
@@ -559,7 +622,7 @@ button {
         line-height: 33px;
     }
 
-    .vote__btn {
+    .vote__link {
         margin-top: 40px;
     }
 
@@ -664,7 +727,7 @@ button {
     .join__bottom {
         flex-wrap: nowrap;
     }
-    .join__btn {
+    .join__link {
         margin-top: 1.1vw;
     }
     .all-registration__count {
@@ -690,7 +753,7 @@ button {
         font-size: 29px;
         line-height: 40px;
     }
-    .join__btn {
+    .join__link {
         margin-top: 40px;
     }
     .all-registration__count {
