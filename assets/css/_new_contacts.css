@@ -29,8 +29,13 @@ button {
 ._container {
     max-width: 1480px;
     margin: 0 auto;
-    padding: 0 3.75vw;
+    padding: 0 6.75vw;
     box-sizing: content-box;
+}
+@media (max-width: 992px) {
+    ._container {
+        padding: 0 16px;
+    }
 }
 
 .mobile {
@@ -231,17 +236,14 @@ button {
 }
 @media (min-width: 800px) {
     .header__wrapper {
-        margin-right: 3.75vw;
-        border-top-right-radius: 22px;
-        border-bottom-right-radius: 22px;
+        margin: 0 16px;
+        border-radius: 22px;
 
-        background-size: 100%;
+        background-size: cover;
         background-repeat: no-repeat;
         background-image: url("../svg/contacts-header-background.svg");
     }
     .header {
-        margin-left: 3.75vw;
-
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -268,6 +270,12 @@ button {
         font-size: 1.31vw;
         line-height: 130%;
         color: #000000;
+    }
+}
+@media (min-width: 993px) {
+    .header__wrapper {
+        margin-left: 3.75vw;
+        margin-right: 3.75vw;
     }
 }
 @media (max-width: 1599px) {
@@ -330,7 +338,7 @@ button {
 @media (min-width: 800px) {
     .front-part {
         position: relative;
-        margin-left: 6.19vw;
+        margin-left: 2.5vw;
         padding-bottom: 12.5vw;
 
         display: flex;
