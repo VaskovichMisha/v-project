@@ -225,6 +225,17 @@ button {
     font-size: 18px;
     font-weight: 500;
     line-height: 110%;
+    transition: all 0.2s;
+}
+
+.advantages__link:hover {
+    color: #B4E925;
+    transition: all 0.2s;
+}
+
+.advantages__link:hover path {
+    stroke: #B4E925;
+    transition: all 0.2s;
 }
 
 .advantages__link-mobile {
@@ -425,6 +436,17 @@ button {
     font-size: 16px;
     font-weight: 700;
     line-height: 150%;
+    transition: all 0.2s;
+}
+
+.quizzes__card-link:hover {
+    color: #B4E925;
+    transition: all 0.2s;
+}
+
+.quizzes__card-link:hover path {
+    stroke: #B4E925;
+    transition: all 0.2s;
 }
 
 .quizzes__card-logo {
@@ -1115,19 +1137,38 @@ button {
 .registration__btn {
     height: 60px;
     width: 100%;
+    background: #B4E925;
     border-radius: 100px;
-    border: 1px solid #191919;
+    border: 2px solid #B4E925;
     font-size: 22px;
     font-weight: 500;
-    line-height: 100%
+    line-height: 100%;
+    transition: all 0.2s;
+}
+
+.registration__btn--login {
+    border: 2px solid #191919;
+    background: none;
+}
+
+.registration__btn:hover {
+    background: #B4E925;
+    border: 2px solid #191919;
 }
 
 .registration__btn--disable {
-    border: 1px solid #191919;
+    border: 2px solid #191919;
     background: #191919;
     font-size: 22px;
     color: #FFFFFF;
     opacity: 25%;
+    cursor: default;
+}
+
+.registration__btn--disable:hover {
+    background: #191919;
+    border: 2px solid #191919;
+    cursor: default;
 }
 
 .checkbox {
@@ -1137,7 +1178,7 @@ button {
 }
 
 .checkbox+label {
-    font-size: 19px;
+    font-size: 17px;
     line-height: 120%;
     display: flex;
     gap: 10px;
@@ -1349,6 +1390,17 @@ button {
     font-weight: 700;
     color: #FFFFFF;
     padding-top: 10px;
+    transition: all 0.2s;
+}
+
+.popular__block-link:hover {
+    color: #B4E925;
+    transition: all 0.2s;
+}
+
+.popular__block-link:hover path {
+    stroke: #B4E925;
+    transition: all 0.2s;
 }
 
 .popular__block-four {
@@ -1836,7 +1888,7 @@ button {
     }
 
     .checkbox+label {
-        font-size: 16px;
+        font-size: 15px;
         gap: 10px;
     }
 
@@ -2273,7 +2325,7 @@ button {
     }
 
     .checkbox+label {
-        font-size: 14px;
+        font-size: 13px;
         gap: 9px;
     }
 
@@ -2491,7 +2543,7 @@ button {
         display: flex !important;
     }
 
-    .advantages__link > img {
+    .advantages__link > svg {
         width: 12px;
     }
 
@@ -3074,7 +3126,7 @@ button {
         display: none;
     }
 
-    .advantages__link > img {
+    .advantages__link > svg {
         width: 11px;
     }
 
