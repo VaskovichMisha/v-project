@@ -9,32 +9,38 @@
     <title>V-PROJECT</title>
 </head>
 <body>
-<div class="header__wrapper">
-    <header class="header" id="header">
+<div class="header__wrapper" id="header">
+    <header class="header">
         <div class="header__block">
             <img class="header__logo" src="assets/svg/logo-text.svg" alt="logo">
             <nav class="header__nav">
-                <a href="#company" class="nav__item">О компании</a>
-                <a href="#survey" class="nav__item">Опросы</a>
-                <a href="#research" class="nav__item">Исследования</a>
+                <a href="_new_contacts.html" class="nav__item nav__item_active">О компании</a>
+                <a href="#vote" class="nav__item">Опросы</a>
+                <a href="_research.html" class="nav__item">Исследования</a>
             </nav>
         </div>
         <div class="header__buttons">
-            <button class="button__gradient">Пульс</button>
-            <button class="button__arrow">
-                <span>Регистрация</span>
-                <svg width="19" height="13" viewBox="0 0 19 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M17.1107 6.26855H0.294922" stroke="#191919" stroke-width="0.934212"/>
-                    <path d="M11.9727 0.663086L17.5779 6.26836L11.9727 11.8736" stroke="#191919" stroke-width="0.934212"/>
-                </svg>
-            </button>
-            <button class="button__arrow">
-                <span>Войти</span>
-                <svg width="19" height="13" viewBox="0 0 19 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M17.1107 6.26855H0.294922" stroke="#191919" stroke-width="0.934212"/>
-                    <path d="M11.9727 0.663086L17.5779 6.26836L11.9727 11.8736" stroke="#191919" stroke-width="0.934212"/>
-                </svg>
-            </button>
+            <form action="_pulse.html">
+                <button class="button__gradient" type="submit">Пульс</button>
+            </form>
+            <form action="_registration-simple.html">
+                <button class="button__arrow" type="submit">
+                    <span>Регистрация</span>
+                    <svg width="19" height="13" viewBox="0 0 19 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.1107 6.26855H0.294922" stroke="#191919" stroke-width="0.934212"/>
+                        <path d="M11.9727 0.663086L17.5779 6.26836L11.9727 11.8736" stroke="#191919" stroke-width="0.934212"/>
+                    </svg>
+                </button>
+            </form>
+            <form action="_login.html">
+                <button class="button__arrow" type="submit">
+                    <span>Войти</span>
+                    <svg width="19" height="13" viewBox="0 0 19 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.1107 6.26855H0.294922" stroke="#191919" stroke-width="0.934212"/>
+                        <path d="M11.9727 0.663086L17.5779 6.26836L11.9727 11.8736" stroke="#191919" stroke-width="0.934212"/>
+                    </svg>
+                </button>
+            </form>
         </div>
     </header>
 
@@ -43,27 +49,33 @@
         <h1 class="front-part__title">V - Project</h1>
         <p class="front-part__text">Добро пожаловать в мир исследований<br> и позитивных перемен!</p>
         <div class="mobile front-part__buttons">
-            <button class="button__gradient">Пульс</button>
-            <button class="button__arrow">
-                <span>Регистрация</span>
-                <svg width="19" height="13" viewBox="0 0 19 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M17.1107 6.26855H0.294922" stroke="#191919" stroke-width="0.934212"/>
-                    <path d="M11.9727 0.663086L17.5779 6.26836L11.9727 11.8736" stroke="#191919" stroke-width="0.934212"/>
-                </svg>
-            </button>
-            <button class="button__arrow">
-                <span>Войти</span>
-                <svg width="19" height="13" viewBox="0 0 19 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M17.1107 6.26855H0.294922" stroke="#191919" stroke-width="0.934212"/>
-                    <path d="M11.9727 0.663086L17.5779 6.26836L11.9727 11.8736" stroke="#191919" stroke-width="0.934212"/>
-                </svg>
-            </button>
+            <form action="_pulse.html">
+                <button class="button__gradient" type="submit">Пульс</button>
+            </form>
+            <form action="_registration-simple.html">
+                <button class="button__arrow" type="submit">
+                    <span>Регистрация</span>
+                    <svg width="19" height="13" viewBox="0 0 19 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.1107 6.26855H0.294922" stroke="#191919" stroke-width="0.934212"/>
+                        <path d="M11.9727 0.663086L17.5779 6.26836L11.9727 11.8736" stroke="#191919" stroke-width="0.934212"/>
+                    </svg>
+                </button>
+            </form>
+            <form action="_login.html">
+                <button class="button__arrow" type="submit">
+                    <span>Войти</span>
+                    <svg width="19" height="13" viewBox="0 0 19 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.1107 6.26855H0.294922" stroke="#191919" stroke-width="0.934212"/>
+                        <path d="M11.9727 0.663086L17.5779 6.26836L11.9727 11.8736" stroke="#191919" stroke-width="0.934212"/>
+                    </svg>
+                </button>
+            </form>
         </div>
     </div>
 </div>
 
 <main class="main">
-    <div class="about _container">
+    <div class="about _container" id="about">
         <div class="about__left">
             <div class="about__head">
                 <h2 class="about__title">V-PROJECT</h2>
@@ -77,7 +89,7 @@
             <img src="assets/svg/logo-with-bg.svg" alt="logo" class="about__logo desktop">
         </div>
     </div>
-    <div class="vote _container">
+    <div class="vote _container" id="vote">
         <div class="vote__left">
             <img src="assets/img/vote-1.png" alt="vote-1" class="vote-img__shadow vote-img__first">
         </div>
@@ -87,7 +99,7 @@
                 <p class="vote__text">Проводя исследования, мы <br class="mobile">стремимся к тому, <br class="desktop">чтобы ваш голос был услышан и учитывался в <br class="mobile">принятии решений. <br>Мы уверены, что каждый человек имеет право <br class="desktop">на свое мнение, <br class="mobile">и наша задача - дать возможность <br class="mobile">его высказать</p>
             </div>
             <div class="vote__bottom">
-                <a href="#" class="link__arrow vote__link">
+                <a href="_survey_list_page.html" class="link__arrow vote__link">
                     <span>Пройти опрос</span>
                     <svg width="19" height="13" viewBox="0 0 19 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M17.1107 6.26855H0.294922" stroke="#191919" stroke-width="0.934212"/>
@@ -101,13 +113,13 @@
             </div>
         </div>
     </div>
-    <div class="join _container">
+    <div class="join _container" id="join">
         <div class="join__head">
             <h2 class="join__title">Присоединяйтесь</h2>
             <p class="join__text">Присоединяйтесь к нашим опросам, станьте частью нашей дружной команды, которая активно работает над созданием лучшего будущего для всех нас. <br class="mobile">Ваш голос имеет значение, и мы уверены, <br>что вместе мы сможем добиться больших изменений.<br class="desktop"> Давайте делать мир лучше вместе!</p>
         </div>
         <div class="join__bottom">
-            <a href="#" class="link__arrow join__link">
+            <a href="_registration-simple.html" class="link__arrow join__link">
                 <span>Присоединиться</span>
                 <svg width="19" height="13" viewBox="0 0 19 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M17.1107 6.26855H0.294922" stroke="#191919" stroke-width="0.934212"/>
@@ -117,14 +129,14 @@
             <div class="all-registration__count">
                 <div hidden="" id="number7">0</div>
                 <div hidden="" id="number6">0</div>
-                <div id="number5">1</div>
-                <div id="number4">2</div>
-                <div id="number3">2</div>
-                <div id="number2">5</div>
-                <div id="number1">4</div>
+                <div id="number5">3</div>
+                <div id="number4">6</div>
+                <div id="number3">8</div>
+                <div id="number2">2</div>
+                <div id="number1">9</div>
                 <div class="all-registration__slug">
-                    <div id="number00">4</div>
-                    <div id="number0">5</div>
+                    <div id="number00">5</div>
+                    <div id="number0">6</div>
                 </div>
             </div>
         </div>
@@ -181,17 +193,17 @@
     <a href="#header" class="nav-mobile__item">
         <img src="assets/svg/home-nav.svg" alt="">
     </a>
-    <a href="#company" class="nav-mobile__item">
+    <a href="#about" class="nav-mobile__item">
         <img src="assets/svg/cart-nav.svg" alt="">
     </a>
-    <a href="#survey" class="nav-mobile__item">
+    <a href="#vote" class="nav-mobile__item">
         <img src="assets/svg/Favourite-nav.svg" alt="">
     </a>
-    <a href="#research" class="nav-mobile__item">
+    <a href="#join" class="nav-mobile__item">
         <img src="assets/svg/Account-nav.svg" alt="">
     </a>
 </div>
 
 </body>
-<script src="assets/js/new_main.js"></script>
+<script src="assets/js/new_contacts.js"></script>
 </html>

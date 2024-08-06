@@ -271,6 +271,9 @@ button {
         line-height: 130%;
         color: #000000;
     }
+    .nav__item_active {
+        font-weight: bold;
+    }
 }
 @media (min-width: 993px) {
     .header__wrapper {
@@ -667,7 +670,7 @@ button {
 .all-registration__slug {
     position: absolute;
     top: -64%;
-    right: -23%;
+    right: -15%;
 }
 .all-registration__slug div:nth-child(1) {
     position: relative;
@@ -708,7 +711,7 @@ button {
         font-size: 25.72vw;
         line-height: 25.41vw;
     }
-    .all-registration__count div:nth-child(even) {
+    .all-registration__count div:nth-child(5n) {
         margin-right: 3vw;
     }
 }
@@ -744,7 +747,7 @@ button {
         font-size: 18.13vw;
         line-height: 17.88vw;
     }
-    .all-registration__count div:nth-child(even) {
+    .all-registration__count div:nth-child(5n) {
         margin-right: 2.44vw;
     }
 }
@@ -770,48 +773,10 @@ button {
         font-size: 290px;
         line-height: 286.6px;
     }
-    .all-registration__count div:nth-child(even) {
+    .all-registration__count div:nth-child(5n) {
         margin-right: 40px;
     }
 }
-
-/*.all-registration__info {*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    align-items: flex-end;*/
-/*    text-align: right;*/
-/*    flex-grow: 1;*/
-/*    min-height: 200px;*/
-/*}*/
-/*.all-registration__title {*/
-/*    color: #161616;*/
-/*    font-size: 40px;*/
-/*    font-weight: 700;*/
-/*    line-height: 50px;*/
-/*    margin-top: 40px;*/
-/*    margin-bottom: auto;*/
-/*}*/
-/*.all-registration__count{*/
-/*    display: flex;*/
-/*}*/
-/*.all-registration__count span{*/
-/*    border-radius: 2px;*/
-/*    background-color: #30b337;*/
-/*    background-image: linear-gradient(to top, #30b337 0%, #14bfaf 100%);*/
-/*    color: #ffffff;*/
-/*    font-size: 39px;*/
-/*    font-weight: 900;*/
-/*    line-height: 65px;*/
-/*    text-align: center;*/
-/*    min-width: 65px;*/
-/*    margin-left: 2px;*/
-/*}*/
-/*.all-registration__count span:first-child {*/
-/*    display: block;*/
-/*    font-size: 30px;*/
-/*    font-weight: 700;*/
-/*    padding: 0 15px;*/
-/*}*/
 
 /******************NAV-MOBILE**************************/
 /******************NAV-MOBILE**************************/
