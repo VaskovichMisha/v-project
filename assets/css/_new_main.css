@@ -1590,7 +1590,21 @@ button {
     bottom: 32px;
     z-index: 50;
 }
-
+.nav-mobile__item {
+    width: 42px;
+    height: 42px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-mobile__item_active {
+    background-color: white;
+}
+.nav-mobile__item_active path {
+    fill: black;
+}
 @media (min-width: 992px) {
     .nav-mobile {
         display: none;

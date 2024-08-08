@@ -147,11 +147,11 @@ button {
     transition: all 0.2s;
 }
 .button__arrow:hover {
-    border: 2px solid #B4E925;
+    border: 2px solid black;
     transition: all 0.2s;
 }
 .button__arrow:hover path {
-    stroke: #B4E925;
+    stroke: black;
     transition: all 0.2s;
 }
 @media (min-width: 1600px) {
@@ -794,7 +794,22 @@ button {
     bottom: 32px;
     z-index: 50;
 }
-
+.nav-mobile__item {
+    /*background-color: white;*/
+    width: 42px;
+    height: 42px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-mobile__item_active {
+    background-color: white;
+}
+.nav-mobile__item_active path {
+    fill: black;
+}
 @media (min-width: 800px) {
     .nav-mobile {
         display: none;
