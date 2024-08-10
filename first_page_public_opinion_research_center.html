@@ -33,14 +33,62 @@
     <div
       class="first-page-opinion-reserch-center-wrapper first-page-opinion-reserch-center-wrapper--padding first-page-opinion-reserch-center"
     >
+      <div class="first-page-opinion-reserch-center__header-wrapper">
+        <header class="first-page-opinion-reserch-center__header">
+          <img class="first-page-opinion-reserch-center__header-logo" src="assets/img/public-opinion-research-center/header-logo-first-page.svg" alt="logo">
+          <nav class="first-page-opinion-reserch-center__header-nav">
+            <a href="/" class="first-page-opinion-reserch-center__nav__item">Релизы и аналитика</a>
+            <a href="/" class="first-page-opinion-reserch-center__nav__item">Решения</a>
+            <a href="/" class="first-page-opinion-reserch-center__nav__item">Респонденты</a>
+            <a href="/" class="first-page-opinion-reserch-center__nav__item">Связаться</a>
+          </nav>
+          <button class="first-page-opinion-reserch-center__header-mobile-nav-btn">
+            <img src="assets/img/public-opinion-research-center/mobile-nav.svg" alt="logo">
+            <img src="assets/img/public-opinion-research-center/mobile-nav-close.svg" alt="logo">
+          </button>
+        </header>
+
+        <div class="first-page-opinion-reserch-center__mobile-menu">
+          <a href="#" class="first-page-opinion-reserch-center__nav__item">Релизы и аналитика</a>
+          <a href="#" class="first-page-opinion-reserch-center__nav__item">Решения</a>
+          <a href="#" class="first-page-opinion-reserch-center__nav__item">Респонденты</a>
+          <a href="#" class="first-page-opinion-reserch-center__nav__item">Связаться</a>
+        </div>
+
+        <script>
+          const openMobileMenu = () =>  document
+                  .getElementsByClassName("first-page-opinion-reserch-center__header-wrapper")
+                  .item(0)
+                  .classList
+                  .add("first-page-opinion-reserch-center__header-wrapper_open-mobile-menu")
+          const closeMobileMenu = () => document
+                  .getElementsByClassName("first-page-opinion-reserch-center__header-wrapper")
+                  .item(0)
+                  .classList
+                  .remove("first-page-opinion-reserch-center__header-wrapper_open-mobile-menu");
+
+          const menuBtn = document.getElementsByClassName("first-page-opinion-reserch-center__header-mobile-nav-btn").item(0);
+          menuBtn.onclick = () => {
+            if(document.getElementsByClassName("first-page-opinion-reserch-center__header-wrapper_open-mobile-menu").length === 0) {
+              openMobileMenu()
+            } else {
+              closeMobileMenu();
+            }
+          }
+
+          for(const navBtn of document.getElementsByClassName("first-page-opinion-reserch-center__nav__item")) {
+            navBtn.onclick = () => closeMobileMenu();
+          }
+        </script>
+      </div>
       <!-- SECTION -->
-      <header class="first-page-opinion-reserch-center__v-project-txt-top">
-        <img
-          src="assets/img/public-opinion-research-center/header-logo-first-page.svg"
-          alt=""
-          class="first-page-opinion-reserch-center__v-project-txt-top-first-page-img"
-        />
-      </header>
+<!--      <header class="first-page-opinion-reserch-center__v-project-txt-top">-->
+<!--        <img-->
+<!--          src="assets/img/public-opinion-research-center/header-logo-first-page.svg"-->
+<!--          alt=""-->
+<!--          class="first-page-opinion-reserch-center__v-project-txt-top-first-page-img"-->
+<!--        />-->
+<!--      </header>-->
 
       <!-- HEADER SECTION -->
       <section
@@ -787,119 +835,119 @@
     </div>
 
     <!-- POPUP FORM -->
-    <div
-      id="first-page-opinion-reserch-center-popup-form"
-      class="first-page-opinion-reserch-center-popup first-page-opinion-reserch-center-wrapper--padding"
-    >
-      <div
-        class="first-page-opinion-reserch-center-popup__box first-page-opinion-reserch-center-card first-page-opinion-reserch-center-form"
-      >
-        <div
-          id="first-page-opinion-reserch-center-popup-form--close"
-          class="first-page-opinion-reserch-center-popup__close"
-        >
-          <svg
-            width="99"
-            height="99"
-            viewBox="0 0 99 99"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M60.1712 63.5323L35.6921 38.5169C34.8557 37.6622 34.8709 36.2599 35.7256 35.4235C36.5803 34.5871 37.9826 34.6023 38.819 35.457L63.2982 60.4724C64.1345 61.3271 64.1193 62.7295 63.2646 63.5659C62.4099 64.4022 61.0076 64.387 60.1712 63.5323Z"
-              fill="#FDFDFD"
-            />
-            <path
-              d="M35.4237 63.2636C34.5874 62.4089 34.6025 61.0066 35.4572 60.1702L60.4727 35.6911C61.3274 34.8547 62.7297 34.8699 63.5661 35.7246C64.4025 36.5793 64.3873 37.9816 63.5326 38.818L38.5171 63.2972C37.6624 64.1335 36.2601 64.1183 35.4237 63.2636Z"
-              fill="#FDFDFD"
-            />
-          </svg>
-        </div>
-        <h2
-          class="first-page-opinion-reserch-center-titlev2 first-page-opinion-reserch-center-form__title first-page-opinion-reserch-center-popup-form__title"
-        >
-          Свяжитесь с нами
-        </h2>
-        <div
-          class="first-page-opinion-reserch-center-form__text first-page-opinion-reserch-center-popup-form__text"
-        >
-          Расскажите нам о задачах,и мы постараемся помочь
-        </div>
-        <form id="first-page-opinion-form--popup" method="get" action="">
-          <div
-            class="first-page-opinion-reserch-center-form__main first-page-opinion-reserch-center-form--popup__main"
-          >
-            <div>
-              <div class="first-page-opinion-reserch-center-form__form-item">
-                <span
-                  class="first-page-opinion-reserch-center-form__form-item--label"
-                  >Ваше имя</span
-                >
-                <input
-                  class="first-page-opinion-reserch-center-form__input"
-                  placeholder="Иван"
-                  name="name"
-                />
-              </div>
-              <div class="first-page-opinion-reserch-center-form__form-item">
-                <span
-                  class="first-page-opinion-reserch-center-form__form-item--label"
-                >
-                  Ваш номер телефона
-                </span>
+<!--    <div-->
+<!--      id="first-page-opinion-reserch-center-popup-form"-->
+<!--      class="first-page-opinion-reserch-center-popup first-page-opinion-reserch-center-wrapper&#45;&#45;padding"-->
+<!--    >-->
+<!--      <div-->
+<!--        class="first-page-opinion-reserch-center-popup__box first-page-opinion-reserch-center-card first-page-opinion-reserch-center-form"-->
+<!--      >-->
+<!--        <div-->
+<!--          id="first-page-opinion-reserch-center-popup-form&#45;&#45;close"-->
+<!--          class="first-page-opinion-reserch-center-popup__close"-->
+<!--        >-->
+<!--          <svg-->
+<!--            width="99"-->
+<!--            height="99"-->
+<!--            viewBox="0 0 99 99"-->
+<!--            fill="none"-->
+<!--            xmlns="http://www.w3.org/2000/svg"-->
+<!--          >-->
+<!--            <path-->
+<!--              d="M60.1712 63.5323L35.6921 38.5169C34.8557 37.6622 34.8709 36.2599 35.7256 35.4235C36.5803 34.5871 37.9826 34.6023 38.819 35.457L63.2982 60.4724C64.1345 61.3271 64.1193 62.7295 63.2646 63.5659C62.4099 64.4022 61.0076 64.387 60.1712 63.5323Z"-->
+<!--              fill="#FDFDFD"-->
+<!--            />-->
+<!--            <path-->
+<!--              d="M35.4237 63.2636C34.5874 62.4089 34.6025 61.0066 35.4572 60.1702L60.4727 35.6911C61.3274 34.8547 62.7297 34.8699 63.5661 35.7246C64.4025 36.5793 64.3873 37.9816 63.5326 38.818L38.5171 63.2972C37.6624 64.1335 36.2601 64.1183 35.4237 63.2636Z"-->
+<!--              fill="#FDFDFD"-->
+<!--            />-->
+<!--          </svg>-->
+<!--        </div>-->
+<!--        <h2-->
+<!--          class="first-page-opinion-reserch-center-titlev2 first-page-opinion-reserch-center-form__title first-page-opinion-reserch-center-popup-form__title"-->
+<!--        >-->
+<!--          Свяжитесь с нами-->
+<!--        </h2>-->
+<!--        <div-->
+<!--          class="first-page-opinion-reserch-center-form__text first-page-opinion-reserch-center-popup-form__text"-->
+<!--        >-->
+<!--          Расскажите нам о задачах,и мы постараемся помочь-->
+<!--        </div>-->
+<!--        <form id="first-page-opinion-form&#45;&#45;popup" method="get" action="">-->
+<!--          <div-->
+<!--            class="first-page-opinion-reserch-center-form__main first-page-opinion-reserch-center-form&#45;&#45;popup__main"-->
+<!--          >-->
+<!--            <div>-->
+<!--              <div class="first-page-opinion-reserch-center-form__form-item">-->
+<!--                <span-->
+<!--                  class="first-page-opinion-reserch-center-form__form-item&#45;&#45;label"-->
+<!--                  >Ваше имя</span-->
+<!--                >-->
+<!--                <input-->
+<!--                  class="first-page-opinion-reserch-center-form__input"-->
+<!--                  placeholder="Иван"-->
+<!--                  name="name"-->
+<!--                />-->
+<!--              </div>-->
+<!--              <div class="first-page-opinion-reserch-center-form__form-item">-->
+<!--                <span-->
+<!--                  class="first-page-opinion-reserch-center-form__form-item&#45;&#45;label"-->
+<!--                >-->
+<!--                  Ваш номер телефона-->
+<!--                </span>-->
 
-                <input
-                  id="first-page-opinion-reserch-center-form--popup--phone"
-                  class="first-page-opinion-reserch-center-form__input first-page-opinion-reserch-center-form__form-item--fullwidth"
-                  placeholder="+7 (999) 000-00-00"
-                  name="phone"
-                />
-              </div>
-              <div class="first-page-opinion-reserch-center-form__form-item">
-                <span
-                  class="first-page-opinion-reserch-center-form__form-item--label"
-                >
-                  Ваш Email
-                </span>
-                <input
-                  class="first-page-opinion-reserch-center-form__input first-page-opinion-reserch-center-form__form-item--fullwidth"
-                  placeholder="you@company.com"
-                  name="email"
-                  type="email"
-                />
-              </div>
-              <div class="first-page-opinion-reserch-center-form__form-item">
-                <span
-                  class="first-page-opinion-reserch-center-form__form-item--label"
-                  >Ваша бизнес-задача
-                </span>
-                <span
-                  class="first-page-opinion-reserch-center-form__form-item--label-secondary"
-                  >Сформулируйте вопросы, на которые хотите получить
-                  ответы</span
-                >
-                <textarea
-                  class="first-page-opinion-reserch-center-form__input first-page-opinion-reserch-center-form__textarea first-page-opinion-reserch-center-form__form-item--fullwidth"
-                  placeholder="Хочу узнать лучше потребности аудитории..."
-                  name="text"
-                ></textarea>
-              </div>
-            </div>
-          </div>
-          <div class="first-page-opinion-reserch-center-form__footer">
-            <button class="first-page-opinion-reserch-center-form__btn" type="submit"> Отправить</button>
-            <label class="first-page-opinion-reserch-center-form__checkbox">
-              <input type="checkbox" name="agree" value="yes"/>
-              <span class="checkmark"></span>
-              <div style="margin-left: 32px; padding-top: 5px;">
-                Я принимаю условия <a class="first-page-opinion-reserch-center-form__agreement" href="#" target="_blank">
-                Политики конфиденциальности</a>
-              </div>
-            </label>
-          </div>
-        </form>
-      </div>
-    </div>
+<!--                <input-->
+<!--                  id="first-page-opinion-reserch-center-form&#45;&#45;popup&#45;&#45;phone"-->
+<!--                  class="first-page-opinion-reserch-center-form__input first-page-opinion-reserch-center-form__form-item&#45;&#45;fullwidth"-->
+<!--                  placeholder="+7 (999) 000-00-00"-->
+<!--                  name="phone"-->
+<!--                />-->
+<!--              </div>-->
+<!--              <div class="first-page-opinion-reserch-center-form__form-item">-->
+<!--                <span-->
+<!--                  class="first-page-opinion-reserch-center-form__form-item&#45;&#45;label"-->
+<!--                >-->
+<!--                  Ваш Email-->
+<!--                </span>-->
+<!--                <input-->
+<!--                  class="first-page-opinion-reserch-center-form__input first-page-opinion-reserch-center-form__form-item&#45;&#45;fullwidth"-->
+<!--                  placeholder="you@company.com"-->
+<!--                  name="email"-->
+<!--                  type="email"-->
+<!--                />-->
+<!--              </div>-->
+<!--              <div class="first-page-opinion-reserch-center-form__form-item">-->
+<!--                <span-->
+<!--                  class="first-page-opinion-reserch-center-form__form-item&#45;&#45;label"-->
+<!--                  >Ваша бизнес-задача-->
+<!--                </span>-->
+<!--                <span-->
+<!--                  class="first-page-opinion-reserch-center-form__form-item&#45;&#45;label-secondary"-->
+<!--                  >Сформулируйте вопросы, на которые хотите получить-->
+<!--                  ответы</span-->
+<!--                >-->
+<!--                <textarea-->
+<!--                  class="first-page-opinion-reserch-center-form__input first-page-opinion-reserch-center-form__textarea first-page-opinion-reserch-center-form__form-item&#45;&#45;fullwidth"-->
+<!--                  placeholder="Хочу узнать лучше потребности аудитории..."-->
+<!--                  name="text"-->
+<!--                ></textarea>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="first-page-opinion-reserch-center-form__footer">-->
+<!--            <button class="first-page-opinion-reserch-center-form__btn" type="submit"> Отправить</button>-->
+<!--            <label class="first-page-opinion-reserch-center-form__checkbox">-->
+<!--              <input type="checkbox" name="agree" value="yes"/>-->
+<!--              <span class="checkmark"></span>-->
+<!--              <div style="margin-left: 32px; padding-top: 5px;">-->
+<!--                Я принимаю условия <a class="first-page-opinion-reserch-center-form__agreement" href="#" target="_blank">-->
+<!--                Политики конфиденциальности</a>-->
+<!--              </div>-->
+<!--            </label>-->
+<!--          </div>-->
+<!--        </form>-->
+<!--      </div>-->
+<!--    </div>-->
 
     <!-- POPUP -->
     <div
@@ -939,6 +987,127 @@
         <div class="first-page-opinion-reserch-center-popup__text">
           Менеджер свяжется с Вами в ближайшее время
         </div>
+      </div>
+    </div>
+
+<!--    <div-->
+<!--      id="first-page-opinion-reserch-center-popup-form"-->
+<!--      class="first-page-opinion-reserch-center-popup first-page-opinion-reserch-center-wrapper&#45;&#45;padding"-->
+<!--    >-->
+<!--      <div-->
+<!--        class="first-page-opinion-reserch-center-popup__box first-page-opinion-reserch-center-card first-page-opinion-reserch-center-form"-->
+<!--      >-->
+<!--        <div-->
+<!--          id="first-page-opinion-reserch-center-popup-form&#45;&#45;close"-->
+<!--          class="first-page-opinion-reserch-center-popup__close"-->
+<!--        >-->
+<!--          <svg-->
+<!--            width="99"-->
+<!--            height="99"-->
+<!--            viewBox="0 0 99 99"-->
+<!--            fill="none"-->
+<!--            xmlns="http://www.w3.org/2000/svg"-->
+<!--          >-->
+<!--            <path-->
+<!--              d="M60.1712 63.5323L35.6921 38.5169C34.8557 37.6622 34.8709 36.2599 35.7256 35.4235C36.5803 34.5871 37.9826 34.6023 38.819 35.457L63.2982 60.4724C64.1345 61.3271 64.1193 62.7295 63.2646 63.5659C62.4099 64.4022 61.0076 64.387 60.1712 63.5323Z"-->
+<!--              fill="#FDFDFD"-->
+<!--            />-->
+<!--            <path-->
+<!--              d="M35.4237 63.2636C34.5874 62.4089 34.6025 61.0066 35.4572 60.1702L60.4727 35.6911C61.3274 34.8547 62.7297 34.8699 63.5661 35.7246C64.4025 36.5793 64.3873 37.9816 63.5326 38.818L38.5171 63.2972C37.6624 64.1335 36.2601 64.1183 35.4237 63.2636Z"-->
+<!--              fill="#FDFDFD"-->
+<!--            />-->
+<!--          </svg>-->
+<!--        </div>-->
+<!--        <h2-->
+<!--          class="first-page-opinion-reserch-center-titlev2 first-page-opinion-reserch-center-form__title first-page-opinion-reserch-center-popup-form__title"-->
+<!--        >-->
+<!--          Получить исследование-->
+<!--        </h2>-->
+<!--        <div-->
+<!--          class="first-page-opinion-reserch-center-form__text first-page-opinion-reserch-center-popup-form__text"-->
+<!--        >-->
+<!--          Оставьте свой Email и мы пришлём исследование<br>вам на почту-->
+<!--        </div>-->
+<!--        <form id="first-page-opinion-form&#45;&#45;popup" method="get" action="">-->
+<!--          <div-->
+<!--            class="first-page-opinion-reserch-center-form__main first-page-opinion-reserch-center-form&#45;&#45;popup__main"-->
+<!--          >-->
+<!--            <div>-->
+<!--              <div class="first-page-opinion-reserch-center-form__form-item">-->
+<!--                <span-->
+<!--                  class="first-page-opinion-reserch-center-form__form-item&#45;&#45;label"-->
+<!--                >-->
+<!--                  Ваше имя-->
+<!--                </span>-->
+<!--                <input-->
+<!--                  class="first-page-opinion-reserch-center-form__input"-->
+<!--                  placeholder="Иван"-->
+<!--                  name="name"-->
+<!--                />-->
+<!--              </div>-->
+<!--              <div class="first-page-opinion-reserch-center-form__form-item">-->
+<!--                <span-->
+<!--                  class="first-page-opinion-reserch-center-form__form-item&#45;&#45;label"-->
+<!--                >-->
+<!--                  Ваш Email-->
+<!--                </span>-->
+<!--                <input-->
+<!--                  class="first-page-opinion-reserch-center-form__input first-page-opinion-reserch-center-form__form-item&#45;&#45;fullwidth"-->
+<!--                  placeholder="you@company.com"-->
+<!--                  name="email"-->
+<!--                  type="email"-->
+<!--                />-->
+<!--              </div>-->
+<!--              <div>-->
+<!--                <button class="first-page-opinion-reserch-center-form__btn" type="submit"> Отправить</button>-->
+<!--                <label class="first-page-opinion-reserch-center-form__checkbox">-->
+<!--                  <input type="checkbox" name="agree" value="yes"/>-->
+<!--                  <span class="checkmark"></span>-->
+<!--                  <div style="margin-left: 32px; padding-top: 5px;">-->
+<!--                    Я принимаю условия <a class="first-page-opinion-reserch-center-form__agreement" href="#" target="_blank">-->
+<!--                    Политики конфиденциальности</a>-->
+<!--                  </div>-->
+<!--                </label>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </form>-->
+<!--      </div>-->
+<!--    </div>-->
+    <div class="new-popup-wrapper">
+      <div class="new-popup">
+        <h2 class="new-popup__title">Получить <br>исследование</h2>
+        <p class="new-popup__subtitle">Оставьте свой Email и мы пришлём исследование <br>вам на почту</p>
+        <form class="new-popup-form">
+          <div class="new-popup-form__form-item">
+            <span class="new-popup-form__form-item--label">Ваше имя</span>
+            <input
+              class="first-page-opinion-reserch-center-form__input"
+              placeholder="Иван"
+              name="name"
+            >
+          </div>
+          <div class="new-popup-form__form-item">
+            <span class="new-popup-form__form-item--label">Ваше Email</span>
+            <input
+              class="first-page-opinion-reserch-center-form__input"
+              placeholder="you@company.com"
+              name="email"
+              type="email"
+            >
+          </div>
+          <div class="new-popup-form__form-item">
+            <button class="new-popup-form__btn" type="submit"> Отправить</button>
+            <label class="first-page-opinion-reserch-center-form__checkbox">
+              <input type="checkbox" name="agree" value="yes"/>
+              <span class="checkmark"></span>
+              <div style="margin-left: 32px; padding-top: 5px;">
+                Я принимаю условия <a class="first-page-opinion-reserch-center-form__agreement" href="#" target="_blank">
+                Политики конфиденциальности</a>
+              </div>
+            </label>
+          </div>
+        </form>
       </div>
     </div>
 
