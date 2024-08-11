@@ -71,6 +71,16 @@ $().ready(function () {
   });
 
   /* FORM LOGIC */
+  /* research form start*/
+  $(".first-page-section__analytics-item-research-button").click(() => {
+    $("#first-page-opinion-reserch-center-research-popup-form").css("display", "block");
+    $("body").addClass("first-page-opinion-reserch-center-popup--no-scroll");
+  });
+  $("#first-page-opinion-reserch-center-research-popup-form--close").click(() => {
+    $("#first-page-opinion-reserch-center-research-popup-form").css("display", "none");
+    $("body").removeClass("first-page-opinion-reserch-center-popup--no-scroll");
+  });
+  /* research form end */
 
   $(".first-page-section__solution-your-business-problem-button").click(() => {
     $("#first-page-opinion-reserch-center-popup-form").css("display", "block");

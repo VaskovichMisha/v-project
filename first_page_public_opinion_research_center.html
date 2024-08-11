@@ -207,9 +207,7 @@
                 <li>Уровень самооценки у россиян</li>
                 <li>Испытывают ли люди социальное давление относительно внутренних качеств и внешности</li>
               </ul>
-              <a href="#">
-                <button class="first-page-section__data-sources-button-more-details">Получить исследование</button>
-              </a>
+              <button class="first-page-section__analytics-item-research-button first-page-section__data-sources-button-more-details">Получить исследование</button>
             </div>
           </div>
           <div class="first-page-section__analytics-item">
@@ -226,9 +224,7 @@
                 <li>Отношение жителей РФ к различным финансовым инструментам: от кредиток до вкладов</li>
                 <li>Топ критериев при выборе инвестиционного брокера</li>
               </ul>
-              <a href="#">
-                <button class="first-page-section__data-sources-button-more-details">Получить исследование</button>
-              </a>
+              <button class="first-page-section__analytics-item-research-button first-page-section__data-sources-button-more-details">Получить исследование</button>
             </div>
           </div>
           <div class="first-page-section__analytics-item">
@@ -245,9 +241,7 @@
                 <li>Готовность и желание людей обратиться к пластическому хирургу или косметологу</li>
                 <li>Уровень страха перед вмешательствами во внешность</li>
               </ul>
-              <a href="#">
-                <button class="first-page-section__data-sources-button-more-details">Получить исследование</button>
-              </a>
+              <button class="first-page-section__analytics-item-research-button first-page-section__data-sources-button-more-details">Получить исследование</button>
             </div>
           </div>
         </div>
@@ -1052,6 +1046,93 @@
         <div class="first-page-opinion-reserch-center-popup__text">
           Менеджер свяжется с Вами в ближайшее время
         </div>
+      </div>
+    </div>
+
+    <!-- RESEARCH POPUP FORM -->
+    <div
+      id="first-page-opinion-reserch-center-research-popup-form"
+      class="first-page-opinion-reserch-center-popup first-page-opinion-reserch-center-wrapper--padding"
+    >
+      <div
+        class="first-page-opinion-reserch-center-popup__box first-page-opinion-reserch-center-card first-page-opinion-reserch-center-form"
+      >
+        <div
+          id="first-page-opinion-reserch-center-research-popup-form--close"
+          class="first-page-opinion-reserch-center-popup__close"
+        >
+          <svg
+            width="99"
+            height="99"
+            viewBox="0 0 99 99"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M60.1712 63.5323L35.6921 38.5169C34.8557 37.6622 34.8709 36.2599 35.7256 35.4235C36.5803 34.5871 37.9826 34.6023 38.819 35.457L63.2982 60.4724C64.1345 61.3271 64.1193 62.7295 63.2646 63.5659C62.4099 64.4022 61.0076 64.387 60.1712 63.5323Z"
+              fill="#FDFDFD"
+            />
+            <path
+              d="M35.4237 63.2636C34.5874 62.4089 34.6025 61.0066 35.4572 60.1702L60.4727 35.6911C61.3274 34.8547 62.7297 34.8699 63.5661 35.7246C64.4025 36.5793 64.3873 37.9816 63.5326 38.818L38.5171 63.2972C37.6624 64.1335 36.2601 64.1183 35.4237 63.2636Z"
+              fill="#FDFDFD"
+            />
+          </svg>
+        </div>
+        <h2
+          class="first-page-opinion-reserch-center-titlev2 first-page-opinion-reserch-center-form__title first-page-opinion-reserch-center-popup-form__title"
+        >
+          Получить <br>исследование
+        </h2>
+        <div
+          class="first-page-opinion-reserch-center-form__text first-page-opinion-reserch-center-popup-form__text"
+        >
+          Оставьте свой Email и мы пришлём исследование <br>вам на почту
+        </div>
+        <form method="get" action="">
+          <div
+            class="first-page-opinion-reserch-center-form__main first-page-opinion-reserch-center-form--popup__main"
+          >
+            <div>
+              <div class="first-page-opinion-reserch-center-form__form-item">
+                <span
+                  class="first-page-opinion-reserch-center-form__form-item--label"
+                >
+                  Ваш номер телефона
+                </span>
+
+                <input
+                  class="first-page-opinion-reserch-center-form__input first-page-opinion-reserch-center-form__form-item--fullwidth"
+                  placeholder="Иван"
+                  name="name"
+                />
+              </div>
+              <div class="first-page-opinion-reserch-center-form__form-item">
+                <span
+                  class="first-page-opinion-reserch-center-form__form-item--label"
+                >
+                  Ваш Email
+                </span>
+                <input
+                  class="first-page-opinion-reserch-center-form__input first-page-opinion-reserch-center-form__form-item--fullwidth"
+                  placeholder="you@company.com"
+                  name="email"
+                  type="email"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="first-page-opinion-reserch-center-form__footer">
+            <button class="first-page-opinion-reserch-center-form__btn" type="submit"> Отправить</button>
+            <label class="first-page-opinion-reserch-center-form__checkbox">
+              <input type="checkbox" name="agree" value="yes"/>
+              <span class="checkmark"></span>
+              <div style="margin-left: 32px; padding-top: 5px;">
+                Я принимаю условия <a class="first-page-opinion-reserch-center-form__agreement" href="#" target="_blank">
+                Политики конфиденциальности</a>
+              </div>
+            </label>
+          </div>
+        </form>
       </div>
     </div>
 
