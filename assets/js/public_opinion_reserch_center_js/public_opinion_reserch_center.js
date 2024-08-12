@@ -82,6 +82,11 @@ $().ready(function () {
   });
   /* research form end */
 
+  $(".contact-nav-btn").click(() => {
+    $("#first-page-opinion-reserch-center-popup-form").css("display", "block");
+    $("body").addClass("first-page-opinion-reserch-center-popup--no-scroll");
+  });
+
   $(".first-page-section__solution-your-business-problem-button").click(() => {
     $("#first-page-opinion-reserch-center-popup-form").css("display", "block");
     $("body").addClass("first-page-opinion-reserch-center-popup--no-scroll");

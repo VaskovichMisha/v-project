@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 html,
 body {
   margin: 0;
@@ -184,6 +188,7 @@ h7 {
   font-weight: 400;
   text-decoration: none;
   white-space: nowrap;
+  cursor: pointer;
 }
 .first-page-opinion-reserch-center__mobile-menu {
     display: none;
@@ -462,139 +467,6 @@ h7 {
 @media (max-width: 1380px) {
     .first-page-section__analytics-container {
         grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-}
-/* Dev popup */
-.new-popup-wrapper {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    background: rgba(0,0,0,0.6);
-    overflow: auto;
-    z-index: 100;
-    padding: 10px;
-}
-.new-popup {
-    position: relative;
-    width: 590px;
-    max-width: 814px;
-    padding: 30px 60px 50px;
-    margin: auto;
-    background-color: #548D54;
-}
-.new-popup__title {
-    color: #FFFFFF;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-.new-popup__subtitle {
-    color: #FDFDFD;
-    font-weight: 400;
-}
-.new-popup-form {
-    display: flex;
-    flex-direction: column;
-}
-.new-popup-form__form-item {
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    display: flex;
-    flex-direction: column;
-}
-.new-popup-form__form-item--label {
-    color: #FFFFFF;
-    font-weight: 550;
-}
-.new-popup-form__btn {
-    background-color: #2C2C2C;
-}
-@media (max-width: 526px) {
-    .new-popup {
-        width: 91.25vw;
-        padding: 9.13vw 7.6vw 8.37vw;
-        border-radius: 6.65vw;
-    }
-    .new-popup__title {
-        font-size: 5.32vw;
-        line-height: 6.17vw;
-    }
-    .new-popup__subtitle {
-        margin-top: 1.14vw;
-        font-size: 2.66vw;
-        line-height: 2.33vw;
-    }
-    .new-popup-form {
-        margin-top: 4.18vw;
-        gap: 3.8vw;
-    }
-    .new-popup-form__form-item--label {
-        font-size: 10px;
-        line-height: 20px;
-    }
-}
-@media (min-width: 527px) {
-    .new-popup {
-        width: 82.05vw;
-        padding: 6.2vw 6.94vw 11.43vw;
-        border-radius: 3.61vw;
-    }
-    .new-popup__title {
-        font-size: 5.13vw;
-        line-height: 5.94vw;
-    }
-    .new-popup__subtitle {
-        margin-top: 1.5vw;
-        font-size: 2.14vw;
-        line-height: 2.13vw;
-    }
-    .new-popup-form {
-        margin-top: 5.24vw;
-        gap: 2.56vw;
-    }
-    .new-popup-form__form-item--label {
-        margin-bottom: 6px;
-        font-size: 14px;
-        line-height: 20px;
-    }
-}
-@media (min-width: 937px) {
-    .new-popup {
-        padding: 6.94vw 6.94vw 6.6vw;
-        width: 56.53vw;
-    }
-    .new-popup__title {
-        font-size: 4.31vw;
-        line-height: 4.63vw;
-    }
-    .new-popup__subtitle {
-        margin-top: 0.97vw;
-        font-size: 1.67vw;
-        line-height: 1.46vw;
-    }
-    .new-popup-form {
-        margin-top: 2.01vw;
-        gap: 1.81vw;
-    }
-}
-@media (min-width: 1440px) {
-    .new-popup {
-        padding: 100px 100px 95px;
-        border-radius: 52px;
-    }
-    .new-popup__title {
-        font-size: 62px;
-        line-height: 66.65px;
-    }
-    .new-popup__subtitle {
-        margin-top: 14px;
-        font-size: 24px;
-        line-height: 21px;
-    }
-    .new-popup-form {
-        margin-top: 29px;
-        gap: 26px;
     }
 }
 
@@ -978,7 +850,7 @@ h7 {
 
 
 .first-page-opinion-reserch-center-form__title {
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 }
 
 .first-page-opinion-reserch-center-form__text {
@@ -994,7 +866,7 @@ h7 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 210px;
-  margin-bottom: 70px;
+  margin-bottom: 29px;
 }
 
 .first-page-opinion-reserch-center-popup-form__title {
@@ -1003,7 +875,7 @@ h7 {
 
 .first-page-opinion-reserch-center-popup-form__text {
   margin: 0;
-  margin-bottom: 80px;
+  margin-bottom: 29px;
   text-align: left;
 }
 
@@ -1012,7 +884,7 @@ h7 {
 }
 
 .first-page-opinion-reserch-center-form__footer {
-  max-width: 668px;
+  /*max-width: 668px;*/
   margin: 0 auto;
 }
 
@@ -1396,6 +1268,8 @@ h7 {
 }
 
 .first-page-opinion-reserch-center-popup__box {
+  width: 814px;
+  max-width: 814px;
   position: absolute;
   display: block;
   box-sizing: border-box;
@@ -1412,7 +1286,7 @@ h7 {
 }
 
 .first-page-opinion-reserch-center-popup__box.first-page-opinion-reserch-center-card {
-  padding: 127px 99px;
+  padding: 95px 99px;
 }
 
 .first-page-opinion-reserch-center-popup__title {
@@ -1814,7 +1688,7 @@ h7 {
   }
 
   .first-page-opinion-reserch-center-form__main {
-    max-width: 480px;
+    /*max-width: 480px;*/
     grid-template-columns: 1fr;
     gap: 48px;
   }
@@ -1915,9 +1789,18 @@ h7 {
     width: calc(100vw - 2.5rem);
   }
 
+  .first-page-opinion-reserch-center-popup__box.first-page-opinion-reserch-center-card {
+    width: 82.05vw;
+    max-width: 768px;
+    padding: 58px 65px 107px;
+  }
+
   .first-page-opinion-reserch-center-form__text {
     font-size: 20px;
-    margin-bottom: 70px;
+    margin-bottom: 49px;
+  }
+  .first-page-opinion-reserch-center-form__text br {
+    display: none;
   }
 
   .first-page-section__bar-green-item-title {
@@ -2269,7 +2152,7 @@ h7 {
   .first-page-opinion-reserch-center-form__text {
     font-size: 14px;
     font-weight: 400;
-    margin-bottom: 37px;
+    margin-bottom: 22px;
     line-height: 87.5%;
   }
 
@@ -2709,17 +2592,36 @@ h7 {
 
 @media (max-width: 1780px) {
   .first-page-opinion-reserch-center-popup__box .first-page-opinion-reserch-center-popup-form__title {
-    font-size: 2.8rem;
+    font-size: 62px;
   }
   .first-page-opinion-reserch-center-popup__box .first-page-opinion-reserch-center-popup-form__text {
-    font-size: 1.2rem;
+    font-size: 24px;
   }
 }
 @media (max-width: 1400px) {
   .first-page-opinion-reserch-center-popup__box .first-page-opinion-reserch-center-popup-form__title {
-    font-size: 2.2rem;
+    font-size: 48px;
   }
   .first-page-opinion-reserch-center-popup__box .first-page-opinion-reserch-center-popup-form__text {
-    font-size: 0.8rem;
+    font-size: 20px;
   }
+}
+
+@media (max-width: 700px) {
+    .first-page-opinion-reserch-center-popup__box .first-page-opinion-reserch-center-popup-form__title {
+        font-size: 36px;
+    }
+    .first-page-opinion-reserch-center-popup__box .first-page-opinion-reserch-center-popup-form__text {
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .first-page-opinion-reserch-center-popup__box .first-page-opinion-reserch-center-popup-form__title {
+        font-size: 28px;
+    }
+    .first-page-opinion-reserch-center-popup__box .first-page-opinion-reserch-center-popup-form__text {
+        font-size: 14px;
+    }
 }
