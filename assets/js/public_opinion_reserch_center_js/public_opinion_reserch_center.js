@@ -255,7 +255,6 @@ $().ready(function () {
 
   $("#first-page-opinion-research-form").validate({
     rules: {
-      name: "required",
       email: {
         required: true,
         checkEmail: true,
@@ -264,7 +263,6 @@ $().ready(function () {
       agree: "required",
     },
     messages: {
-      name: "Обязательное поле",
       email: {
         required: "Обязательное поле",
         checkEmail: "Введите валидный email",
@@ -277,17 +275,18 @@ $().ready(function () {
 
       $("#first-page-opinion-reserch-center-research-popup-form").css("display", "none");
 
-      $("#first-page-opinion-reserch-center-popup-notification").css(
-          "display",
-          "block"
-      );
+      // $("#first-page-opinion-reserch-center-popup-notification").css(
+      //     "display",
+      //     "block"
+      // );
 
-      $("#first-page-opinion-reserch-center-popup-notification").css(
-          "display",
-          "block"
-      );
+      // $("#first-page-opinion-reserch-center-popup-notification").css(
+      //     "display",
+      //     "block"
+      // );
 
-      $("body").addClass("first-page-opinion-reserch-center-popup--no-scroll");
+      // $("body").addClass("first-page-opinion-reserch-center-popup--no-scroll");
+      $("body").removeClass("first-page-opinion-reserch-center-popup--no-scroll");
     },
   });
 
