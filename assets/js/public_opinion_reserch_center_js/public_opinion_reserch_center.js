@@ -91,7 +91,8 @@ $().ready(function () {
         $(this).height(elements.get(yPosition));
       }
     });
-  }
+  };
+  setTitleHeight();
   window.addEventListener('resize', function(event) {
     setTitleHeight();
   }, true);
