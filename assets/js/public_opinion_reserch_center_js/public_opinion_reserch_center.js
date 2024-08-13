@@ -70,6 +70,32 @@ $().ready(function () {
       .addClass("first-page-section__item-txt-content_active");
   });
 
+  /* Analytic section title height */
+  const setTitleHeight = () => {
+    let elements = new Map();
+
+    $(".first-page-section__analytics-item-title").each(function() {
+      $(this).height("auto");
+      const yPosition = Math.round(this.getBoundingClientRect().top + window.scrollY);
+      const titleHeight = this.clientHeight;
+
+      if(!elements.has(yPosition) || elements.get(yPosition) < titleHeight) {
+        elements.set(yPosition, titleHeight);
+      }
+    });
+    $(".first-page-section__analytics-item-title").each(function () {
+      const yPosition = Math.round(this.getBoundingClientRect().top + window.scrollY);
+      const titleHeight = this.clientHeight;
+
+      if(elements.get(yPosition) > titleHeight) {
+        $(this).height(elements.get(yPosition));
+      }
+    });
+  }
+  window.addEventListener('resize', function(event) {
+    setTitleHeight();
+  }, true);
+
   /* FORM LOGIC */
   /* research form start*/
   $(".first-page-section__analytics-item-research-button").click(() => {

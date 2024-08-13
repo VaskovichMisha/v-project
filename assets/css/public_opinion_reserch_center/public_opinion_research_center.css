@@ -184,8 +184,9 @@ h7 {
   align-items: center;
 }
 .first-page-opinion-reserch-center__nav__item {
+  font-family: "HelveticaNeueCYR", sans-serif;
   color: white;
-  font-weight: 400;
+  font-weight: 350;
   text-decoration: none;
   white-space: nowrap;
   cursor: pointer;
@@ -351,18 +352,19 @@ h7 {
     padding: 50px 28px 28px;
 }
 .first-page-section__analytics-item-title {
+    font-family: "HelveticaNeueCYR", sans-serif;
     color: #000;
     font-size: 24px;
-    font-weight: 550;
+    font-weight: 550 !important;
     line-height: 87.5%;
     font-style: normal;
+    hyphens: auto;
     margin-bottom: 20px;
 }
 .first-page-section__analytics-item-content {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    justify-content: end;
 }
 .first-page-section__analytics-item-txt {
     color: #000;
@@ -400,6 +402,10 @@ h7 {
     border-width: 0;
     border-radius: 10px;
     background-color: #548D54;
+}
+.first-page-section__analytics-item-research-button {
+    font-family: "HelveticaNeueCYR", sans-serif;
+    margin-top: auto;
 }
 @media (max-width: 479px) {
     .first-page-section__analytics-container {
@@ -454,6 +460,9 @@ h7 {
     .first-page-section__analytics-container {
         display: flex;
         flex-direction: column;
+    }
+    .first-page-section__analytics-item-title br {
+        display: none;
     }
 }
 @media (max-width: 1200px) {
