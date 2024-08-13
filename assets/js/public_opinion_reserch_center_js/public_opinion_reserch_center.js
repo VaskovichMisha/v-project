@@ -108,11 +108,6 @@ $().ready(function () {
   });
   /* research form end */
 
-  $(".contact-nav-btn").click(() => {
-    $("#first-page-opinion-reserch-center-popup-form").css("display", "block");
-    $("body").addClass("first-page-opinion-reserch-center-popup--no-scroll");
-  });
-
   $(".first-page-section__solution-your-business-problem-button").click(() => {
     $("#first-page-opinion-reserch-center-popup-form").css("display", "block");
     $("body").addClass("first-page-opinion-reserch-center-popup--no-scroll");
@@ -251,6 +246,44 @@ $().ready(function () {
 
       $(".first-page-opinion-reserch-center-popup__box").addClass(
         "first-page-opinion-reserch-center-popup__box--black"
+      );
+
+      $("body").addClass("first-page-opinion-reserch-center-popup--no-scroll");
+    },
+  });
+
+  $("#first-page-opinion-research-form").validate({
+    rules: {
+      name: "required",
+      email: {
+        required: true,
+        checkEmail: true,
+        email: true,
+      },
+      agree: "required",
+    },
+    messages: {
+      name: "Обязательное поле",
+      email: {
+        required: "Обязательное поле",
+        checkEmail: "Введите валидный email",
+        email: "Введите валидный email",
+      },
+      agree: "Обязательное поле",
+    },
+    submitHandler: function (el) {
+      $("#first-page-opinion-research-form").trigger("reset");
+
+      $("#first-page-opinion-reserch-center-research-popup-form").css("display", "none");
+
+      $("#first-page-opinion-reserch-center-popup-notification").css(
+          "display",
+          "block"
+      );
+
+      $("#first-page-opinion-reserch-center-popup-notification").css(
+          "display",
+          "block"
       );
 
       $("body").addClass("first-page-opinion-reserch-center-popup--no-scroll");
