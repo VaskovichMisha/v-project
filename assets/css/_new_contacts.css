@@ -807,8 +807,11 @@ button {
 .nav-mobile__item_active {
     background-color: white;
 }
-.nav-mobile__item_active path {
+.nav-mobile__item_active path:not(.filtered) {
     fill: black;
+}
+.nav-mobile__item_active .filtered {
+    filter: saturate(200%) brightness(80%);
 }
 @media (min-width: 800px) {
     .nav-mobile {
